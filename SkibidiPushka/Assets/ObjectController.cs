@@ -9,20 +9,23 @@ public class ObjectController : MonoBehaviour
     [Header("Настройки объекта")]
     [SerializeField] private float mass = 5f;
     [SerializeField] private float health = 100f;
-    [SerializeField] private float minDamage = 5f; 
-    [SerializeField] private float maxDamage = 50f; 
-    [SerializeField] private float breakThreshold = 10f; 
-    [SerializeField] private float knockbackMultiplier = 0.5f; 
+    [SerializeField] private float minDamage = 5f;
+    [SerializeField] private float maxDamage = 50f;
+    [SerializeField] private float breakThreshold = 10f;
+    [SerializeField] private float knockbackMultiplier = 0.5f;
 
     private Rigidbody2D rb;
     private bool isHeld = false;
     private Vector2 lastPosition;
     private float currentSpeed = 0f;
 
+    private const string navMeshUpdateEvent = "UpdateNavMesh";
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.mass = mass;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation; 
     }
 
     public void GrabObject()
@@ -31,7 +34,11 @@ public class ObjectController : MonoBehaviour
         {
             isHeld = true;
             gameObject.layer = LayerMask.NameToLayer(playerTouchedLayer);
+
             rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
         }
     }
 
@@ -43,6 +50,8 @@ public class ObjectController : MonoBehaviour
             rb.isKinematic = false;
 
             rb.velocity = (transform.position - (Vector3)lastPosition) / Time.deltaTime;
+
+            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
         }
     }
 
@@ -60,23 +69,18 @@ public class ObjectController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-
-        if (collision.collider.CompareTag("Enemy"))
+        if (isHeld && collision.collider.CompareTag("Enemy"))
         {
             float damage = CalculateDamage();
             collision.collider.GetComponent<EnemyHealth>()?.TakeDamage(damage);
 
-
             ApplyKnockback(collision.collider, damage);
-
             TakeDamage(damage);
         }
     }
 
     private float CalculateDamage()
     {
-
         float damage = mass * currentSpeed * 0.1f;
         return Mathf.Clamp(damage, minDamage, maxDamage);
     }
