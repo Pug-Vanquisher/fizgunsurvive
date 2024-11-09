@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30b1c08c305b669439d2c94ab03eee86
+guid: df43cd89e0efe5449b6e335615c92bfc
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-stand_Frame_0
+  - name: Cat-Harm_Frame_0
     originalName: 
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
@@ -126,9 +126,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
+      width: 16
       height: 14
-    spriteID: b4a3d4c804786d94b9edb5c7cb10eb91
+    spriteID: bc9e8ae1d6117ac4b9b2b5619c30077f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -136,19 +136,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3, y: 3}
-  - name: Cat-stand_Frame_1
+    uvTransform: {x: 4, y: 4}
+  - name: Cat-Harm_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
+    pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 26
-      width: 14
-      height: 13
-    spriteID: 989cd2f85d6aca7499583f542f143a30
+      width: 16
+      height: 14
+    spriteID: ff2040f791fb9614caf74a936162b5d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -157,87 +157,31 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 26}
-  - name: Cat-stand_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: -0.083333336}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 4
-      width: 14
-      height: 12
-    spriteID: 341bcbdc3460db04fa6de3baa77ad3f1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
-  - name: Cat-stand_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 47
-      width: 14
-      height: 13
-    spriteID: 1f4459671c17bfb4e8b696c25daee396
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 47}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1798275719
-    name: Cat-stand
+    guid: 1660478061
+    name: Cat-Harm
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-stand_Frame_0
+    - name: Cat-Harm_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
-        y: 0
+        y: 1
         width: 16
-        height: 16
-      spriteId: b4a3d4c804786d94b9edb5c7cb10eb91
-    - name: Cat-stand_Frame_1
+        height: 14
+      spriteId: bc9e8ae1d6117ac4b9b2b5619c30077f
+    - name: Cat-Harm_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
+        x: 0
         y: 1
-        width: 14
-        height: 13
-      spriteId: 989cd2f85d6aca7499583f542f143a30
-    - name: Cat-stand_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 12
-      spriteId: 341bcbdc3460db04fa6de3baa77ad3f1
-    - name: Cat-stand_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 13
-      spriteId: 1f4459671c17bfb4e8b696c25daee396
+        width: 16
+        height: 14
+      spriteId: ff2040f791fb9614caf74a936162b5d6
     linkedCells: []
     parentIndex: -1
   platformSettings: []

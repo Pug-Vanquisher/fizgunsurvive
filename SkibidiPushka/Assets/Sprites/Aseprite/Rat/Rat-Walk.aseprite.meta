@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30b1c08c305b669439d2c94ab03eee86
+guid: 700686bc6ce5e21479bd80afb3db9cb6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,9 +117,29 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-stand_Frame_0
+  - name: Rat-Walk_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.4166667, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 25
+      width: 12
+      height: 14
+    spriteID: 856a872a8ad69cc43836587837470315
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 25}
+  - name: Rat-Walk_Frame_1
+    originalName: 
+    pivot: {x: 0.42857146, y: -0.23076925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -127,28 +147,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 14
-      height: 14
-    spriteID: b4a3d4c804786d94b9edb5c7cb10eb91
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 3, y: 3}
-  - name: Cat-stand_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 26
-      width: 14
       height: 13
-    spriteID: 989cd2f85d6aca7499583f542f143a30
+    spriteID: 793cdf2b29f58314097815df16fea375
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,19 +156,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
-  - name: Cat-stand_Frame_2
+    uvTransform: {x: 4, y: 4}
+  - name: Rat-Walk_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -0.083333336}
+    pivot: {x: 0.4166667, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 26
       y: 4
-      width: 14
-      height: 12
-    spriteID: 341bcbdc3460db04fa6de3baa77ad3f1
+      width: 12
+      height: 13
+    spriteID: 6008e1980512e7f44bd8029278dc1321
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,18 +177,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 4}
-  - name: Cat-stand_Frame_3
+  - name: Rat-Walk_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
+    pivot: {x: 0.4166667, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 47
-      width: 14
-      height: 13
-    spriteID: 1f4459671c17bfb4e8b696c25daee396
+      width: 12
+      height: 14
+    spriteID: 23d177519abe29e4f82b4ffacb43f7b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,47 +197,103 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 47}
+  - name: Rat-Walk_Frame_4
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 69
+      width: 12
+      height: 14
+    spriteID: 9caf3fd25c77a8d4a865b2fbfe633b87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 69}
+  - name: Rat-Walk_Frame_5
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 91
+      width: 12
+      height: 14
+    spriteID: 38195127c35bbf5498d4a8f551d7ce02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 91}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1798275719
-    name: Cat-stand
+    guid: -363511877
+    name: Rat-Walk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-stand_Frame_0
+    - name: Rat-Walk_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: b4a3d4c804786d94b9edb5c7cb10eb91
-    - name: Cat-stand_Frame_1
+        x: 3
+        y: 1
+        width: 12
+        height: 14
+      spriteId: 856a872a8ad69cc43836587837470315
+    - name: Rat-Walk_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
-        y: 1
+        x: 2
+        y: 3
         width: 14
         height: 13
-      spriteId: 989cd2f85d6aca7499583f542f143a30
-    - name: Cat-stand_Frame_2
+      spriteId: 793cdf2b29f58314097815df16fea375
+    - name: Rat-Walk_Frame_2
       frameIndex: 2
       cellRect:
-        x: 1
+        x: 3
         y: 1
-        width: 14
-        height: 12
-      spriteId: 341bcbdc3460db04fa6de3baa77ad3f1
-    - name: Cat-stand_Frame_3
+        width: 12
+        height: 13
+      spriteId: 6008e1980512e7f44bd8029278dc1321
+    - name: Rat-Walk_Frame_3
       frameIndex: 3
       cellRect:
-        x: 1
+        x: 3
         y: 1
-        width: 14
-        height: 13
-      spriteId: 1f4459671c17bfb4e8b696c25daee396
+        width: 12
+        height: 14
+      spriteId: 23d177519abe29e4f82b4ffacb43f7b4
+    - name: Rat-Walk_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 2
+        width: 12
+        height: 14
+      spriteId: 9caf3fd25c77a8d4a865b2fbfe633b87
+    - name: Rat-Walk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 3
+        y: 1
+        width: 12
+        height: 14
+      spriteId: 38195127c35bbf5498d4a8f551d7ce02
     linkedCells: []
     parentIndex: -1
   platformSettings: []
