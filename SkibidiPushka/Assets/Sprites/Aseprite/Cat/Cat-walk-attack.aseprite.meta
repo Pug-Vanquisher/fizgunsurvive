@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 14
       height: 14
-    spriteID: 0c31ae2fceeeaa54681ce4bea9aec516
+    spriteID: 4d19de7c3b525ed4eb36fd2c57e8f3b8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 4
       width: 15
       height: 13
-    spriteID: 1e3f4806ed5d1df498fe5734a3bda8b6
+    spriteID: 325cad507eed27c419b4a954de7d708c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,7 +176,7 @@ ScriptedImporter:
       y: 25
       width: 15
       height: 13
-    spriteID: dca5d7398c50ae341b39b2b32e03fe2a
+    spriteID: 1300f6bc151661944b444ff99274c532
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
       y: 26
       width: 14
       height: 14
-    spriteID: b16de69d50c910a4ab82173827ea3594
+    spriteID: 8c83f99983f7bc745a38aef91573cb0a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,7 +218,7 @@ ScriptedImporter:
       y: 48
       width: 14
       height: 14
-    spriteID: 26277d5ed5f97b0469147db18a6254f0
+    spriteID: be16128b14196694ba99db92c7c11c73
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,7 +239,7 @@ ScriptedImporter:
       y: 70
       width: 14
       height: 14
-    spriteID: 25b7a1e894cf714479f682421428d921
+    spriteID: 9e682981fb1e4734592af2ca701f4101
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: 0c31ae2fceeeaa54681ce4bea9aec516
+      spriteId: 4d19de7c3b525ed4eb36fd2c57e8f3b8
     - name: Cat-walk-attack_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -274,7 +274,7 @@ ScriptedImporter:
         y: 3
         width: 15
         height: 13
-      spriteId: 1e3f4806ed5d1df498fe5734a3bda8b6
+      spriteId: 325cad507eed27c419b4a954de7d708c
     - name: Cat-walk-attack_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -283,7 +283,7 @@ ScriptedImporter:
         y: 1
         width: 15
         height: 13
-      spriteId: dca5d7398c50ae341b39b2b32e03fe2a
+      spriteId: 1300f6bc151661944b444ff99274c532
     - name: Cat-walk-attack_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -292,7 +292,7 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: b16de69d50c910a4ab82173827ea3594
+      spriteId: 8c83f99983f7bc745a38aef91573cb0a
     - name: Cat-walk-attack_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -301,7 +301,7 @@ ScriptedImporter:
         y: 2
         width: 14
         height: 14
-      spriteId: 26277d5ed5f97b0469147db18a6254f0
+      spriteId: be16128b14196694ba99db92c7c11c73
     - name: Cat-walk-attack_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -310,7 +310,7 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: 25b7a1e894cf714479f682421428d921
+      spriteId: 9e682981fb1e4734592af2ca701f4101
     linkedCells: []
     parentIndex: -1
   platformSettings: []
