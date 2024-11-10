@@ -3,7 +3,8 @@ using UnityEngine;
 public class ObjectGrabSystem : MonoBehaviour
 {
     [SerializeField] private LayerMask grabbableLayer;
-    private MonoBehaviour currentObject; 
+    private MonoBehaviour currentObject;
+
     private void Update()
     {
         HandleObjectGrab();
@@ -25,6 +26,10 @@ public class ObjectGrabSystem : MonoBehaviour
             {
                 bulletController.ReleaseObject();
             }
+            else if (currentObject is GranadeController granadeController)
+            {
+                granadeController.ReleaseObject();
+            }
 
             currentObject = null;
         }
@@ -39,6 +44,7 @@ public class ObjectGrabSystem : MonoBehaviour
         {
             ObjectController objectController = hit.collider.GetComponent<ObjectController>();
             BulletController bulletController = hit.collider.GetComponent<BulletController>();
+            GranadeController granadeController = hit.collider.GetComponent<GranadeController>();
 
             if (objectController != null && objectController.canBeGrabbed)
             {
@@ -50,13 +56,18 @@ public class ObjectGrabSystem : MonoBehaviour
                 Bullet bulletScript = hit.collider.GetComponent<Bullet>();
                 if (bulletScript != null)
                 {
-                    bulletScript.CancelLifeTimeCoroutine(); 
+                    bulletScript.CancelLifeTimeCoroutine();
                 }
 
                 Destroy(bulletScript);
 
                 currentObject = bulletController;
                 bulletController.GrabObject();
+            }
+            else if (granadeController != null && granadeController.canBeGrabbed)
+            {
+                currentObject = granadeController;
+                granadeController.GrabObject();
             }
             else
             {
