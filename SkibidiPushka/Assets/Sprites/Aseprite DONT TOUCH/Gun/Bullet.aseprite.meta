@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63c6f712551f2b94f85515d8b5c120c1
+guid: d56f69c4df3abab4b936797e6f8d236d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-walk_Frame_0
+  - name: Bullet_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 14
-    spriteID: 4f92662561e5b6f4d9e76400d7347484
+      width: 12
+      height: 7
+    spriteID: f63908db946777a4da2f366d9a37cabc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,61 +143,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Cat-walk_Frame_1
+  - name: Bullet_Frame_3
     originalName: 
-    pivot: {x: 0.53333336, y: -0.23076925}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 4
-      width: 15
-      height: 13
-    spriteID: ec97916319963784b80892ea0f5dd1b4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
-  - name: Cat-walk_Frame_2
-    originalName: 
-    pivot: {x: 0.53333336, y: -0.07692308}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 25
-      width: 15
-      height: 13
-    spriteID: 1ecc84165bac42246b7b1d0f59fbb146
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 25}
-  - name: Cat-walk_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 26
-      width: 14
-      height: 14
-    spriteID: 88c3b65fcd537134b90615ff5258750a
+      y: 19
+      width: 10
+      height: 7
+    spriteID: b471297ec3aecc540b41135e46f51fe6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -205,20 +163,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
-  - name: Cat-walk_Frame_4
+    uvTransform: {x: 4, y: 19}
+  - name: Bullet_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.14285715}
+    pivot: {x: 0.5, y: -2.3333335}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 48
-      width: 14
-      height: 14
-    spriteID: 78de77f02f0a2f84593e96aedfe398e8
+      y: 34
+      width: 8
+      height: 3
+    spriteID: dcacbbbf8a611844091f657097a4f771
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -226,20 +184,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
-  - name: Cat-walk_Frame_5
+    uvTransform: {x: 4, y: 34}
+  - name: Bullet_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.5, y: -2.3333335}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 70
-      width: 14
-      height: 14
-    spriteID: 9ed6476e8e9a8d54daf9332608a73995
+      x: 22
+      y: 19
+      width: 6
+      height: 3
+    spriteID: e5dce2a428361d34680e0daecea9019e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -247,70 +205,52 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 70}
+    uvTransform: {x: 22, y: 19}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -564469704
-    name: Cat-walk
+    guid: -1231888674
+    name: Bullet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-walk_Frame_0
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 14
-      spriteId: 4f92662561e5b6f4d9e76400d7347484
-    - name: Cat-walk_Frame_1
+    - name: Bullet_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 3
-        width: 15
-        height: 13
-      spriteId: ec97916319963784b80892ea0f5dd1b4
-    - name: Cat-walk_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 1
-        width: 15
-        height: 13
-      spriteId: 1ecc84165bac42246b7b1d0f59fbb146
-    - name: Cat-walk_Frame_3
+        x: 2
+        y: 5
+        width: 12
+        height: 7
+      spriteId: f63908db946777a4da2f366d9a37cabc
+    - name: Bullet_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 14
-      spriteId: 88c3b65fcd537134b90615ff5258750a
-    - name: Cat-walk_Frame_4
-      frameIndex: 4
+        x: 3
+        y: 5
+        width: 10
+        height: 7
+      spriteId: b471297ec3aecc540b41135e46f51fe6
+    - name: Bullet_Frame_0
+      frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
-        y: 2
-        width: 14
-        height: 14
-      spriteId: 78de77f02f0a2f84593e96aedfe398e8
-    - name: Cat-walk_Frame_5
-      frameIndex: 5
+        x: 4
+        y: 7
+        width: 8
+        height: 3
+      spriteId: dcacbbbf8a611844091f657097a4f771
+    - name: Bullet_Frame_2
+      frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 14
-      spriteId: 9ed6476e8e9a8d54daf9332608a73995
+        x: 5
+        y: 7
+        width: 6
+        height: 3
+      spriteId: e5dce2a428361d34680e0daecea9019e
     linkedCells: []
     parentIndex: -1
   platformSettings: []
