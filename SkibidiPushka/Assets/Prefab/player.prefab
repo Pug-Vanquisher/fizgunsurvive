@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4421052979381775566}
   - component: {fileID: 7221680644247284146}
   - component: {fileID: 7180917251677681730}
+  - component: {fileID: 4598630912192462616}
   m_Layer: 8
   m_Name: player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 1, b: 0.10849929, a: 1}
   m_FlipX: 0
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7180917251677681730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,4 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffb8e4101da49946a9213e6703f3501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
+--- !u!114 &4598630912192462616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423344531971300064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a709439d7f8dab469580ec24a641acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBody: {fileID: 7221680644247284146}
+  speed: 3
