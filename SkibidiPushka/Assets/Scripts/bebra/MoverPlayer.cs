@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour
+public class MoverPlayer : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed;
