@@ -31,7 +31,6 @@ public class CorrupterPlacer : MonoBehaviour
                     var a = Instantiate(CorrupterPrefab, transform);
                     a.GetComponent<EnvCorrupter>().localPos = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(respawnMinDistance, respawnMaxDistance);
                 }
-                EventManager.Instance.TriggerEvent("UpdateNavMesh");
             }
         }
     }
