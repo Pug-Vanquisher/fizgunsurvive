@@ -44,7 +44,7 @@ public class ObjectController : MonoBehaviour
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
+            //EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
         }
     }
 
@@ -57,7 +57,7 @@ public class ObjectController : MonoBehaviour
 
             rb.velocity = (transform.position - (Vector3)lastPosition) / Time.deltaTime;
 
-            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
+            //EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
         }
     }
 
@@ -124,7 +124,7 @@ public class ObjectController : MonoBehaviour
         //DisableComponents();
 
 
-        EventManager.Instance.TriggerEvent("ClearedObj");
+        //EventManager.Instance.TriggerEvent("ClearedObj");
 
         // ”ничтожаем объект с небольшой задержкой
         Invoke(nameof(DestroyAfterDelay), destroyDelay);
