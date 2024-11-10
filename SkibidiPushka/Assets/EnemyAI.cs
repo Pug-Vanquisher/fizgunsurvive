@@ -161,7 +161,7 @@ public class EnemyAI : MonoBehaviour
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
 
-        animator.SetBool("Walk", speed > 0.05f);
+        animator.SetFloat("Speed", speed);
     }
 
     private void FlipSprite()
@@ -181,8 +181,7 @@ public class EnemyAI : MonoBehaviour
         isStoppedDueToDamage = true;
         agent.enabled = false;
         rb.velocity = Vector2.zero;
-        animator.SetBool("Walk", false);
-        animator.SetBool("Hit", true);
+        animator.SetFloat("Hitted", 1f);
     }
 
     private void ResumeMovement()
@@ -190,8 +189,7 @@ public class EnemyAI : MonoBehaviour
         isStoppedDueToDamage = false;
         agent.enabled = true;
         agent.isStopped = false;
-        animator.SetBool("Hit", false);
-        animator.SetBool("Walk", true);
+        animator.SetFloat("Hitted", 0f);
     }
 
     private void OnDestroy()
