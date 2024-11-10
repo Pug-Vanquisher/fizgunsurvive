@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: -6880931556506972929}
   - component: {fileID: -4375719693274495299}
   - component: {fileID: 7122149166394670820}
+  - component: {fileID: 5471898714779828452}
   m_Layer: 7
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,9 +100,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_LinearDrag: 1000000
+  m_AngularDrag: 1000000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -150,3 +151,23 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &5471898714779828452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081071776517753593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11fc89e9a1c4a9409be2e48fe2be5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTouchedLayer: PlayerTouched
+  canBeGrabbed: 1
+  mass: 5
+  health: 100
+  minDamage: 5
+  maxDamage: 50
+  breakThreshold: 10
+  knockbackMultiplier: 0.5

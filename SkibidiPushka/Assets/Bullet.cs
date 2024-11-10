@@ -1,18 +1,45 @@
 using UnityEngine;
+using System.Collections;
 
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float damage = 50f; // Урон
     [SerializeField] private float bulletLifetime = 5f;  // Время жизни пули
 
+    private Coroutine lifeTimeCoroutine;
+    private bool isHeld = false; // Флаг для проверки, что пуля захвачена
+
     private void Start()
     {
-        // Уничтожаем пулю через определённое время, если она не попала
-        Destroy(gameObject, bulletLifetime);
+        // Запускаем корутину для отслеживания времени жизни пули
+        lifeTimeCoroutine = StartCoroutine(BulletLifeTime());
+    }
+
+    private IEnumerator BulletLifeTime()
+    {
+        float timer = 0f;
+
+        while (timer < bulletLifetime)
+        {
+            // Проверяем, захвачена ли пуля
+            if (isHeld)
+            {
+                yield break; // Прерываем выполнение корутины, если пуля захвачена
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Уничтожаем пулю, если она не захвачена
+        Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Если пуля захвачена, не обрабатываем столкновение
+        if (isHeld) return;
+
         // Определяем слой объекта, в который попала пуля
         int collidedLayer = collision.gameObject.layer;
 
@@ -46,5 +73,16 @@ public class Bullet : MonoBehaviour
     {
         // Уничтожаем пулю при столкновении
         Destroy(gameObject);
+    }
+
+    // Метод для отмены времени жизни пули при захвате
+    public void CancelLifeTimeCoroutine()
+    {
+        isHeld = true;
+        if (lifeTimeCoroutine != null)
+        {
+            StopCoroutine(lifeTimeCoroutine);
+            lifeTimeCoroutine = null; // Очищаем ссылку на корутину
+        }
     }
 }
