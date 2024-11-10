@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5616225cf4b46cf4cab86e503d928da3
+guid: af2b2625fa356f547a2e0543c579050b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Rat-Harm_Frame_0
+  - name: Bomb_Frame_0
     originalName: 
-    pivot: {x: 0.4166667, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 12
       height: 14
-    spriteID: 9888a58c713ac994b8c2a1ce5c0cec66
+    spriteID: 18d5942cff91e884b97f779f42ad6a0d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,9 +143,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Rat-Harm_Frame_1
+  - name: Bomb_Frame_1
     originalName: 
-    pivot: {x: 0.4166667, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 26
       width: 12
       height: 14
-    spriteID: 5b37949214aba5945bb3b749832ea6b8
+    spriteID: 32ade7430387ff043a153b3cce100acc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,33 +164,123 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 26}
+  - name: Bomb_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 4
+      width: 12
+      height: 14
+    spriteID: f46d6645d0c138c488e6260d8fcab042
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 4}
+  - name: Bomb_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 26
+      width: 12
+      height: 14
+    spriteID: 4272de96ede059b4083c5d1f09168be0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 26}
+  - name: Bomb_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 12
+      height: 14
+    spriteID: 8f01d8b5118a32d43a672c1a1ca57a5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1861500202
-    name: Rat-Harm
+    guid: 1764514314
+    name: Bomb
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Rat-Harm_Frame_0
+    - name: Bomb_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 3
+        x: 2
         y: 1
         width: 12
         height: 14
-      spriteId: 9888a58c713ac994b8c2a1ce5c0cec66
-    - name: Rat-Harm_Frame_1
+      spriteId: 18d5942cff91e884b97f779f42ad6a0d
+    - name: Bomb_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 3
+        x: 2
         y: 1
         width: 12
         height: 14
-      spriteId: 5b37949214aba5945bb3b749832ea6b8
+      spriteId: 32ade7430387ff043a153b3cce100acc
+    - name: Bomb_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 1
+        width: 12
+        height: 14
+      spriteId: f46d6645d0c138c488e6260d8fcab042
+    - name: Bomb_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 1
+        width: 12
+        height: 14
+      spriteId: 4272de96ede059b4083c5d1f09168be0
+    - name: Bomb_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 1
+        width: 12
+        height: 14
+      spriteId: 8f01d8b5118a32d43a672c1a1ca57a5f
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5616225cf4b46cf4cab86e503d928da3
+guid: 7abbdcac9a71a9b4a8f80a12465f4c15
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Rat-Harm_Frame_0
+  - name: Bullet2-Sheet
     originalName: 
-    pivot: {x: 0.4166667, y: -0.071428575}
+    pivot: {x: 0.5178572, y: -0.27272728}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 14
-    spriteID: 9888a58c713ac994b8c2a1ce5c0cec66
+      width: 56
+      height: 11
+    spriteID: a6a8522bdfddfc0478645cd7598ce498
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,59 +142,29 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: Rat-Harm_Frame_1
-    originalName: 
-    pivot: {x: 0.4166667, y: -0.071428575}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 26
-      width: 12
-      height: 14
-    spriteID: 5b37949214aba5945bb3b749832ea6b8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
+    uvTransform: {x: 1, y: 1}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1861500202
-    name: Rat-Harm
+    guid: -1874276146
+    name: Bullet2-Sheet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Rat-Harm_Frame_0
+    - name: Bullet2-Sheet
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 3
-        y: 1
-        width: 12
-        height: 14
-      spriteId: 9888a58c713ac994b8c2a1ce5c0cec66
-    - name: Rat-Harm_Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 3
-        y: 1
-        width: 12
-        height: 14
-      spriteId: 5b37949214aba5945bb3b749832ea6b8
+        x: 0
+        y: 0
+        width: 64
+        height: 16
+      spriteId: a6a8522bdfddfc0478645cd7598ce498
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 64, y: 16}
