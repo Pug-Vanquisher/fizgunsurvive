@@ -7,20 +7,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float invulnerabilityTime = 0.5f;
 
+    public delegate void DamageAction();
+    public event DamageAction OnDamageTaken;
+    public event DamageAction OnInvulnerabilityEnd;
+
     private float currentHealth;
     private bool isInvulnerable = false;
-    private SpriteRenderer spriteRenderer;
-    private Color originalColor;
 
     private void Awake()
     {
         currentHealth = maxHealth;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
-        if (spriteRenderer != null)
-        {
-            originalColor = spriteRenderer.color;
-        }
     }
 
     public void TakeDamage(float damage)
@@ -36,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
+            OnDamageTaken?.Invoke();
             StartCoroutine(InvulnerabilityCoroutine());
         }
     }
@@ -49,19 +46,8 @@ public class EnemyHealth : MonoBehaviour
     private IEnumerator InvulnerabilityCoroutine()
     {
         isInvulnerable = true;
-
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = Color.magenta;
-        }
-
         yield return new WaitForSeconds(invulnerabilityTime);
-
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = originalColor;
-        }
-
         isInvulnerable = false;
+        OnInvulnerabilityEnd?.Invoke();
     }
 }

@@ -15,17 +15,23 @@ public class ObjectController : MonoBehaviour
     [SerializeField] private float knockbackMultiplier = 0.5f;
 
     private Rigidbody2D rb;
+    private Collider2D objectCollider;
+    private Renderer objectRenderer;
     private bool isHeld = false;
     private Vector2 lastPosition;
     private float currentSpeed = 0f;
 
     private const string navMeshUpdateEvent = "UpdateNavMesh";
+    private float destroyDelay = 0.1f; 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        objectCollider = GetComponent<Collider2D>();
+        objectRenderer = GetComponent<Renderer>();
+
         rb.mass = mass;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation; 
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void GrabObject()
@@ -110,6 +116,39 @@ public class ObjectController : MonoBehaviour
     private void DestroyObject()
     {
         Debug.Log("ќбъект разрушен!");
+
+
+        //transform.position = new Vector3(9999, 9999, 9999);
+
+
+        //DisableComponents();
+
+
+        EventManager.Instance.TriggerEvent("ClearedObj");
+
+        // ”ничтожаем объект с небольшой задержкой
+        Invoke(nameof(DestroyAfterDelay), destroyDelay);
+    }
+
+    private void DisableComponents()
+    {
+
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        if (objectCollider != null)
+            objectCollider.enabled = false;
+
+        if (objectRenderer != null)
+            objectRenderer.enabled = false;
+    }
+
+    private void DestroyAfterDelay()
+    {
         Destroy(gameObject);
     }
 }

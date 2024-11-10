@@ -17,6 +17,7 @@ public class NavMeshUpdater : MonoBehaviour
         BuildNavMesh();
 
         EventManager.Instance.Subscribe(updateEventName, BuildNavMesh);
+        EventManager.Instance.Subscribe("ClearedObj", BuildNavMeshDelay);
     }
 
     private void BuildNavMesh()
@@ -31,6 +32,11 @@ public class NavMeshUpdater : MonoBehaviour
             Debug.LogWarning("NavMeshSurface не найден!");
         }
     }
+
+    private void BuildNavMeshDelay()
+    {
+        Invoke(nameof(BuildNavMesh), 1f);
+    }    
 
     private void OnDestroy()
     {

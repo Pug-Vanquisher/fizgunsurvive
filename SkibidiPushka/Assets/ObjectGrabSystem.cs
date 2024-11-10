@@ -3,8 +3,7 @@ using UnityEngine;
 public class ObjectGrabSystem : MonoBehaviour
 {
     [SerializeField] private LayerMask grabbableLayer;
-    private ObjectController currentObject;
-
+    private MonoBehaviour currentObject; 
     private void Update()
     {
         HandleObjectGrab();
@@ -18,7 +17,15 @@ public class ObjectGrabSystem : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0) && currentObject != null)
         {
-            currentObject.ReleaseObject();
+            if (currentObject is ObjectController objectController)
+            {
+                objectController.ReleaseObject();
+            }
+            else if (currentObject is BulletController bulletController)
+            {
+                bulletController.ReleaseObject();
+            }
+
             currentObject = null;
         }
     }
@@ -30,10 +37,26 @@ public class ObjectGrabSystem : MonoBehaviour
 
         if (hit.collider != null)
         {
-            currentObject = hit.collider.GetComponent<ObjectController>();
-            if (currentObject != null && currentObject.canBeGrabbed) // Проверка флага захвата
+            ObjectController objectController = hit.collider.GetComponent<ObjectController>();
+            BulletController bulletController = hit.collider.GetComponent<BulletController>();
+
+            if (objectController != null && objectController.canBeGrabbed)
             {
-                currentObject.GrabObject();
+                currentObject = objectController;
+                objectController.GrabObject();
+            }
+            else if (bulletController != null && bulletController.canBeGrabbed)
+            {
+                Bullet bulletScript = hit.collider.GetComponent<Bullet>();
+                if (bulletScript != null)
+                {
+                    bulletScript.CancelLifeTimeCoroutine(); 
+                }
+
+                Destroy(bulletScript);
+
+                currentObject = bulletController;
+                bulletController.GrabObject();
             }
             else
             {
