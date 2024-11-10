@@ -4,7 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [Header("Настройки здоровья игрока")]
     [SerializeField] private float maxHealth = 100f;
-    private float currentHealth;
+    public float currentHealth;
 
     private void Start()
     {
