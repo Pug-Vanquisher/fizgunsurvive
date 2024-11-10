@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: -2818089880718893488}
   - component: {fileID: -6880931556506972929}
   - component: {fileID: -4375719693274495299}
-  - component: {fileID: 7122149166394670820}
   - component: {fileID: 5471898714779828452}
+  - component: {fileID: 8092367191663410814}
   m_Layer: 7
   m_Name: wall
   m_TagString: Wall
@@ -164,22 +164,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7122149166394670820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8081071776517753593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!114 &5471898714779828452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,3 +184,19 @@ MonoBehaviour:
   maxDamage: 50
   breakThreshold: 10
   knockbackMultiplier: 0.5
+--- !u!208 &8092367191663410814
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081071776517753593}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
