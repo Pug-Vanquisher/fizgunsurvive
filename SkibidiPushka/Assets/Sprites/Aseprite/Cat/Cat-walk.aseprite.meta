@@ -21,13 +21,11 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
-    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMipmapLimit: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -77,7 +75,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,7 +87,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -105,7 +101,6 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -127,14 +122,13 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 4
       width: 14
       height: 14
-    spriteID: c3901766b49d3704085e5972d80c4944
+    spriteID: 4f92662561e5b6f4d9e76400d7347484
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,14 +142,13 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.23076925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 26
       y: 4
       width: 15
       height: 13
-    spriteID: 20db239ac038f0c48acd398a7d7acfd8
+    spriteID: ec97916319963784b80892ea0f5dd1b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -169,14 +162,13 @@ ScriptedImporter:
     pivot: {x: 0.53333336, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 26
       y: 25
       width: 15
       height: 13
-    spriteID: abf0fb5c830a1114eb0aa41a4e7424ae
+    spriteID: 1ecc84165bac42246b7b1d0f59fbb146
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,14 +182,13 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 26
       width: 14
       height: 14
-    spriteID: ec850aa8f4f68a94fbe0481e611789ae
+    spriteID: 88c3b65fcd537134b90615ff5258750a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -211,14 +202,13 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.14285715}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 48
       width: 14
       height: 14
-    spriteID: e22068a52a411154bb46c0517e653f65
+    spriteID: 78de77f02f0a2f84593e96aedfe398e8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,14 +222,13 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 70
       width: 14
       height: 14
-    spriteID: c6150487842a62d4994154aab9da6cd9
+    spriteID: 9ed6476e8e9a8d54daf9332608a73995
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -259,62 +248,55 @@ ScriptedImporter:
     cells:
     - name: Cat-walk_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 1
         width: 14
         height: 14
-      spriteId: c3901766b49d3704085e5972d80c4944
+      spriteId: 4f92662561e5b6f4d9e76400d7347484
     - name: Cat-walk_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 3
         width: 15
         height: 13
-      spriteId: 20db239ac038f0c48acd398a7d7acfd8
+      spriteId: ec97916319963784b80892ea0f5dd1b4
     - name: Cat-walk_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 1
         width: 15
         height: 13
-      spriteId: abf0fb5c830a1114eb0aa41a4e7424ae
+      spriteId: 1ecc84165bac42246b7b1d0f59fbb146
     - name: Cat-walk_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 1
         width: 14
         height: 14
-      spriteId: ec850aa8f4f68a94fbe0481e611789ae
+      spriteId: 88c3b65fcd537134b90615ff5258750a
     - name: Cat-walk_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 14
         height: 14
-      spriteId: e22068a52a411154bb46c0517e653f65
+      spriteId: 78de77f02f0a2f84593e96aedfe398e8
     - name: Cat-walk_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 1
         width: 14
         height: 14
-      spriteId: c6150487842a62d4994154aab9da6cd9
+      spriteId: 9ed6476e8e9a8d54daf9332608a73995
     linkedCells: []
     parentIndex: -1
   platformSettings: []
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 16, y: 16}
