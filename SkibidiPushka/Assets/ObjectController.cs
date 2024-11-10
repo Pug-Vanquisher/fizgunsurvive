@@ -22,7 +22,7 @@ public class ObjectController : MonoBehaviour
     private float currentSpeed = 0f;
 
     private const string navMeshUpdateEvent = "UpdateNavMesh";
-    private float destroyDelay = 0.1f; // Задержка перед уничтожением объекта
+    private float destroyDelay = 0.1f; 
 
     private void Awake()
     {
@@ -117,13 +117,13 @@ public class ObjectController : MonoBehaviour
     {
         Debug.Log("Объект разрушен!");
 
-        // Переносим объект далеко за пределы сцены
+
         //transform.position = new Vector3(9999, 9999, 9999);
 
-        // Отключаем физику и рендеринг
+
         //DisableComponents();
 
-        // Запускаем событие для обновления NavMesh
+
         EventManager.Instance.TriggerEvent("ClearedObj");
 
         // Уничтожаем объект с небольшой задержкой
@@ -132,7 +132,7 @@ public class ObjectController : MonoBehaviour
 
     private void DisableComponents()
     {
-        // Отключаем физику и рендеринг
+
         if (rb != null)
         {
             rb.isKinematic = true;

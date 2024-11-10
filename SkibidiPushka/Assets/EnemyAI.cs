@@ -70,13 +70,10 @@ public class EnemyAI : MonoBehaviour
             MoveToRandomPointNearPlayer();
         }
 
-        // Поворот спрайта в зависимости от направления движения
         FlipSprite();
 
-        // Проверка застревания и препятствий
         CheckForObstacles();
 
-        // Проверка скорости для включения/выключения анимации ходьбы
         UpdateWalkingAnimation();
     }
 
@@ -133,12 +130,10 @@ public class EnemyAI : MonoBehaviour
 
     private void CheckForObstacles()
     {
-        // Используем SphereCast для проверки препятствий перед врагом
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, sphereCastRadius, transform.right, sphereCastDistance, obstacleLayer);
 
         if (hit.collider != null)
         {
-            // Если перед врагом стена или объект на слое PlayerTouched, враг стреляет
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall") ||
                 hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerTouched"))
             {
@@ -157,7 +152,6 @@ public class EnemyAI : MonoBehaviour
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
 
-        // Если скорость меньше порога, отключаем анимацию ходьбы
         if (speed < stuckSpeedThreshold)
         {
             animator.SetBool("Walk", false);

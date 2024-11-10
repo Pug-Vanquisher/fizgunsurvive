@@ -8,17 +8,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        // Инициализируем здоровье игрока
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(float damage)
     {
-        // Уменьшаем здоровье игрока
         currentHealth -= damage;
         Debug.Log($"Игрок получил урон: {damage}. Текущее здоровье: {currentHealth}");
 
-        // Проверяем, если здоровье меньше или равно нулю
         if (currentHealth <= 0)
         {
             Die();
@@ -27,8 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        // Логика смерти игрока, например, перезагрузка уровня
-        Debug.Log("Игрок погиб!");
-        // Здесь можно добавить логику для перезапуска уровня
+        Debug.Log("Игрок погиб");
     }
 }

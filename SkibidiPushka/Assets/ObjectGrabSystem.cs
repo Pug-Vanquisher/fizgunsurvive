@@ -3,8 +3,7 @@ using UnityEngine;
 public class ObjectGrabSystem : MonoBehaviour
 {
     [SerializeField] private LayerMask grabbableLayer;
-    private MonoBehaviour currentObject; // Изменено на MonoBehaviour для универсальности
-
+    private MonoBehaviour currentObject; 
     private void Update()
     {
         HandleObjectGrab();
@@ -48,14 +47,12 @@ public class ObjectGrabSystem : MonoBehaviour
             }
             else if (bulletController != null && bulletController.canBeGrabbed)
             {
-                // Получаем компонент Bullet, чтобы отменить его время жизни
                 Bullet bulletScript = hit.collider.GetComponent<Bullet>();
                 if (bulletScript != null)
                 {
-                    bulletScript.CancelLifeTimeCoroutine(); // Останавливаем корутину уничтожения
+                    bulletScript.CancelLifeTimeCoroutine(); 
                 }
 
-                // Удаляем компонент Bullet, потому что пуля теперь будет обычным объектом
                 Destroy(bulletScript);
 
                 currentObject = bulletController;
