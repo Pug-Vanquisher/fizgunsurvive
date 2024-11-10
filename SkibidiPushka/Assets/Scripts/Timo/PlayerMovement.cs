@@ -11,11 +11,11 @@ public class PlayerMovement : MonoBehaviour
     {
         direct.x = Input.GetAxis("Horizontal");
         direct.y = Input.GetAxis("Vertical");
-        Move(direct.normalized);
+        MoveTest(direct.normalized);
         
     }
 
-    private void Move(Vector3 direct)
+    private void MoveTest(Vector3 direct)
     {
         playerBody.velocity = direct * speed;
     }
