@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30bb8c32e836927448c64c46d5e20eb7
+guid: 58b78d60dc659a3459eeac4550aae491
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,28 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-stand_Frame_0
-    originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 14
-      height: 14
-    spriteID: b4a3d4c804786d94b9edb5c7cb10eb91
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 3, y: 3}
-  - name: Cat-stand_Frame_1
+  - name: Uzi
     originalName: 
     pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
@@ -152,52 +131,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 26
-      width: 14
-      height: 13
-    spriteID: 989cd2f85d6aca7499583f542f143a30
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
-  - name: Cat-stand_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: -0.083333336}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 26
       y: 4
       width: 14
-      height: 12
-    spriteID: 341bcbdc3460db04fa6de3baa77ad3f1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
-  - name: Cat-stand_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 47
-      width: 14
       height: 13
-    spriteID: 1f4459671c17bfb4e8b696c25daee396
+    spriteID: dfc212b05fe3d6442a8f90d72e60943d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -205,52 +142,25 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 47}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1798275719
-    name: Cat-stand
+    guid: -727115132
+    name: Uzi
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-stand_Frame_0
+    - name: Uzi
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: b4a3d4c804786d94b9edb5c7cb10eb91
-    - name: Cat-stand_Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
         x: 1
         y: 1
         width: 14
         height: 13
-      spriteId: 989cd2f85d6aca7499583f542f143a30
-    - name: Cat-stand_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 12
-      spriteId: 341bcbdc3460db04fa6de3baa77ad3f1
-    - name: Cat-stand_Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 13
-      spriteId: 1f4459671c17bfb4e8b696c25daee396
+      spriteId: dfc212b05fe3d6442a8f90d72e60943d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

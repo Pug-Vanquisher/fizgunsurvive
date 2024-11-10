@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,9 +15,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireCooldown = 1.5f;
     [SerializeField] private float bulletSpeed = 15f;
-    [SerializeField] private float stuckSpeedThreshold = 0.05f;
     [SerializeField] private float sphereCastRadius = 0.5f;
     [SerializeField] private float sphereCastDistance = 0.5f;
+    [SerializeField] private float pathUpdateInterval = 0.2f; // Интервал обновления пути
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -52,6 +53,7 @@ public class EnemyAI : MonoBehaviour
             enemyHealth.OnDamageTaken += StopMovementOnDamage;
             enemyHealth.OnInvulnerabilityEnd += ResumeMovement;
         }
+        StartCoroutine(UpdatePathPeriodically());
     }
 
     private void Update()
@@ -65,16 +67,23 @@ public class EnemyAI : MonoBehaviour
         {
             TryShootAtPlayer();
         }
-        else
-        {
-            MoveToRandomPointNearPlayer();
-        }
 
         FlipSprite();
-
         CheckForObstacles();
-
         UpdateWalkingAnimation();
+    }
+
+    private IEnumerator UpdatePathPeriodically()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(pathUpdateInterval);
+
+            if (player != null && !isStoppedDueToDamage)
+            {
+                MoveToRandomPointNearPlayer();
+            }
+        }
     }
 
     private void MoveToRandomPointNearPlayer()
@@ -152,14 +161,7 @@ public class EnemyAI : MonoBehaviour
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
 
-        if (speed < stuckSpeedThreshold)
-        {
-            animator.SetBool("Walk", false);
-        }
-        else
-        {
-            animator.SetBool("Walk", true);
-        }
+        animator.SetBool("Walk", speed > 0.05f);
     }
 
     private void FlipSprite()
@@ -177,11 +179,8 @@ public class EnemyAI : MonoBehaviour
     private void StopMovementOnDamage()
     {
         isStoppedDueToDamage = true;
-
         agent.enabled = false;
         rb.velocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-
         animator.SetBool("Walk", false);
         animator.SetBool("Hit", true);
     }
@@ -189,13 +188,8 @@ public class EnemyAI : MonoBehaviour
     private void ResumeMovement()
     {
         isStoppedDueToDamage = false;
-
-        rb.velocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-
         agent.enabled = true;
         agent.isStopped = false;
-
         animator.SetBool("Hit", false);
         animator.SetBool("Walk", true);
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63c6f712551f2b94f85515d8b5c120c1
+guid: 6146301254145fc479589867fbe4be2d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-walk_Frame_0
+  - name: Cat-Dead
     originalName: 
     pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 14
       height: 14
-    spriteID: 4f92662561e5b6f4d9e76400d7347484
+    spriteID: 7c8118fc8a2cf3c4099d2e518879c6a0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,121 +143,16 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Cat-walk_Frame_1
-    originalName: 
-    pivot: {x: 0.53333336, y: -0.23076925}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 4
-      width: 15
-      height: 13
-    spriteID: ec97916319963784b80892ea0f5dd1b4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
-  - name: Cat-walk_Frame_2
-    originalName: 
-    pivot: {x: 0.53333336, y: -0.07692308}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 25
-      width: 15
-      height: 13
-    spriteID: 1ecc84165bac42246b7b1d0f59fbb146
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 25}
-  - name: Cat-walk_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 26
-      width: 14
-      height: 14
-    spriteID: 88c3b65fcd537134b90615ff5258750a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
-  - name: Cat-walk_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: -0.14285715}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 48
-      width: 14
-      height: 14
-    spriteID: 78de77f02f0a2f84593e96aedfe398e8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
-  - name: Cat-walk_Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 70
-      width: 14
-      height: 14
-    spriteID: 9ed6476e8e9a8d54daf9332608a73995
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 70}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -564469704
-    name: Cat-walk
+    guid: -771848557
+    name: Cat-Dead
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-walk_Frame_0
+    - name: Cat-Dead
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -265,52 +160,7 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: 4f92662561e5b6f4d9e76400d7347484
-    - name: Cat-walk_Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 3
-        width: 15
-        height: 13
-      spriteId: ec97916319963784b80892ea0f5dd1b4
-    - name: Cat-walk_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 1
-        width: 15
-        height: 13
-      spriteId: 1ecc84165bac42246b7b1d0f59fbb146
-    - name: Cat-walk_Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 14
-      spriteId: 88c3b65fcd537134b90615ff5258750a
-    - name: Cat-walk_Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 2
-        width: 14
-        height: 14
-      spriteId: 78de77f02f0a2f84593e96aedfe398e8
-    - name: Cat-walk_Frame_5
-      frameIndex: 5
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 14
-        height: 14
-      spriteId: 9ed6476e8e9a8d54daf9332608a73995
+      spriteId: 7c8118fc8a2cf3c4099d2e518879c6a0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
