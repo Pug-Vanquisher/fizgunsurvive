@@ -21,7 +21,6 @@ public class BulletController : MonoBehaviour
     private Vector2 lastPosition;
     private float currentSpeed = 0f;
 
-    private const string navMeshUpdateEvent = "UpdateNavMesh";
     private float destroyDelay = 0.1f; // Задержка перед уничтожением объекта
 
     private void Awake()
@@ -41,10 +40,11 @@ public class BulletController : MonoBehaviour
             isHeld = true;
             gameObject.layer = LayerMask.NameToLayer(playerTouchedLayer);
 
+            EventManager.Instance.TriggerEvent("StartAttack");
+
             //rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
         }
     }
 
@@ -57,7 +57,8 @@ public class BulletController : MonoBehaviour
 
             rb.velocity = (transform.position - (Vector3)lastPosition) / Time.deltaTime;
 
-            EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
+            EventManager.Instance.TriggerEvent("StopAttack");
+
         }
     }
 
@@ -126,6 +127,8 @@ public class BulletController : MonoBehaviour
 
         if (health <= 0)
         {
+            EventManager.Instance.TriggerEvent("StopAttack");
+
             DestroyObject();
         }
     }

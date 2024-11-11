@@ -117,12 +117,14 @@ public class ObjectController : MonoBehaviour
 
     private void DestroyObject()
     {
+
         Debug.Log("Объект разрушен!");
         Invoke(nameof(DestroyAfterDelay), destroyDelay);
     }
 
     private void DestroyAfterDelay()
     {
+        EventManager.Instance.TriggerEvent("StopAttack");
         Destroy(gameObject);
     }
 }

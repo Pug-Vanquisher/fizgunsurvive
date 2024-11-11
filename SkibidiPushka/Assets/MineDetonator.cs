@@ -7,13 +7,21 @@ public class MineDetonator : MonoBehaviour
     public float damage = 100f; // Урон
     public float explosionRadius = 4f; // Радиус взрыва
     public GameObject explosionEffectPrefab;
+    
 
     public Animator animator;
 
     private bool isExploding = false;
 
+    private MineController mineController;
+
     //и тут я насрал.
     public Transform player;
+
+    private void Awake()
+    {
+        mineController = GetComponent<MineController>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -92,8 +100,15 @@ public class MineDetonator : MonoBehaviour
 
         //хехе.
 
+        if (mineController != null)
+        {
+            mineController.Detonated();
+        }
+
         Destroy(gameObject);
     }
+
+    
 
     private void ApplyKnockback(Collider2D hitCollider)
     {

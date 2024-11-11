@@ -59,6 +59,8 @@ public class GranadeController : MonoBehaviour
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
+            EventManager.Instance.TriggerEvent("StartAttack");
+
             if (!timerStarted)
             {
                 timerStarted = true;
@@ -73,6 +75,8 @@ public class GranadeController : MonoBehaviour
             isHeld = false;
             rb.isKinematic = false;
             rb.velocity = Vector2.zero;
+
+            EventManager.Instance.TriggerEvent("StopAttack");
         }
     }
 
@@ -134,6 +138,7 @@ public class GranadeController : MonoBehaviour
         }
 
         //ץוץו.
+        EventManager.Instance.TriggerEvent("StopAttack");
 
         Destroy(gameObject);
 

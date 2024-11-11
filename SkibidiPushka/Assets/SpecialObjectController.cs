@@ -29,6 +29,9 @@ public class SpecialObjectController : MonoBehaviour
             isHeld = true;
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+            EventManager.Instance.TriggerEvent("StartAttack");
+
         }
     }
 
@@ -39,6 +42,16 @@ public class SpecialObjectController : MonoBehaviour
             isHeld = false;
             rb.isKinematic = false;
             rb.velocity = Vector2.zero;
+
+            EventManager.Instance.TriggerEvent("StopAttack");
+        }
+    }
+
+    public void OnUse()
+    {
+        if (isHeld)
+        {
+            EventManager.Instance.TriggerEvent("StopAttack");
         }
     }
 }

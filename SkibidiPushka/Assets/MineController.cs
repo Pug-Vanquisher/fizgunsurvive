@@ -32,6 +32,16 @@ public class MineController : MonoBehaviour
         {
             isHeld = true;
             gameObject.layer = LayerMask.NameToLayer(touchedMineLayer);
+
+            EventManager.Instance.TriggerEvent("StartAttack");
+        }
+    }
+
+    public void Detonated()
+    {
+        if (isHeld)
+        {
+            EventManager.Instance.TriggerEvent("StopAttack");
         }
     }
 
@@ -41,6 +51,8 @@ public class MineController : MonoBehaviour
         {
             isHeld = false;
             //rb.velocity = Vector2.zero;
+
+            EventManager.Instance.TriggerEvent("StopAttack");
         }
     }
 }
