@@ -7,7 +7,7 @@ public class ObjectController : MonoBehaviour
     public bool canBeGrabbed = false;
 
     [Header("Настройки объекта")]
-    [SerializeField] private float mass = 5f;
+    [SerializeField] private float massForDamageCalculation = 5f; // Используется только для расчета урона
     [SerializeField] private float health = 100f;
     [SerializeField] private float minDamage = 5f;
     [SerializeField] private float maxDamage = 50f;
@@ -21,7 +21,7 @@ public class ObjectController : MonoBehaviour
     private Vector2 lastPosition;
     private float currentSpeed = 0f;
 
-    private float destroyDelay = 0.1f; 
+    private float destroyDelay = 0.1f;
 
     private void Awake()
     {
@@ -29,7 +29,6 @@ public class ObjectController : MonoBehaviour
         objectCollider = GetComponent<Collider2D>();
         objectRenderer = GetComponent<Renderer>();
 
-        rb.mass = mass;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
@@ -86,7 +85,7 @@ public class ObjectController : MonoBehaviour
 
     private float CalculateDamage()
     {
-        float damage = mass * currentSpeed * 0.1f;
+        float damage = massForDamageCalculation * currentSpeed * 0.1f;
         return Mathf.Clamp(damage, minDamage, maxDamage);
     }
 

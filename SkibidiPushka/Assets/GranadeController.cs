@@ -7,29 +7,29 @@ public class GranadeController : MonoBehaviour
 {
     public string granadeTouchedLayer = "GranadeTouched";
     public bool canBeGrabbed = false;
-    public float explosionDelay = 3f; 
-    public float damage = 100f; 
-    public GameObject explosionEffectPrefab; 
-    public TMP_Text countdownText; 
+    public float explosionDelay = 3f;
+    public float damage = 100f;
+    public GameObject explosionEffectPrefab;
+    public TMP_Text countdownText;
 
     private Rigidbody2D rb;
     private bool isHeld = false;
     private bool isExploding = false;
+    private bool timerStarted = false;
     private float explosionTimer;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        explosionTimer = explosionDelay;
+        countdownText.text = explosionDelay.ToString();
     }
 
     private void Update()
     {
-        if (isHeld)
+        if (timerStarted)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = mousePos;
-
             explosionTimer -= Time.deltaTime;
             countdownText.text = Mathf.Ceil(explosionTimer).ToString();
 
@@ -37,6 +37,12 @@ public class GranadeController : MonoBehaviour
             {
                 StartCoroutine(Explode());
             }
+        }
+
+        if (isHeld)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = mousePos;
         }
     }
 
@@ -46,10 +52,14 @@ public class GranadeController : MonoBehaviour
         {
             isHeld = true;
             gameObject.layer = LayerMask.NameToLayer(granadeTouchedLayer);
-            explosionTimer = explosionDelay;
 
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+            if (!timerStarted)
+            {
+                timerStarted = true;
+            }
         }
     }
 
@@ -67,7 +77,7 @@ public class GranadeController : MonoBehaviour
     {
         isExploding = true;
 
-        // эффект взрыва
+        // Спавним эффект взрыва
         Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
 
         // Найти все объекты в радиусе взрыва
