@@ -456,6 +456,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4247916949176256185, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: 'ObjectsPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
     - target: {fileID: 4423344531971300064, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
       propertyPath: m_Name
       value: player
@@ -751,7 +755,7 @@ MonoBehaviour:
   - {fileID: 8081071776517753593, guid: a1855400a2b11df409d9bd2a95c474be, type: 3}
   - {fileID: 4423344531971300064, guid: d149c732df390634ea284730704768ce, type: 3}
   - {fileID: 4423344531971300064, guid: fb011656ebcd6b04d964e3c0ce49931e, type: 3}
-  - {fileID: 4423344531971300064, guid: a3b8ce5ce01f00d45ba842947a16b542, type: 3}
+  - {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
   enemySpawnrate: 10
   obstalceSpawnrate: 10
   respawnMaxDistance: 5
