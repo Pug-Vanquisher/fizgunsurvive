@@ -398,15 +398,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1776689834722170448, guid: 66137a77e63146a479d4c89fe6182a56, type: 3}
       propertyPath: bulletSpeed
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1776689834722170448, guid: 66137a77e63146a479d4c89fe6182a56, type: 3}
       propertyPath: bulletSpread
-      value: 14
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1776689834722170448, guid: 66137a77e63146a479d4c89fe6182a56, type: 3}
       propertyPath: numberOfShoots
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776689834722170448, guid: 66137a77e63146a479d4c89fe6182a56, type: 3}
+      propertyPath: delayBetweenShots
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3160468205360601381, guid: 66137a77e63146a479d4c89fe6182a56, type: 3}
       propertyPath: m_LocalPosition.x

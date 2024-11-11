@@ -7,6 +7,7 @@ public class SemiAutogun : EnemyAI
 {
     [SerializeField] float numberOfShoots;
     [SerializeField, Range(0,30), Tooltip("в градусах")] float bulletSpread;
+    [SerializeField, Range(0.1f, 0.3f)] float delayBetweenShots;
     private Quaternion rotation;
     protected override void ShootBullet(Vector3 targetPosition)
     {
@@ -26,13 +27,6 @@ public class SemiAutogun : EnemyAI
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)down* 4);
     }
 
-    //private Vector2 DirectionChange(Vector2 targetDirection, float hangedAngle)
-    //{
-    //    float x = Mathf.Sin(hangedAngle);
-    //    float y = Mathf.Cos(hangedAngle);
-    //    targetDirection += new Vector2(x, y);
-    //    return targetDirection.normalized;
-    //}
     IEnumerator SHOOTA(Vector3 targetPosition)
     {
         for (int shootsNum = 0; shootsNum < numberOfShoots; shootsNum++)
@@ -51,7 +45,7 @@ public class SemiAutogun : EnemyAI
             {
                 bulletRb.velocity = direction * bulletSpeed;
             }
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(delayBetweenShots);
         }
     }
 }
