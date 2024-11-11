@@ -12,7 +12,7 @@ public class CameraEffects : MonoBehaviour
 
     public void ExplosionFreeze() 
     {
-        FreezeFrame(0.1f);
+        FreezeFrame(0.05f);
     }
 
     public void FreezeFrame(float dur)
