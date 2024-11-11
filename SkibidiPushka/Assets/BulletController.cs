@@ -85,7 +85,7 @@ public class BulletController : MonoBehaviour
         }
         else if (collidedLayer == LayerMask.NameToLayer("Wall") || collidedLayer == LayerMask.NameToLayer("PlayerTouched"))
         {
-            // Наносим урон через компонент ObjectController
+            // урон через ObjectController
             ObjectController objectController = collision.gameObject.GetComponent<ObjectController>();
             if (objectController != null)
             {
@@ -129,34 +129,7 @@ public class BulletController : MonoBehaviour
     {
         Debug.Log("Объект разрушен!");
 
-        // Переносим объект далеко за пределы сцены
-        //transform.position = new Vector3(9999, 9999, 9999);
-
-        // Отключаем физику и рендеринг
-        //DisableComponents();
-
-        // Запускаем событие для обновления NavMesh
-        EventManager.Instance.TriggerEvent("ClearedObj");
-
-        // Уничтожаем объект с небольшой задержкой
         Invoke(nameof(DestroyAfterDelay), destroyDelay);
-    }
-
-    private void DisableComponents()
-    {
-        // Отключаем физику и рендеринг
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-            rb.velocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-        }
-
-        if (objectCollider != null)
-            objectCollider.enabled = false;
-
-        if (objectRenderer != null)
-            objectRenderer.enabled = false;
     }
 
     private void DestroyAfterDelay()

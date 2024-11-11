@@ -30,6 +30,14 @@ public class ObjectGrabSystem : MonoBehaviour
             {
                 granadeController.ReleaseObject();
             }
+            else if (currentObject is SpecialObjectController specialObjectController)
+            {
+                specialObjectController.ReleaseObject();
+            }
+            else if (currentObject is MineController mineController)
+            {
+                mineController.ReleaseObject();
+            }
 
             currentObject = null;
         }
@@ -45,6 +53,8 @@ public class ObjectGrabSystem : MonoBehaviour
             ObjectController objectController = hit.collider.GetComponent<ObjectController>();
             BulletController bulletController = hit.collider.GetComponent<BulletController>();
             GranadeController granadeController = hit.collider.GetComponent<GranadeController>();
+            SpecialObjectController specialObjectController = hit.collider.GetComponent<SpecialObjectController>();
+            MineController mineController = hit.collider.GetComponent<MineController>();
 
             if (objectController != null && objectController.canBeGrabbed)
             {
@@ -68,6 +78,16 @@ public class ObjectGrabSystem : MonoBehaviour
             {
                 currentObject = granadeController;
                 granadeController.GrabObject();
+            }
+            else if (specialObjectController != null && specialObjectController.canBeGrabbed)
+            {
+                currentObject = specialObjectController;
+                specialObjectController.GrabObject();
+            }
+            else if (mineController != null && mineController.canBeGrabbed)
+            {
+                currentObject = mineController;
+                mineController.GrabObject();
             }
             else
             {

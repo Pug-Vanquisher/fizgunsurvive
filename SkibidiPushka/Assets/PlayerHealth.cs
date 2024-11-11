@@ -22,6 +22,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        Debug.Log($"Игрок восстановил здоровье: {amount}. Текущее здоровье: {currentHealth}");
+    }
+
     private void Die()
     {
         Debug.Log("Игрок погиб");

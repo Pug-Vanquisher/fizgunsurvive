@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class NavMeshUpdater : MonoBehaviour
 {
     [SerializeField] private NavMeshSurface navMeshSurface;
-    //private const string updateEventName = "UpdateNavMesh";
+    
 
     private void Start()
     {
@@ -16,8 +16,7 @@ public class NavMeshUpdater : MonoBehaviour
 
         BuildNavMesh();
 
-        //EventManager.Instance.Subscribe(updateEventName, BuildNavMesh);
-        //EventManager.Instance.Subscribe("ClearedObj", BuildNavMeshDelay);
+        
     }
 
     private void BuildNavMesh()
@@ -33,16 +32,4 @@ public class NavMeshUpdater : MonoBehaviour
         }
     }
 
-    //private void BuildNavMeshDelay()
-    //{
-    //    Invoke(nameof(BuildNavMesh), 1f);
-    //}
-
-    //private void OnDestroy()
-    //{
-    //    if (EventManager.Instance != null)
-    //    {
-    //        EventManager.Instance.Unsubscribe(updateEventName, BuildNavMesh);
-    //    }
-    //}
 }
