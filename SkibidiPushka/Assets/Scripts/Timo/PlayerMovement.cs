@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip()
     {
-        Debug.Log(playerBody.velocity.ToString() + _isNoFlipped);
         if (playerBody.velocity.x < 0 && _isNoFlipped)
         {
             playerBody.transform.localRotation = Quaternion.Euler(0, 0, 0);

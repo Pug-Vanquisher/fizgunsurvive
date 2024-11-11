@@ -11,13 +11,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private float fireCooldown = 1.5f;
-    [SerializeField] private float bulletSpeed = 15f;
     [SerializeField] private float sphereCastRadius = 0.5f;
     [SerializeField] private float sphereCastDistance = 0.5f;
     [SerializeField] private float pathUpdateInterval = 0.2f; // Интервал обновления пути
+    [SerializeField] protected float fireCooldown = 1.5f;
+    [SerializeField] protected Transform firePoint;
+    [SerializeField] protected GameObject bulletPrefab;
+    [SerializeField] protected float bulletSpeed = 15f;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -118,7 +118,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void ShootBullet(Vector3 targetPosition)
+    protected virtual void ShootBullet(Vector3 targetPosition)
     {
         if (bulletPrefab == null || firePoint == null) return;
 
