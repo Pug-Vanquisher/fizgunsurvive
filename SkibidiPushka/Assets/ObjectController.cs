@@ -14,6 +14,8 @@ public class ObjectController : MonoBehaviour
     [SerializeField] private float breakThreshold = 10f;
     [SerializeField] private float knockbackMultiplier = 0.5f;
 
+    private float Maxhealth;
+
     private Rigidbody2D rb;
     private Collider2D objectCollider;
     private Renderer objectRenderer;
@@ -31,6 +33,7 @@ public class ObjectController : MonoBehaviour
 
         rb.mass = mass;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        Maxhealth = health;
     }
 
     public void GrabObject()
@@ -70,6 +73,7 @@ public class ObjectController : MonoBehaviour
             currentSpeed = ((Vector2)transform.position - lastPosition).magnitude / Time.deltaTime;
             lastPosition = transform.position;
         }
+        GetComponent<SpriteRenderer>().material.SetFloat("Force", 1f - health / Maxhealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
