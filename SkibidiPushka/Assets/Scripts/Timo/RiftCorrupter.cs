@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvCorrupter : MonoBehaviour
+public class RiftCorrupter : MonoBehaviour
 {
     private Dictionary<Collider2D, GameObject> collidersIn = new Dictionary<Collider2D, GameObject>();
     public Vector2 localPos;
@@ -14,7 +14,6 @@ public class EnvCorrupter : MonoBehaviour
     {
         transform.position = tiled(localPos + new Vector2(transform.parent.position.x, transform.parent.position.y));
     }
-
     void KillTile()
     {
         List<GameObject> gmbj = new List<GameObject>();
@@ -28,10 +27,9 @@ public class EnvCorrupter : MonoBehaviour
         }
         collidersIn.Clear();
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collidersIn.ContainsKey(collision) && collision.gameObject.tag != "Player")
+        if(!collidersIn.ContainsKey(collision))
         {
             collidersIn.Add(collision, collision.gameObject);
         }
@@ -39,10 +37,7 @@ public class EnvCorrupter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collidersIn.ContainsKey(collision) && collision.gameObject.tag != "Player")
-        {
-            collidersIn.Remove(collision);
-        }
+        collidersIn.Remove(collision);
     }
     Vector2 tiled(Vector2 pos)
     {

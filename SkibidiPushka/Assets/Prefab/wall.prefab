@@ -179,7 +179,7 @@ MonoBehaviour:
   playerTouchedLayer: PlayerTouched
   canBeGrabbed: 1
   massForDamageCalculation: 5
-  health: 500
+  maxhealth: 500
   minDamage: 5
   maxDamage: 50
   breakThreshold: 10

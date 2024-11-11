@@ -14,9 +14,15 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
     private bool isInvulnerable = false;
 
+    private float maxForce;
+    private float maxPulses;
+    private float maxScale;
+
+
     private void Awake()
     {
         currentHealth = maxHealth;
+        NullizeShader();
     }
 
     public void TakeDamage(float damage)
@@ -35,6 +41,8 @@ public class EnemyHealth : MonoBehaviour
             OnDamageTaken?.Invoke();
             StartCoroutine(InvulnerabilityCoroutine());
         }
+
+        ShaderLerp();
     }
 
     private void Die()
@@ -50,4 +58,23 @@ public class EnemyHealth : MonoBehaviour
         isInvulnerable = false;
         OnInvulnerabilityEnd?.Invoke();
     }
+
+    void NullizeShader()
+    {
+        maxForce = GetComponent<SpriteRenderer>().material.GetFloat("_Force");
+        maxPulses = GetComponent<SpriteRenderer>().material.GetFloat("_Pulses");
+        maxScale = GetComponent<SpriteRenderer>().material.GetFloat("_Scale");
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", 0);
+    }
+
+    void ShaderLerp()
+    {
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", currentHealth * maxForce / maxHealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", currentHealth * maxPulses / maxHealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", currentHealth * maxScale / maxHealth);
+    }
+    
+
 }
