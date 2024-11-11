@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Granata_0: 6246008881180493282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

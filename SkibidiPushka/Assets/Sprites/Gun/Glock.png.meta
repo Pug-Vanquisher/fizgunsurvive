@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Glock_0: -8401589990244493734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3160468205360601377}
   - component: {fileID: 3160468205360601378}
   - component: {fileID: 3160468205360601376}
-  - component: {fileID: 3160468205360601407}
+  - component: {fileID: 5281102731347817827}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3160468205360601384}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.558, y: 3.404, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
@@ -113,7 +113,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.14
-  m_BaseOffset: -0.03
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
 --- !u!50 &3160468205360601380
@@ -207,8 +207,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &3160468205360601407
-BoxCollider2D:
+--- !u!58 &5281102731347817827
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -241,18 +241,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.01, y: 0.08}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4166667, y: -0.071428575}
-    oldSize: {x: 0.12, y: 0.14}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.11, y: 0.1}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.06
 --- !u!1 &3160468206610530440
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 3160468206610530440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0835, y: 0.021, z: 0}
+  m_LocalPosition: {x: 0.0506, y: -0.0652, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
