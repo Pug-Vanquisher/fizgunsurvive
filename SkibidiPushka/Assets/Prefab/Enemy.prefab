@@ -104,10 +104,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.45
-  m_Speed: 5
-  m_Acceleration: 8
+  m_Speed: 8
+  m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 200
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -129,7 +129,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 8
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -166,8 +166,8 @@ MonoBehaviour:
     m_Bits: 136
   sphereCastRadius: 0.3
   sphereCastDistance: 0.3
-  pathUpdateInterval: 0.2
-  fireCooldown: 1.5
+  pathUpdateInterval: 0.5
+  fireCooldown: 0.5
   firePoint: {fileID: 3160468207017012367}
   bulletPrefab: {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
   bulletSpeed: 5

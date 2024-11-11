@@ -55,13 +55,13 @@ public class Bullet : MonoBehaviour
             }
         }
 
-        TakeDamage(damage);
+        //TakeDamage(damage);
     }
 
-    private void TakeDamage(float damage)
-    {
-        Destroy(gameObject);
-    }
+    //private void TakeDamage(float damage)
+    //{
+    //    Destroy(gameObject);
+    //}
 
     public void CancelLifeTimeCoroutine()
     {

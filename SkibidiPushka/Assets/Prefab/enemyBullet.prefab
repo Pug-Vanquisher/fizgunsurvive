@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
+  m_Mass: 0.06
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b69f579eee46b4aaad3e72af457fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  bulletLifetime: 5
+  damage: 35
+  bulletLifetime: 15
 --- !u!58 &5960602550618303900
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -185,9 +185,9 @@ MonoBehaviour:
   playerTouchedLayer: BulletTouched
   canBeGrabbed: 1
   mass: 10
-  health: 10
-  minDamage: 10
-  maxDamage: 120
+  health: 100
+  minDamage: 100
+  maxDamage: 100
   breakThreshold: 15
   knockbackMultiplier: 0.2
 --- !u!95 &8131187155377256258
