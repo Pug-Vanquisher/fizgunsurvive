@@ -104,7 +104,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.45
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -164,13 +164,13 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 136
-  bulletPrefab: {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
-  firePoint: {fileID: 3160468207017012367}
-  fireCooldown: 1.5
-  bulletSpeed: 5
   sphereCastRadius: 0.3
   sphereCastDistance: 0.3
   pathUpdateInterval: 0.2
+  fireCooldown: 1.5
+  firePoint: {fileID: 3160468207017012367}
+  bulletPrefab: {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
+  bulletSpeed: 5
 --- !u!114 &3160468205360601378
 MonoBehaviour:
   m_ObjectHideFlags: 0
