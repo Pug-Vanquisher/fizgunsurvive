@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9674810e8039fd94ca696699a5472026
+guid: 8869d4d3001c7984cb36802341653ceb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sprite-0002
+  - name: Granata
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.61538464, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 64
-    spriteID: bcfedc6c4cd787c42a4845f547aa550a
+      width: 13
+      height: 15
+    spriteID: d0d970b85b1448c46be254f9904a2edf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,25 +146,25 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -572920020
-    name: Sprite-0002
+    guid: -1949269196
+    name: Granata
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sprite-0002
+    - name: Granata
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 64
-        height: 64
-      spriteId: bcfedc6c4cd787c42a4845f547aa550a
+        width: 13
+        height: 15
+      spriteId: d0d970b85b1448c46be254f9904a2edf
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 16, y: 16}
