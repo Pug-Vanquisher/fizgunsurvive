@@ -127,7 +127,7 @@ public class GranadeController : MonoBehaviour
         if (hitRb != null)
         {
             Vector2 knockbackDirection = (hitCollider.transform.position - transform.position).normalized;
-            float knockbackForce = damage * 0.1f; // Сила отталкивания
+            float knockbackForce = damage * 0.3f; // Сила отталкивания
             hitRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         }
     }
