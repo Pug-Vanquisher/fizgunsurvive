@@ -315,6 +315,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8123332855744867420, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655536623912359369, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655536623912359369, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655536623912359369, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.142857
+      objectReference: {fileID: 0}
     - target: {fileID: 655536623912359369, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -354,6 +370,26 @@ PrefabInstance:
     - target: {fileID: 655536623912359369, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421052979381775566, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421052979381775566, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421052979381775566, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421052979381775566, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421052979381775566, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4423344531971300064, guid: 520fc8d43a268b24aa52194eaced5597, type: 3}
       propertyPath: m_Name
