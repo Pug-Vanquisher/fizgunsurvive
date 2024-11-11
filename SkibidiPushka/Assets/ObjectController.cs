@@ -8,14 +8,13 @@ public class ObjectController : MonoBehaviour
 
     [Header("Настройки объекта")]
     [SerializeField] private float massForDamageCalculation = 5f; 
-    [SerializeField] private float health = 100f;
+    [SerializeField] private float maxhealth = 100f;
     [SerializeField] private float minDamage = 5f;
     [SerializeField] private float maxDamage = 50f;
     [SerializeField] private float breakThreshold = 10f;
     [SerializeField] private float knockbackMultiplier = 0.5f;
 
-    private float Maxhealth;
-
+    private float health;
     private Rigidbody2D rb;
     private Collider2D objectCollider;
     private Renderer objectRenderer;
@@ -25,6 +24,12 @@ public class ObjectController : MonoBehaviour
 
     private float destroyDelay = 0.1f;
 
+
+    private float maxForce;
+    private float maxPulses;
+    private float maxScale;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +37,10 @@ public class ObjectController : MonoBehaviour
         objectRenderer = GetComponent<Renderer>();
 
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        Maxhealth = health;
+        health = maxhealth;
+
+        NullizeShader();
+
     }
 
     public void GrabObject()
@@ -72,7 +80,6 @@ public class ObjectController : MonoBehaviour
             currentSpeed = ((Vector2)transform.position - lastPosition).magnitude / Time.deltaTime;
             lastPosition = transform.position;
         }
-        GetComponent<SpriteRenderer>().material.SetFloat("Force", 1f - health / Maxhealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -113,6 +120,8 @@ public class ObjectController : MonoBehaviour
         {
             DestroyObject();
         }
+
+        ShaderLerp();
     }
 
     private void DestroyObject()
@@ -125,4 +134,22 @@ public class ObjectController : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    void NullizeShader()
+    {
+        maxForce = GetComponent<SpriteRenderer>().material.GetFloat("_Force");
+        maxPulses = GetComponent<SpriteRenderer>().material.GetFloat("_Pulses");
+        maxScale = GetComponent<SpriteRenderer>().material.GetFloat("_Scale");
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", 0);
+    }
+
+    void ShaderLerp()
+    {
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", health * maxForce / maxhealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", health * maxPulses / maxhealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", health * maxScale / maxhealth);
+    }
+
 }

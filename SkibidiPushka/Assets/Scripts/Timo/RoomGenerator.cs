@@ -16,7 +16,7 @@ public class RoomGenerator : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= 5f)
+        if(timer >= 2.5f)
         {
             timer = 0;
             EventManager.Instance.TriggerEvent("CorruptTiles");

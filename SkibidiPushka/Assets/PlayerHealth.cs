@@ -6,6 +6,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     public float currentHealth;
 
+    private float maxForce;
+    private float maxPulses;
+    private float maxScale;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -20,13 +24,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
-        Invoke("StopHit", 1f);
+        GetComponent<Animator>().SetFloat("Hitted", 1f);
+        Invoke("StopHit", 0.4f);
 
     }
     
     void StopHit()
     {
-
+        GetComponent<Animator>().SetFloat("Hitted", 0f);
     }
 
     public void Heal(float amount)
@@ -43,4 +48,22 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Игрок погиб");
     }
+
+    void NullizeShader()
+    {
+        maxForce = GetComponent<SpriteRenderer>().material.GetFloat("_Force");
+        maxPulses = GetComponent<SpriteRenderer>().material.GetFloat("_Pulses");
+        maxScale = GetComponent<SpriteRenderer>().material.GetFloat("_Scale");
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", 0);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", 0);
+    }
+
+    void ShaderLerp()
+    {
+        GetComponent<SpriteRenderer>().material.SetFloat("_Force", currentHealth * maxForce / maxHealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Pulses", currentHealth * maxPulses / maxHealth);
+        GetComponent<SpriteRenderer>().material.SetFloat("_Scale", currentHealth * maxScale / maxHealth);
+    }
+
 }
