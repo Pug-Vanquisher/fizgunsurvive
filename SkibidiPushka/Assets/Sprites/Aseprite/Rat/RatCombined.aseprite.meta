@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5cbda8a6fa1666a4e9b74764c6e68206
+guid: eee95a28595d25c49aebba7e323aab62
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -32,10 +32,10 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 0
+    spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 10
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638668879089862982
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,19 +122,19 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cat-walk_Frame_0
+  - name: RatCombined_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 27
-      width: 16
+      width: 14
       height: 14
-    spriteID: 4f92662561e5b6f4d9e76400d7347484
+    spriteID: e36c85cf981e26f4dbffa46ec28fa7a6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,15 +143,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 27}
-  - name: Cat-walk_Frame_1
+  - name: RatCombined_Frame_1
     originalName: 
-<<<<<<< Updated upstream
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-=======
     pivot: {x: 0.5, y: -0.06666667}
     alignment: 9
->>>>>>> Stashed changes
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -160,7 +155,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 15
-    spriteID: ec97916319963784b80892ea0f5dd1b4
+    spriteID: 0fd3d786b9fcc38459347db7a2a40fe9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -169,19 +164,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Cat-walk_Frame_2
+  - name: RatCombined_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 28
       y: 4
-      width: 15
+      width: 14
       height: 13
-    spriteID: 1ecc84165bac42246b7b1d0f59fbb146
+    spriteID: 4bf6f1b548ba87749a8d26a5a8979c87
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,10 +185,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 28, y: 4}
-  - name: Cat-walk_Frame_3
+  - name: RatCombined_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -202,7 +197,7 @@ ScriptedImporter:
       y: 49
       width: 14
       height: 14
-    spriteID: 88c3b65fcd537134b90615ff5258750a
+    spriteID: 92f99e7b7da1e6146afe5309c7cfc603
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -211,10 +206,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 49}
-  - name: Cat-walk_Frame_4
+  - name: RatCombined_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -223,7 +218,7 @@ ScriptedImporter:
       y: 71
       width: 14
       height: 14
-    spriteID: 78de77f02f0a2f84593e96aedfe398e8
+    spriteID: 5810013f6cf0b8f4c9bf46b107604da8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,10 +227,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 71}
-  - name: Cat-walk_Frame_5
+  - name: RatCombined_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -244,7 +239,7 @@ ScriptedImporter:
       y: 93
       width: 14
       height: 14
-    spriteID: 9ed6476e8e9a8d54daf9332608a73995
+    spriteID: 89e23edd15e17dd41a948f46b520f43c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -256,22 +251,22 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -564469704
-    name: Cat-walk
+    guid: -1532830822
+    name: RatCombined
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cat-walk_Frame_0
+    - name: RatCombined_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
+        x: 1
         y: 1
-        width: 16
+        width: 14
         height: 14
-      spriteId: 4f92662561e5b6f4d9e76400d7347484
-    - name: Cat-walk_Frame_1
+      spriteId: e36c85cf981e26f4dbffa46ec28fa7a6
+    - name: RatCombined_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -279,17 +274,17 @@ ScriptedImporter:
         y: 1
         width: 16
         height: 15
-      spriteId: ec97916319963784b80892ea0f5dd1b4
-    - name: Cat-walk_Frame_2
+      spriteId: 0fd3d786b9fcc38459347db7a2a40fe9
+    - name: RatCombined_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 0
+        x: 1
         y: 1
-        width: 15
+        width: 14
         height: 13
-      spriteId: 1ecc84165bac42246b7b1d0f59fbb146
-    - name: Cat-walk_Frame_3
+      spriteId: 4bf6f1b548ba87749a8d26a5a8979c87
+    - name: RatCombined_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -297,8 +292,8 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: 88c3b65fcd537134b90615ff5258750a
-    - name: Cat-walk_Frame_4
+      spriteId: 92f99e7b7da1e6146afe5309c7cfc603
+    - name: RatCombined_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -306,8 +301,8 @@ ScriptedImporter:
         y: 2
         width: 14
         height: 14
-      spriteId: 78de77f02f0a2f84593e96aedfe398e8
-    - name: Cat-walk_Frame_5
+      spriteId: 5810013f6cf0b8f4c9bf46b107604da8
+    - name: RatCombined_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -315,70 +310,10 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 14
-      spriteId: 9ed6476e8e9a8d54daf9332608a73995
+      spriteId: 89e23edd15e17dd41a948f46b520f43c
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Windows Store Apps
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

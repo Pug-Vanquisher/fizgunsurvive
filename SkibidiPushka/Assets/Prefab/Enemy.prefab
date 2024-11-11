@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.558, y: 3.404, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3160468206610530439}
@@ -62,7 +62,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c281ec31c08a2054ba7f5abbd777a2f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,12 +83,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -7399308508025265290, guid: 4b4b5ffb62332d849a71198b2feeaed0, type: 3}
+  m_Sprite: {fileID: 781606508, guid: ed4c97400fdfb8148b6bfce664773645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.12, y: 0.14}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -103,7 +103,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 3160468205360601384}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.06
+  m_Radius: 0.45
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -112,8 +112,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.14
-  m_BaseOffset: 0
+  m_Height: 0.87
+  m_BaseOffset: 0.44
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
 --- !u!50 &3160468205360601380
@@ -242,7 +242,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.06
+  m_Radius: 0.4
 --- !u!1 &3160468206610530440
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +328,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3160468207017012464

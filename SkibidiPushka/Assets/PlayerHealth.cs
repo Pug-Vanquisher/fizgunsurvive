@@ -20,6 +20,13 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
+        Invoke("StopHit", 1f);
+
+    }
+    
+    void StopHit()
+    {
+
     }
 
     public void Heal(float amount)

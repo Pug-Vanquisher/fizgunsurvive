@@ -68,7 +68,6 @@ public class EnemyAI : MonoBehaviour
             TryShootAtPlayer();
         }
 
-        FlipSprite();
         CheckForObstacles();
         UpdateWalkingAnimation();
     }
@@ -161,19 +160,8 @@ public class EnemyAI : MonoBehaviour
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
 
+        animator.SetFloat("X", agent.velocity.normalized.x);
         animator.SetFloat("Speed", speed);
-    }
-
-    private void FlipSprite()
-    {
-        if (agent.velocity.x > 0.1f)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-        else if (agent.velocity.x < -0.1f)
-        {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
     }
 
     private void StopMovementOnDamage()

@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0434, y: 0.0407, z: 0}
-  m_LocalScale: {x: 6.25, y: 6.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5356574185940491189, guid: 23490ec298b57144ba75356d23879d03, type: 3}
+  m_Sprite: {fileID: 1807125615787039003, guid: cd5132a89a242fd418556570d0e5ac87, type: 3}
   m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTouchedLayer: PlayerTouched
   canBeGrabbed: 1
-  mass: 5
+  massForDamageCalculation: 5
   health: 500
   minDamage: 5
   maxDamage: 50

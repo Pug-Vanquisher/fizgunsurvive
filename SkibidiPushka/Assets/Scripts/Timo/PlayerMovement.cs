@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
         EventManager.Instance.Subscribe("StartAttack", Attack);
         EventManager.Instance.Subscribe("StopAttack", StopAttack);
     }
-    void FixedUpdate()
+    void Update()
     {
         direct.x = Input.GetAxis("Horizontal");
         direct.y = Input.GetAxis("Vertical");
@@ -28,7 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         playerBody.velocity = direct.normalized * speed * Time.fixedDeltaTime * 50;
-        animator.SetFloat("Velocity", playerBody.velocity.magnitude);
+        animator.SetFloat("Speed", playerBody.velocity.magnitude);
+        animator.SetFloat("X", playerBody.velocity.normalized.x);
     }
 
     void Flip()
@@ -53,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void StopAttack()
     {
-        animator.SetFloat("Attack", -1);
+        animator.SetFloat("Attack", 0);
     }
 
     private void OnDestroy()

@@ -17,6 +17,9 @@
         },
         {
             "m_Id": "7dc350b15a0d48b0a3d0e57c5e9da024"
+        },
+        {
+            "m_Id": "5372c1c209ea43b794fcef9a767786b2"
         }
     ],
     "m_Keywords": [],
@@ -613,7 +616,7 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 196.8000030517578,
+            "x": 199.19996643066407,
             "y": 264.0
         },
         "m_Blocks": [
@@ -703,10 +706,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2079.999755859375,
-            "y": 1271.1998291015625,
-            "width": 124.0,
-            "height": 172.800048828125
+            "x": -1528.7999267578125,
+            "y": 1133.5999755859375,
+            "width": 124.0001220703125,
+            "height": 172.7999267578125
         }
     },
     "m_Slots": [
@@ -1678,10 +1681,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -312.7999572753906,
-            "y": 332.7999572753906,
+            "x": -344.79998779296877,
+            "y": 332.0,
             "width": 208.0,
-            "height": 431.9999694824219
+            "height": 432.00006103515627
         }
     },
     "m_Slots": [
@@ -1772,6 +1775,34 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "5372c1c209ea43b794fcef9a767786b2",
+    "m_Guid": {
+        "m_GuidSerialized": "1360cb7a-2e12-4ef3-beae-e9e6157623a2"
+    },
+    "m_Name": "Pulses",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Pulses",
+    "m_DefaultReferenceName": "_Pulses",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 10.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -1897,10 +1928,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -481.0592346191406,
-            "y": 1089.8792724609375,
-            "width": 0.0,
-            "height": 0.0
+            "x": -537.6000366210938,
+            "y": 1057.5999755859375,
+            "width": 208.0,
+            "height": 277.5999755859375
         }
     },
     "m_Slots": [
@@ -2171,7 +2202,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 1.0,
+        "e00": 2.0,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -3819,10 +3850,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": 200.79998779296876,
+            "y": 353.6000061035156,
+            "width": 200.0,
+            "height": 40.79998779296875
         }
     },
     "m_Slots": [
@@ -4010,6 +4041,9 @@
         },
         {
             "m_Id": "7dc350b15a0d48b0a3d0e57c5e9da024"
+        },
+        {
+            "m_Id": "5372c1c209ea43b794fcef9a767786b2"
         }
     ]
 }
@@ -4024,7 +4058,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "AlphaClipThreshold",
     "m_StageCapability": 2,
-    "m_Value": 0.5,
+    "m_Value": 1.0,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -4090,10 +4124,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -83.19998931884766,
-            "y": 887.2000122070313,
-            "width": 208.0,
-            "height": 359.20001220703127
+            "x": -84.00003051757813,
+            "y": 782.4000244140625,
+            "width": 208.00003051757813,
+            "height": 359.199951171875
         }
     },
     "m_Slots": [
