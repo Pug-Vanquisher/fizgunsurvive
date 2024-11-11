@@ -7,7 +7,7 @@ public class ObjectController : MonoBehaviour
     public bool canBeGrabbed = false;
 
     [Header("Настройки объекта")]
-    [SerializeField] private float massForDamageCalculation = 5f; // Используется только для расчета урона
+    [SerializeField] private float massForDamageCalculation = 5f; 
     [SerializeField] private float health = 100f;
     [SerializeField] private float minDamage = 5f;
     [SerializeField] private float maxDamage = 50f;
