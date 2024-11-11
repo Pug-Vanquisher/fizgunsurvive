@@ -207,7 +207,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paw-Sheet_0: 2737379172305985246
+      Paw-Sheet_1: -9030231837271899976
+      Paw-Sheet_2: 2839594883684148220
+      Paw-Sheet_3: 6738707446883742703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
