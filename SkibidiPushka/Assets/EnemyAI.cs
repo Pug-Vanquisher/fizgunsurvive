@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
-    [SerializeField] private float pathUpdateInterval = 0.2f; // Интервал обновления пути
+    [SerializeField] private float pathUpdateInterval = 0.2f;
 
     [Header("Настройки Пушек")]
     [SerializeField] private GameObject[] GunsList;
@@ -21,7 +21,6 @@ public class EnemyAI : MonoBehaviour
     private EnemyHealth enemyHealth;
 
     private bool isStoppedDueToDamage = false;
-    private bool canShoot = true;
     private Vector3 lastPosition;
 
     private void Awake()

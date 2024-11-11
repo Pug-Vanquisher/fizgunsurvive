@@ -31,7 +31,6 @@ public class GunScript : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.parent.position, player.position);
 
-        // Проверка на видимость игрока и стрельба
         if (distanceToPlayer <= detectionRange && IsPlayerInSight())
         {
             TryShootAtPlayer();
