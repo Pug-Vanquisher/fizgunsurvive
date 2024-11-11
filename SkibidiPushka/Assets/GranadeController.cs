@@ -18,6 +18,9 @@ public class GranadeController : MonoBehaviour
     private bool timerStarted = false;
     private float explosionTimer;
 
+    //и тут я насрал.
+    public Transform player;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -115,6 +118,22 @@ public class GranadeController : MonoBehaviour
                 ApplyKnockback(hitCollider);
             }
         }
+
+        //ето я накакал >:)
+
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        }
+
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= 10)
+        {
+            EventManager.Instance.TriggerEvent("Explosion");
+        }
+
+        //хехе.
 
         Destroy(gameObject);
 

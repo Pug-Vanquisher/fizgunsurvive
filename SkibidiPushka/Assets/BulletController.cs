@@ -75,15 +75,20 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!isHeld)
+        {
+            return;
+        }
+
         int collidedLayer = collision.gameObject.layer;
         float damage = CalculateDamage();
 
-        if (collidedLayer == LayerMask.NameToLayer("Enemy"))
+        if (isHeld && collidedLayer == LayerMask.NameToLayer("Enemy"))
         {
             collision.collider.GetComponent<EnemyHealth>()?.TakeDamage(damage);
             ApplyKnockback(collision.collider, damage);
         }
-        else if (collidedLayer == LayerMask.NameToLayer("Wall") || collidedLayer == LayerMask.NameToLayer("PlayerTouched"))
+        else if (isHeld && collidedLayer == LayerMask.NameToLayer("Wall") || collidedLayer == LayerMask.NameToLayer("PlayerTouched"))
         {
             // урон через ObjectController
             ObjectController objectController = collision.gameObject.GetComponent<ObjectController>();
