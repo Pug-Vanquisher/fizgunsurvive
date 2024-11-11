@@ -85,7 +85,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             agent.isStopped = false;
-            Vector2 randomOffset = Random.insideUnitCircle * 6f;
+            Vector2 randomOffset = Random.insideUnitCircle * 0.006f;
             Vector3 targetPosition = player.position + new Vector3(randomOffset.x, randomOffset.y, 0);
             agent.SetDestination(targetPosition);
         }

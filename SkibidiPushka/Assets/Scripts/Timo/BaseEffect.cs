@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class BuffDebuff : MonoBehaviour // потом засунуть в наследование каждого уникального эффекта
+public class BaseEffect : MonoBehaviour // потом засунуть в наследование каждого уникального эффекта
 {
-    internal string Name;
+    [SerializeField] internal string Name;
 
     private void Awake()
     {

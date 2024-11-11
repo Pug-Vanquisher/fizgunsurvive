@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
     [Header("Настройки здоровья игрока")]
     [SerializeField] private float maxHealth = 100f;
+    [SerializeField] float animDuration;
+    [SerializeField] Animator animator;
     public float currentHealth;
 
     private void Start()
@@ -20,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
+        Animation("Hitted");
         Invoke("StopHit", 1f);
 
     }
@@ -41,6 +45,16 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        Animation("IsDead");
         Debug.Log("Игрок погиб");
     }
+
+    private IEnumerator Animation(string name)
+    {
+        animator.SetFloat(name, 1);
+        yield return new WaitForSeconds(animDuration);
+        animator.SetFloat(name, 1);
+    }
+
+
 }
