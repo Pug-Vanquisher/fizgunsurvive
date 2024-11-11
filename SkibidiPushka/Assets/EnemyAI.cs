@@ -42,7 +42,15 @@ public class EnemyAI : MonoBehaviour
 
         if (player == null)
         {
-            player = GameObject.FindGameObjectWithTag("Player")?.transform;
+            GameObject playerObj = GameObject.FindWithTag("Player");
+            if (playerObj != null && playerObj.scene.IsValid())
+            {
+                player = playerObj.transform;
+            }
+            else
+            {
+                Debug.LogError("Player not found");
+            }
         }
 
 
@@ -57,6 +65,7 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         if (player == null || isStoppedDueToDamage) return;
+        Debug.Log($"Enemy Position: {transform.position}, Player Position: {player.position}");
 
         UpdateWalkingAnimation();
     }
@@ -83,9 +92,19 @@ public class EnemyAI : MonoBehaviour
         else
         {
             agent.isStopped = false;
-            Vector2 randomOffset = Random.insideUnitCircle * 6f;
+
+            Vector2 randomOffset = Random.insideUnitCircle * 1f;
             Vector3 targetPosition = player.position + new Vector3(randomOffset.x, randomOffset.y, 0);
-            agent.SetDestination(targetPosition);
+
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(targetPosition, out hit, 2.0f, NavMesh.AllAreas))
+            {
+                agent.SetDestination(hit.position);
+            }
+            else
+            {
+                agent.SetDestination(player.position);
+            }
         }
     }
 
