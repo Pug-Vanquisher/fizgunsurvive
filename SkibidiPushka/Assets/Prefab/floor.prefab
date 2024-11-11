@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 655536623912359369}
   - component: {fileID: -8123332855744867420}
+  - component: {fileID: 991121733382648766}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -76,14 +77,33 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 876571767878077095, guid: 61791b221991a0047867f29cb1bd9c0f, type: 3}
+  m_Sprite: {fileID: -1779804096137566232, guid: 9fd902e377f4acc4fa81f82eacd7f0b7, type: 3}
   m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &991121733382648766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423344531971300064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b2113e752d516499b492aab97dfe4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorSprites:
+  - {fileID: 1807125615787039003, guid: cd5132a89a242fd418556570d0e5ac87, type: 3}
+  - {fileID: 1217902749, guid: cd5132a89a242fd418556570d0e5ac87, type: 3}
+  - {fileID: -1547380916, guid: cd5132a89a242fd418556570d0e5ac87, type: 3}
+  spriteRenderer: {fileID: -8123332855744867420}
+  perlin: 0
+  trans: {x: 0, y: 0, z: 0}

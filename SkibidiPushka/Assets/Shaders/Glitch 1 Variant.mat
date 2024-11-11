@@ -43,8 +43,9 @@ Material:
     - _BUILTIN_DstBlend: 10
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_SrcBlend: 5
-    - _Force: 0
+    - _Force: 0.5
     - _Opacity: 1
+    - _Pulses: 5
     - _Scale: 0.04
     m_Colors:
     - _MaxRandom: {r: 10, g: 10, b: 0, a: 0}

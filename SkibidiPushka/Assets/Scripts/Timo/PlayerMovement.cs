@@ -21,30 +21,14 @@ public class PlayerMovement : MonoBehaviour
         direct.x = Input.GetAxis("Horizontal");
         direct.y = Input.GetAxis("Vertical");
         Move();
-        Flip();
 
     }
 
     private void Move()
     {
         playerBody.velocity = direct.normalized * speed * Time.fixedDeltaTime * 50;
-        animator.SetFloat("Speed", playerBody.velocity.magnitude);
+        animator.SetFloat("Speed", playerBody.velocity.magnitude/speed);
         animator.SetFloat("X", playerBody.velocity.normalized.x);
-    }
-
-    void Flip()
-    {
-        Debug.Log(playerBody.velocity.ToString() + _isNoFlipped);
-        if (playerBody.velocity.x < 0 && _isNoFlipped)
-        {
-            playerBody.transform.localRotation = Quaternion.Euler(0, 0, 0);
-            _isNoFlipped = false;
-        }
-        else if (playerBody.velocity.x > 0 && !_isNoFlipped)
-        {
-            playerBody.transform.localRotation = Quaternion.Euler(0, 180, 0);
-            _isNoFlipped = true;
-        }
     }
 
     void Attack()
