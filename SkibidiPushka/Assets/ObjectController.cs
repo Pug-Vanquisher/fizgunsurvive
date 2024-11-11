@@ -21,7 +21,6 @@ public class ObjectController : MonoBehaviour
     private Vector2 lastPosition;
     private float currentSpeed = 0f;
 
-    private const string navMeshUpdateEvent = "UpdateNavMesh";
     private float destroyDelay = 0.1f; 
 
     private void Awake()
@@ -44,7 +43,7 @@ public class ObjectController : MonoBehaviour
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-            //EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
+            EventManager.Instance.TriggerEvent("StartAttack");
         }
     }
 
@@ -57,7 +56,7 @@ public class ObjectController : MonoBehaviour
 
             rb.velocity = (transform.position - (Vector3)lastPosition) / Time.deltaTime;
 
-            //EventManager.Instance.TriggerEvent(navMeshUpdateEvent);
+            EventManager.Instance.TriggerEvent("StopAttack");
         }
     }
 
@@ -116,35 +115,7 @@ public class ObjectController : MonoBehaviour
     private void DestroyObject()
     {
         Debug.Log("ќбъект разрушен!");
-
-
-        //transform.position = new Vector3(9999, 9999, 9999);
-
-
-        //DisableComponents();
-
-
-        //EventManager.Instance.TriggerEvent("ClearedObj");
-
-        // ”ничтожаем объект с небольшой задержкой
         Invoke(nameof(DestroyAfterDelay), destroyDelay);
-    }
-
-    private void DisableComponents()
-    {
-
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-            rb.velocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-        }
-
-        if (objectCollider != null)
-            objectCollider.enabled = false;
-
-        if (objectRenderer != null)
-            objectRenderer.enabled = false;
     }
 
     private void DestroyAfterDelay()
