@@ -3,7 +3,7 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 
-public class SemiAutogun : EnemyAI
+public class SemiAutogun : GunScript
 {
     [SerializeField] float numberOfShoots;
     [SerializeField, Range(0,30), Tooltip("в градусах")] float bulletSpread;

@@ -11,14 +11,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
-    [SerializeField] private float sphereCastRadius = 0.5f;
-    [SerializeField] private float sphereCastDistance = 0.5f;
     [SerializeField] private float pathUpdateInterval = 0.2f; // Интервал обновления пути
-    [SerializeField] protected float fireCooldown = 1.5f;
-    [SerializeField] protected Transform firePoint;
-    [SerializeField] protected GameObject bulletPrefab;
-    [SerializeField] protected float bulletSpeed = 15f;
 
+    [Header("Настройки Пушек")]
+    [SerializeField] private GameObject[] GunsList;
     private NavMeshAgent agent;
     private Animator animator;
     private Rigidbody2D rb;
@@ -29,7 +25,7 @@ public class EnemyAI : MonoBehaviour
     private Vector3 lastPosition;
 
     private void Awake()
-    {
+    { 
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -43,10 +39,13 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        GenerateGun(Random.Range(0, GunsList.Length));
+
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player")?.transform;
         }
+
 
         if (enemyHealth != null)
         {
@@ -60,15 +59,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (player == null || isStoppedDueToDamage) return;
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        // Проверка на видимость игрока и стрельба
-        if (distanceToPlayer <= detectionRange && IsPlayerInSight())
-        {
-            TryShootAtPlayer();
-        }
-
-        CheckForObstacles();
         UpdateWalkingAnimation();
     }
 
@@ -97,61 +87,6 @@ public class EnemyAI : MonoBehaviour
             Vector2 randomOffset = Random.insideUnitCircle * 6f;
             Vector3 targetPosition = player.position + new Vector3(randomOffset.x, randomOffset.y, 0);
             agent.SetDestination(targetPosition);
-        }
-    }
-
-    private bool IsPlayerInSight()
-    {
-        Vector2 directionToPlayer = (player.position - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, playerLayer);
-        return hit.collider != null && hit.collider.CompareTag("Player");
-    }
-
-    private void TryShootAtPlayer()
-    {
-        if (canShoot)
-        {
-            canShoot = false;
-            ShootBullet(player.position);
-            Invoke(nameof(ResetShoot), fireCooldown);
-        }
-    }
-
-    protected virtual void ShootBullet(Vector3 targetPosition)
-    {
-        if (bulletPrefab == null || firePoint == null) return;
-
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-
-        if (bulletRb != null)
-        {
-            Vector2 direction = (targetPosition - firePoint.position).normalized;
-            bulletRb.velocity = direction * bulletSpeed;
-        }
-    }
-
-    private void ResetShoot()
-    {
-        canShoot = true;
-    }
-
-    private void CheckForObstacles()
-    {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, sphereCastRadius, transform.right, sphereCastDistance, obstacleLayer);
-
-        if (hit.collider != null)
-        {
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall") ||
-                hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerTouched"))
-            {
-                if (canShoot)
-                {
-                    canShoot = false;
-                    ShootBullet(hit.point);
-                    Invoke(nameof(ResetShoot), fireCooldown);
-                }
-            }
         }
     }
 
@@ -187,5 +122,18 @@ public class EnemyAI : MonoBehaviour
             enemyHealth.OnDamageTaken -= StopMovementOnDamage;
             enemyHealth.OnInvulnerabilityEnd -= ResumeMovement;
         }
+    }
+
+    void GenerateGun(int id)
+    {
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            Destroy(transform.GetChild(i).gameObject);
+        }
+
+        var NewGun = Instantiate(GunsList[id], transform);
+        NewGun.GetComponent<GunScript>().detectionRange = detectionRange;
+        NewGun.GetComponent<GunScript>().playerLayer = playerLayer;
+        NewGun.GetComponent<GunScript>().obstacleLayer = obstacleLayer;
     }
 }
