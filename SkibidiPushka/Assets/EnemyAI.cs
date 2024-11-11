@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool isStoppedDueToDamage = false;
     private bool canShoot = true;
+    private bool _isFlipped = false;
     private Vector3 lastPosition;
 
     private void Awake()
@@ -94,7 +95,6 @@ public class EnemyAI : MonoBehaviour
     {
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
-
         animator.SetFloat("X", agent.velocity.normalized.x);
         animator.SetFloat("Speed", speed);
     }
@@ -136,4 +136,6 @@ public class EnemyAI : MonoBehaviour
         NewGun.GetComponent<GunScript>().playerLayer = playerLayer;
         NewGun.GetComponent<GunScript>().obstacleLayer = obstacleLayer;
     }
+
+    
 }

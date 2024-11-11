@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6582738834962222181}
   - component: {fileID: 7272614362455327468}
-  - component: {fileID: 137367505866049528}
   m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
@@ -89,32 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &137367505866049528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3276161227139190794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57bdb1d326a4385418ef0e7556f27cc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRange: 10
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  firePoint: {fileID: 0}
-  sphereCastRadius: 0.5
-  sphereCastDistance: 0.5
-  bulletPrefab: {fileID: 0}
-  bulletSpeed: 0
-  fireCooldown: 0
-  canShoot: 0
 --- !u!1 &5050591568179588809
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,17 +167,17 @@ MonoBehaviour:
   detectionRange: 10
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
-  firePoint: {fileID: 0}
+    m_Bits: 136
+  firePoint: {fileID: 7493019148327348791}
   sphereCastRadius: 0.5
   sphereCastDistance: 0.5
   bulletPrefab: {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
-  bulletSpeed: 0
-  fireCooldown: 0
+  bulletSpeed: 5
+  fireCooldown: 1.5
   canShoot: 1
-  numberOfShoots: 0
-  bulletSpread: 0
-  delayBetweenShots: 0.1
+  numberOfShoots: 3
+  bulletSpread: 10.5
+  delayBetweenShots: 0.1372
