@@ -3,20 +3,26 @@ using System.Collections;
 
 public class WildBullet : MonoBehaviour
 {
+    [Header("Настройки пули")]
     [SerializeField] private float damage = 50f;
     [SerializeField] private float bulletLifetime = 30f;
-    [SerializeField] private float bounceForce = 10f;
     [SerializeField] private float speed = 20f;
 
-    private Coroutine lifeTimeCoroutine;
+    private Vector2 currentDirection;
     private bool isHeld = false;
-    private Rigidbody2D rb;
+    private Coroutine lifeTimeCoroutine;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * speed;
+        currentDirection = transform.right;
         lifeTimeCoroutine = StartCoroutine(BulletLifeTime());
+    }
+
+    private void Update()
+    {
+        if (isHeld) return;
+
+        transform.Translate(currentDirection * speed * Time.deltaTime, Space.World);
     }
 
     private IEnumerator BulletLifeTime()
@@ -26,9 +32,7 @@ public class WildBullet : MonoBehaviour
         while (timer < bulletLifetime)
         {
             if (isHeld)
-            {
                 yield break;
-            }
 
             timer += Time.deltaTime;
             yield return null;
@@ -63,14 +67,22 @@ public class WildBullet : MonoBehaviour
         }
         else
         {
-            BounceOff(collision.contacts[0].normal);
+            Vector2 collisionNormal = collision.contacts[0].normal;
+            BounceOff(collisionNormal);
         }
     }
 
     private void BounceOff(Vector2 collisionNormal)
     {
-        Vector2 bounceDirection = Vector2.Reflect(rb.velocity.normalized, collisionNormal);
-        rb.velocity = bounceDirection * bounceForce;
+        currentDirection = Vector2.Reflect(currentDirection, collisionNormal).normalized;
+
+        RotateBullet();
+    }
+
+    private void RotateBullet()
+    {
+        float angle = Mathf.Atan2(currentDirection.y, currentDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     public void CancelLifeTimeCoroutine()

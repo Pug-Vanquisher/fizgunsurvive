@@ -897,6 +897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7962003426264772700, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
+      propertyPath: grabbableLayer.m_Bits
+      value: 65160
+      objectReference: {fileID: 0}
     - target: {fileID: 7982757207407218596, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
       propertyPath: m_Radius
       value: 0.35
