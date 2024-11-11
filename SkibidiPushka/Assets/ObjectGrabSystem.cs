@@ -67,9 +67,17 @@ public class ObjectGrabSystem : MonoBehaviour
                 if (bulletScript != null)
                 {
                     bulletScript.CancelLifeTimeCoroutine();
+                    Destroy(bulletScript);
                 }
-
-                Destroy(bulletScript);
+                else
+                {
+                    WildBullet wildBulletScript = hit.collider.GetComponent<WildBullet>();
+                    if (wildBulletScript != null)
+                    {
+                        wildBulletScript.CancelLifeTimeCoroutine();
+                        Destroy(wildBulletScript);
+                    }
+                }
 
                 currentObject = bulletController;
                 bulletController.GrabObject();

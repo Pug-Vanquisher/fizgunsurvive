@@ -1,16 +1,21 @@
 using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour
+public class WildBullet : MonoBehaviour
 {
-    [SerializeField] private float damage = 50f; 
-    [SerializeField] private float bulletLifetime = 5f;  
+    [SerializeField] private float damage = 50f;
+    [SerializeField] private float bulletLifetime = 30f;
+    [SerializeField] private float bounceForce = 10f;
+    [SerializeField] private float speed = 20f;
 
     private Coroutine lifeTimeCoroutine;
-    private bool isHeld = false; 
+    private bool isHeld = false;
+    private Rigidbody2D rb;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = transform.right * speed;
         lifeTimeCoroutine = StartCoroutine(BulletLifeTime());
     }
 
@@ -22,7 +27,7 @@ public class Bullet : MonoBehaviour
         {
             if (isHeld)
             {
-                yield break; 
+                yield break;
             }
 
             timer += Time.deltaTime;
@@ -45,24 +50,27 @@ public class Bullet : MonoBehaviour
             {
                 playerHealth.TakeDamage(damage);
             }
-            TakeDamage(damage);
+            Destroy(gameObject);
         }
-        else if (collidedLayer == LayerMask.NameToLayer("Wall") || collidedLayer == LayerMask.NameToLayer("PlayerTouched"))
+        else if (collidedLayer == LayerMask.NameToLayer("Enemy"))
         {
-            ObjectController objectController = collision.gameObject.GetComponent<ObjectController>();
-            if (objectController != null)
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
             {
-                objectController.TakeDamage(damage);
+                enemyHealth.TakeDamage(damage);
             }
-            TakeDamage(damage);
+            Destroy(gameObject);
         }
-
-
+        else
+        {
+            BounceOff(collision.contacts[0].normal);
+        }
     }
 
-    private void TakeDamage(float damage)
+    private void BounceOff(Vector2 collisionNormal)
     {
-        Destroy(gameObject);
+        Vector2 bounceDirection = Vector2.Reflect(rb.velocity.normalized, collisionNormal);
+        rb.velocity = bounceDirection * bounceForce;
     }
 
     public void CancelLifeTimeCoroutine()
@@ -71,7 +79,7 @@ public class Bullet : MonoBehaviour
         if (lifeTimeCoroutine != null)
         {
             StopCoroutine(lifeTimeCoroutine);
-            lifeTimeCoroutine = null; 
+            lifeTimeCoroutine = null;
         }
     }
 }
