@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Rocket
     originalName: 
-    pivot: {x: 0.36363637, y: -1.2}
+    pivot: {x: 0.5, y: -1.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,7 +132,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 11
+      width: 16
       height: 5
     spriteID: b38aecc7ea38f8948885f9fb99c024f8
     spriteBone: []
@@ -156,9 +156,9 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 4
+        x: 0
         y: 6
-        width: 11
+        width: 16
         height: 5
       spriteId: b38aecc7ea38f8948885f9fb99c024f8
     linkedCells: []
