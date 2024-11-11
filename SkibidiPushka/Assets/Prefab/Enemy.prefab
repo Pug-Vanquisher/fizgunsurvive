@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c967b9f4f13349148a7e9c7283e5a113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 5895279002176274238, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
   stopDistance: 1
   detectionRange: 5
   playerLayer:
