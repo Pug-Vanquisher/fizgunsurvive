@@ -169,8 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 50
   bulletLifetime: 15
-  bounceForce: 10
-  speed: 5
+  speed: 6
 --- !u!114 &5135901355806133922
 MonoBehaviour:
   m_ObjectHideFlags: 0
