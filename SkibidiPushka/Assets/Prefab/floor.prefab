@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 655536623912359369}
   - component: {fileID: -8123332855744867420}
   - component: {fileID: 991121733382648766}
+  - component: {fileID: 8822496847436263523}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -107,3 +108,21 @@ MonoBehaviour:
   spriteRenderer: {fileID: -8123332855744867420}
   perlin: 0
   trans: {x: 0, y: 0, z: 0}
+--- !u!114 &8822496847436263523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423344531971300064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7ab15992a226489e246ad7bd4935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkInterval: 15
+  checkDistance: 10
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  playerTag: Player

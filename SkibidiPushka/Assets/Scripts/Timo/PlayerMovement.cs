@@ -29,16 +29,8 @@ public class PlayerMovement : MonoBehaviour
     {
         direct.x = Input.GetAxis("Horizontal");
         direct.y = Input.GetAxis("Vertical");
-        if (Input.GetKeyDown(dashKey))
-        {
-            Debug.Log("Dash activated");
-            _currDashTime = 0;
-            StartCoroutine(Dash(direct.normalized));
-        }
-        else
-        {
-            Move();
-        }
+
+        Move();
     }
 
     void SpeedUpscale()
@@ -69,17 +61,6 @@ public class PlayerMovement : MonoBehaviour
         EventManager.Instance.Unsubscribe("StopAttack", StopAttack);
         EventManager.Instance.Unsubscribe("HighMobility", SpeedUpscale);
         EventManager.Instance.Unsubscribe("Ghost", GhostMode);
-    }
-
-    private IEnumerator Dash(Vector3 direct)
-    {
-        while (_currDashTime < dashTime)
-        {
-            _currDashTime += Time.deltaTime;
-            playerBody.velocity = direct * speed * dashMulti * Time.fixedDeltaTime * 50;
-            yield return _waiter;
-        }
-        yield return null;
     }
 
     private void GhostMode()

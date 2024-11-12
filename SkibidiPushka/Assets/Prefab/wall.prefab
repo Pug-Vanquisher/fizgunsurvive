@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkInterval: 15
-  checkDistance: 5
+  checkDistance: 10
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
 
         EventManager.Instance.Subscribe("HighHealth", HealthUpscale);
         EventManager.Instance.Subscribe("Invulnerability", ActivateInvul);
+        NullizeShader();
     }
     
     public void HealthUpscale()
@@ -54,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<Animator>().SetFloat("Hitted", 1f);
             Invoke("StopHit", 0.4f);
         }
+        ShaderLerp();
 
     }
     

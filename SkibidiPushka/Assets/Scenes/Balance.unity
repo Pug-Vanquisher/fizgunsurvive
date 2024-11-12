@@ -1632,7 +1632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7921060951320692779, guid: 42ac9edac12ffbc4780dfb85c399805a, type: 3}
       propertyPath: effectDuration
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7986297422156595003, guid: 42ac9edac12ffbc4780dfb85c399805a, type: 3}
       propertyPath: Loop
@@ -1686,11 +1686,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4946813378392761553, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
       propertyPath: respawnMaxDistance
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4946813378392761553, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
       propertyPath: respawnMinDistance
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946813378392761553, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
+      propertyPath: ObjectsPrefabs.Array.size
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5544611828813312436, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
       propertyPath: speed

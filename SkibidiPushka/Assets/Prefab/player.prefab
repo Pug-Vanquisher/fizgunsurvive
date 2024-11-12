@@ -110,6 +110,7 @@ MonoBehaviour:
   maxHealth: 1000
   menu: {fileID: 0}
   currentHealth: 0
+  clip: {fileID: 8300000, guid: 9aaf14060f2fa6f47b8e81736b4b0af4, type: 3}
 --- !u!50 &9192151139639385330
 Rigidbody2D:
   serializedVersion: 4
@@ -188,6 +189,9 @@ MonoBehaviour:
   playerBody: {fileID: 9192151139639385330}
   speed: 6
   animator: {fileID: 1917540360615909224}
+  dashKey: 304
+  dashMulti: 0
+  dashTime: 0
 --- !u!114 &4946813378392761553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +236,7 @@ MonoBehaviour:
   maxHealth: 200
   menu: {fileID: 0}
   currentHealth: 0
+  clip: {fileID: 0}
 --- !u!114 &7962003426264772700
 MonoBehaviour:
   m_ObjectHideFlags: 0

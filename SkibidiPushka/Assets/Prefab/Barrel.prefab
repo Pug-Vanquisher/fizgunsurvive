@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7821719757933523029}
   - component: {fileID: 4535191498679316186}
   - component: {fileID: 128337659617749898}
+  - component: {fileID: 8133761526164460431}
   m_Layer: 7
   m_Name: Barrel
   m_TagString: Wall
@@ -200,3 +201,21 @@ MonoBehaviour:
   maxDamage: 60
   breakThreshold: 10
   knockbackMultiplier: 0.6
+--- !u!114 &8133761526164460431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923209112055499543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7ab15992a226489e246ad7bd4935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkInterval: 15
+  checkDistance: 10
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  playerTag: Player

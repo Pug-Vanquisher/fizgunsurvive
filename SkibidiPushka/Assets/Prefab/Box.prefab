@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2741209220751200054}
   - component: {fileID: 2066055591129150179}
   - component: {fileID: -1840042189684563567}
+  - component: {fileID: 1718630665766669303}
   m_Layer: 7
   m_Name: Box
   m_TagString: Wall
@@ -200,3 +201,21 @@ MonoBehaviour:
   maxDamage: 50
   breakThreshold: 10
   knockbackMultiplier: 0.5
+--- !u!114 &1718630665766669303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8575131270305981851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7ab15992a226489e246ad7bd4935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkInterval: 15
+  checkDistance: 10
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  playerTag: Player

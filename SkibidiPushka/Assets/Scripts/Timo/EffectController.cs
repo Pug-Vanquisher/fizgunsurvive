@@ -17,6 +17,7 @@ public class EffectController : MonoBehaviour
     private void Awake()
     {
         EventManager.Instance.Subscribe("UpgradeTime", AwakeUpgradeConsole);
+        EventManager.Instance.Subscribe("RiftClosed", RiftEffectSpawn);
     }
     void AwakeUpgradeConsole()
     {
@@ -28,6 +29,12 @@ public class EffectController : MonoBehaviour
         a.GetComponent<ConsoleScript>().effects = effects.ToArray();
         EventManager.Instance.TriggerEvent("Upscaling");
         StartCoroutine(RltInvoke());
+    }
+    void RiftEffectSpawn()
+    {
+        rEffect = DatabaseRiftEffects.effects[Random.Range(0, DatabaseRiftEffects.effects.Count)];
+
+        EventManager.Instance.TriggerEvent(rEffect.Event);
     }
     IEnumerator<WaitForSecondsRealtime> RltInvoke()
     {
