@@ -178,3 +178,4 @@ MonoBehaviour:
   bulletSpeed: 6
   fireCooldown: 0.5
   canShoot: 1
+  clip: {fileID: 8300000, guid: 7921b2868206cec4db18a03031c37465, type: 3}

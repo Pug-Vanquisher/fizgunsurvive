@@ -7,7 +7,8 @@ public class MineDetonator : MonoBehaviour
     public float damage = 100f; // Урон
     public float explosionRadius = 4f; // Радиус взрыва
     public GameObject explosionEffectPrefab;
-    
+
+    [SerializeField] AudioClip clip;
 
     public Animator animator;
 
@@ -44,6 +45,8 @@ public class MineDetonator : MonoBehaviour
         isExploding = true;
 
         animator.SetBool("AMABATACUUUM", true);
+
+        SFXManager.instance.PlaySound(clip, transform);
 
         yield return new WaitForSeconds(explosionDelay);
 
