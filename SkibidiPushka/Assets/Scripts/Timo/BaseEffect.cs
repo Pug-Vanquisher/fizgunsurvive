@@ -1,6 +1,3 @@
-
-
-
 [System.Serializable]
 
 public class BaseEffect// потом засунуть в наследование каждого уникального эффекта
