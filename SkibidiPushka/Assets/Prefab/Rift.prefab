@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1089501996902942768}
   - component: {fileID: 7886719937177822798}
-  - component: {fileID: 2691295531907151811}
+  - component: {fileID: 5194472486757194915}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Rift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 83a5367e80c90a04eba4b6904437bfa8, type: 3}
+  - {fileID: 2100000, guid: 179184db6e597c342a43f2b2d2503379, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2691295531907151811
+--- !u!114 &5194472486757194915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,16 +97,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7824538403349923800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3786602bb9f538249a65ad998cd84ace, type: 3}
+  m_Script: {fileID: 11500000, guid: c3c0482ea9d5aa3479817cde41fe05ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CorrupterPrefab: {fileID: 1699819765839567404, guid: e757199064505684aa1f52c6e2d50329, type: 3}
-  ObjectsPrefabs:
-  - {fileID: 3160468205360601384, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
-  - {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
-  - {fileID: 3345658562076423327, guid: 6dbd67e6618381f44a630806ca7673dc, type: 3}
-  - {fileID: 3345658562076423327, guid: 377293b00d881a045b04131bbad7f080, type: 3}
-  enemySpawnrate: 3
-  obstalceSpawnrate: 3
+  CorrupterPrefab: {fileID: 0}
+  ObjectsPrefabs: []
+  enemySpawnrate: 0
+  obstalceSpawnrate: 0
   respawnMaxDistance: 0
   respawnMinDistance: 0
