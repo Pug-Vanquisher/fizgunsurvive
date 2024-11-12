@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [Header("Настройки здоровья игрока")]
     [SerializeField] private float maxHealth = 100f;
+    [SerializeField] Menu menu;
     public float currentHealth;
 
     [SerializeField] AudioClip clip;
@@ -75,6 +76,9 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Игрок погиб");
+        //Destroy(gameObject);
+        menu.gameObject.SetActive(true);
+        menu.EndGame();
     }
 
     void NullizeShader()

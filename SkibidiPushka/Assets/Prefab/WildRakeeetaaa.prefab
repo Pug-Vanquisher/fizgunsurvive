@@ -132,11 +132,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  explosionRadius: 4
+  explosionRadius: 2
   rocketLifetime: 15
   explosionEffectPrefab: {fileID: 3737584329265593100, guid: ecce2738ad5d82348abd87e443d40244, type: 3}
-  initialSpeed: 5
-  maxSpeed: 20
+  initialSpeed: 2
+  maxSpeed: 12
 --- !u!114 &7069557992819765034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,10 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTouchedLayer: RaketkaTouched
   canBeGrabbed: 1
-  explosionRadius: 4
+  explosionRadius: 2
   damage: 100
   explosionEffectPrefab: {fileID: 3737584329265593100, guid: ecce2738ad5d82348abd87e443d40244, type: 3}
-  moveForce: 10
+  moveForce: 5
 --- !u!70 &1736450418316925415
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

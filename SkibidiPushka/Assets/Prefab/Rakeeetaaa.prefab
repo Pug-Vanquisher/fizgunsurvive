@@ -152,7 +152,7 @@ MonoBehaviour:
   playerTouchedLayer: RaketkaTouched
   canBeGrabbed: 1
   explosionRadius: 4
-  damage: 100
+  damage: 50
   explosionEffectPrefab: {fileID: 3737584329265593100, guid: ecce2738ad5d82348abd87e443d40244, type: 3}
   moveForce: 10
 --- !u!70 &1736450418316925415
