@@ -11,11 +11,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Timo.unity
     guid: 155219acd0c7e76468bb39fb1287e91c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartMenu.unity
     guid: 8cd025147f05b434e84d4379943632c3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartLVL.unity
     guid: c071321fad91fc548a36fb6ab8ba535a
+  - enabled: 1
+    path: Assets/Scenes/Balance.unity
+    guid: 022262e730c02454e9efbf779a79544b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
