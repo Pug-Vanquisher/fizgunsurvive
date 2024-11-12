@@ -19,12 +19,21 @@ public class ConsoleScript : MonoBehaviour
     void Start()
     {
         errors = errorFile.text.Split("\n");
-        StartCoroutine(ConsoleStart());
-        foreach(BaseEffect effect in effects)
+        EventManager.Instance.Subscribe("Upscaling", UpscalingEvent);
+    }
+    void UpscalingEvent()
+    {
+        foreach (BaseEffect effect in effects)
         {
             EventManager.Instance.Subscribe(effect.Event, ModChoosen);
+
         }
+        StartCoroutine(ConsoleStart());
     }
+
+
+
+
     private void Update()
     {
         if (!StartingEnd)
@@ -74,7 +83,7 @@ public class ConsoleScript : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.01f);
 
         }
-        Time.timeScale = 0f;
+        Time.timeScale = 0.01f;
     }
 
     IEnumerator unpause()

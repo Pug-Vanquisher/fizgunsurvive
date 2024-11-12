@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         EventManager.Instance.Subscribe("StartAttack", Attack);
         EventManager.Instance.Subscribe("StopAttack", StopAttack);
+        EventManager.Instance.Subscribe("HighMobility", SpeedUpscale);
     }
     void Update()
     {
@@ -22,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
         direct.y = Input.GetAxis("Vertical");
         Move();
 
+    }
+    void SpeedUpscale()
+    {
+        speed += 2;
     }
 
     private void Move()
@@ -46,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         EventManager.Instance.Unsubscribe("StartAttack", Attack);
         EventManager.Instance.Unsubscribe("StopAttack", StopAttack);
     }
+
 
 }
 

@@ -27,8 +27,6 @@ public class RiftBreaker : MonoBehaviour
                     Destroy(activity);
                 }
 
-                //Trigger
-
                 StartCoroutine(Closing());
             }
         }

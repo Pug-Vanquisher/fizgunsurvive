@@ -13,6 +13,18 @@ public class CorrupterPlacer : MonoBehaviour
     void Start()
     {
         EventManager.Instance.Subscribe("CorruptTiles", StartTileRemake);
+
+        EventManager.Instance.Subscribe("HighActivity", ActiviyUpscale);
+        EventManager.Instance.Subscribe("HighLoad", LoadUpscale);
+    }
+
+    void ActiviyUpscale()
+    {
+        enemySpawnrate += 2;
+    }
+    void LoadUpscale()
+    {
+        obstalceSpawnrate += 1;
     }
 
     // Update is called once per frame

@@ -13,6 +13,15 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+
+        EventManager.Instance.Subscribe("HighHealth", HealthUpscale);
+    }
+    
+    public void HealthUpscale()
+    {
+        float newHeal = currentHealth * (maxHealth + 100) / maxHealth;
+        maxHealth += 100;
+        Heal(newHeal);
     }
 
     public void TakeDamage(float damage)
