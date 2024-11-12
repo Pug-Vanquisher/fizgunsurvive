@@ -7,15 +7,36 @@ public class Rocket : MonoBehaviour
     [SerializeField] private float explosionRadius = 4f;
     [SerializeField] private float bulletLifetime = 5f;
     [SerializeField] private GameObject explosionEffectPrefab;
+    [SerializeField] private float maxSpeed = 50f;
+    [SerializeField] private float accelerationTime = 3f; 
 
 
     private Coroutine lifeTimeCoroutine;
     private Rigidbody2D rb;
+    private float initialSpeed;
+    private float accelerationRate;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        initialSpeed = rb.velocity.magnitude; 
+        accelerationRate = (maxSpeed - initialSpeed) / accelerationTime; 
         lifeTimeCoroutine = StartCoroutine(RocketLifeTime());
+    }
+
+    private void Update()
+    {
+        AccelerateRocket();
+    }
+
+    private void AccelerateRocket()
+    {
+        if (rb.velocity.magnitude < maxSpeed)
+        {
+            float newSpeed = rb.velocity.magnitude + accelerationRate * Time.deltaTime;
+            newSpeed = Mathf.Min(newSpeed, maxSpeed); 
+            rb.velocity = rb.velocity.normalized * newSpeed;
+        }
     }
 
     private IEnumerator RocketLifeTime()

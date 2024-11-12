@@ -16,6 +16,7 @@ public class GunScript : MonoBehaviour
     [SerializeField] public float bulletSpeed;
     [SerializeField] public float fireCooldown;
     [SerializeField] public bool canShoot;
+    private bool _isFlipped = false;
 
 
     private void Start()
@@ -30,7 +31,19 @@ public class GunScript : MonoBehaviour
     void Update()
     {
         float distanceToPlayer = Vector2.Distance(transform.parent.position, player.position);
-
+        float angle = Vector2.SignedAngle(player.position - transform.position, transform.right);
+        Debug.Log(angle);
+        if ((angle > 90 || angle < -90) && !_isFlipped)
+        {
+            Flip();
+            _isFlipped = true;
+        }
+        else if (angle > -90 && angle < 90 && _isFlipped)
+        {
+            Flip();
+            _isFlipped = false;
+        }
+        // Проверка на видимость игрока и стрельба
         if (distanceToPlayer <= detectionRange && IsPlayerInSight())
         {
             TryShootAtPlayer();
@@ -80,6 +93,13 @@ public class GunScript : MonoBehaviour
     protected virtual void ShootBullet(Vector3 targetPosition)
     {
 
+    }
+
+    private void Flip()
+    {
+        var temp = transform.localScale;
+        temp.x *= -1;
+        transform.localScale = temp;
     }
 
 }

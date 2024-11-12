@@ -286,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &160308639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1049,6 +1049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 6757207297647371200, guid: 66a10ace4c8643943a7795ddae3c269e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1242,7 +1246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1182562990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1484,7 +1488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1697476564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1721,7 +1725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1935080833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2100,6 +2104,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3160468205360601377, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
+      propertyPath: GunsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160468205360601377, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
+      propertyPath: 'GunsList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6087284258791908462, guid: f97b01fb8e1537840bcd3e8b034fb11c, type: 3}
     - target: {fileID: 3160468205360601378, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
       propertyPath: maxHealth
       value: 250
