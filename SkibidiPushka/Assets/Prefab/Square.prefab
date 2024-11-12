@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089501996902942768}
   - component: {fileID: 7886719937177822798}
+  - component: {fileID: 2691295531907151811}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -87,3 +88,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2691295531907151811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7824538403349923800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3786602bb9f538249a65ad998cd84ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrupterPrefab: {fileID: 1699819765839567404, guid: e757199064505684aa1f52c6e2d50329, type: 3}
+  ObjectsPrefabs:
+  - {fileID: 3160468205360601384, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
+  - {fileID: 3345658562076423327, guid: 5969a109c1663d1479148184bf24ed48, type: 3}
+  - {fileID: 3345658562076423327, guid: 6dbd67e6618381f44a630806ca7673dc, type: 3}
+  - {fileID: 3345658562076423327, guid: 377293b00d881a045b04131bbad7f080, type: 3}
+  enemySpawnrate: 3
+  obstalceSpawnrate: 3
+  respawnMaxDistance: 0
+  respawnMinDistance: 0
