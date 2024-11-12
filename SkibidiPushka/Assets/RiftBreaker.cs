@@ -27,6 +27,8 @@ public class RiftBreaker : MonoBehaviour
                     Destroy(activity);
                 }
 
+                EventManager.Instance.TriggerEvent("RiftClosed");
+
                 StartCoroutine(Closing());
             }
         }
