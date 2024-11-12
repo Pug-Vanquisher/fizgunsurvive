@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     public float currentHealth;
 
+    [SerializeField] AudioClip clip;
+
     private float maxForce;
     private float maxPulses;
     private float maxScale;
@@ -66,6 +68,7 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        SFXManager.instance.PlaySound(clip, transform);
         Debug.Log($"Игрок восстановил здоровье: {amount}. Текущее здоровье: {currentHealth}");
     }
 

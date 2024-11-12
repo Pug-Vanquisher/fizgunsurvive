@@ -1,55 +1,19 @@
 using UnityEngine;
-using System.Collections;
 
-public class MineDetonator : MonoBehaviour
+public class Nuke : MonoBehaviour
 {
-    public float explosionDelay = 1.5f; // Задержка взрыва
-    public float damage = 100f; // Урон
-    public float explosionRadius = 4f; // Радиус взрыва
-    public GameObject explosionEffectPrefab;
 
-    [SerializeField] AudioClip clip;
+    [SerializeField] private float damage = 200f;
+    [SerializeField] private float explosionRadius = 4f;
+    [SerializeField] private GameObject explosionEffectPrefab;
 
-    public Animator animator;
-
-    private bool isExploding = false;
-
-    private MineController mineController;
-
-    //и тут я насрал.
-    public Transform player;
-
-    private void Awake()
+    void Start()
     {
-        mineController = GetComponent<MineController>();
+        Explode();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Explode()
     {
-        int collidedLayer = collision.gameObject.layer;
-
-        if (collidedLayer == LayerMask.NameToLayer("Wall") ||
-            collidedLayer == LayerMask.NameToLayer("PlayerTouched") ||
-            collidedLayer == LayerMask.NameToLayer("Player") ||
-            collidedLayer == LayerMask.NameToLayer("Enemy"))
-        {
-            if (!isExploding)
-            {
-                StartCoroutine(ExplodeAfterDelay());
-            }
-        }
-    }
-
-    private IEnumerator ExplodeAfterDelay()
-    {
-        isExploding = true;
-
-        animator.SetBool("AMABATACUUUM", true);
-
-        SFXManager.instance.PlaySound(clip, transform);
-
-        yield return new WaitForSeconds(explosionDelay);
-
         Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
@@ -87,31 +51,8 @@ public class MineDetonator : MonoBehaviour
             }
         }
 
-        //ето я накакал >:)
-
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player")?.transform;
-        }
-
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= 10)
-        {
-            EventManager.Instance.TriggerEvent("Explosion");
-        }
-
-        //хехе.
-
-        if (mineController != null)
-        {
-            mineController.Detonated();
-        }
-
         Destroy(gameObject);
     }
-
-    
 
     private void ApplyKnockback(Collider2D hitCollider)
     {
