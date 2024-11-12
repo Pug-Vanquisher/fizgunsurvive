@@ -482,8 +482,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2720092107959537239, guid: 626c3dcd50e6df142a0e42e077a609ae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 237752103}
   m_SourcePrefab: {fileID: 100100000, guid: 626c3dcd50e6df142a0e42e077a609ae, type: 3}
+--- !u!1 &237752102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2720092107959537239, guid: 626c3dcd50e6df142a0e42e077a609ae, type: 3}
+  m_PrefabInstance: {fileID: 198288534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &237752103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237752102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7ab15992a226489e246ad7bd4935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkInterval: 1
+  checkDistance: 5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  playerTag: Player
 --- !u!1001 &256424508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1284,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3160468205360601384, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1678,6 +1708,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b96f7c3fa2ac7943bf3b75a698e9264, type: 3}
+--- !u!1 &1630101457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630101460}
+  - component: {fileID: 1630101459}
+  - component: {fileID: 1630101458}
+  m_Layer: 0
+  m_Name: Aboba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1630101458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630101457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5ecef9243ce584b80a5a00c8aec663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1630101459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630101457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9329dad398b3a414da9a62210301843b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRifts: 3
+  riftProbability: 0.1
+  riftPrefab: {fileID: 7824538403349923800, guid: 03d54f17ea052064a9c03ccc02853da6, type: 3}
+--- !u!4 &1630101460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630101457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.815077, y: 14.437049, z: -0.060447253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1644811490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,6 +2567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3160468205360601384, guid: 279bf14023d44de4aab8cebd4fb5f0f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2514,3 +2608,4 @@ SceneRoots:
   - {fileID: 1991583690}
   - {fileID: 198288534}
   - {fileID: 1617020081}
+  - {fileID: 1630101460}
