@@ -33,7 +33,7 @@ public class ConsoleScript : MonoBehaviour
     }
     public void ShowRiftEffect()
     {
-        StartCoroutine()
+        StartCoroutine(ConsoleRift());
     }
 
 
