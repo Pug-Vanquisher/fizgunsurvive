@@ -11,20 +11,35 @@ public class EffectController : MonoBehaviour
 
     private float timer;
     public List<BaseEffect> effects = new List<BaseEffect>();
+    public RiftEffect rEffect;
+    public ConsoleScript myConsole;
     public bool isChoosing = true;
 
     private void Awake()
     {
         EventManager.Instance.Subscribe("UpgradeTime", AwakeUpgradeConsole);
     }
-    void AwakeUpgradeConsole()
+    private void Start()
     {
         var a = Instantiate(ConsolePrefab);
+        myConsole.GetComponent<ConsoleScript>();
+    }
+    void AwakeRiftConsole()
+    {
+        myConsole.riftEffect = rEffect;
+        Invoke("ShowRiftEffect",1f);
+    }
+    void ShowRiftEffect()
+    {
+        myConsole.ShowRiftEffect();
+    }
+    void AwakeUpgradeConsole()
+    {
         for (int i = 0; i < 3; i++)
         {
             effects.Add(DatabaseEffects.effects[Random.Range(0, DatabaseEffects.effects.Count)]);
         }
-        a.GetComponent<ConsoleScript>().effects = effects.ToArray();
+        myConsole.effects = effects.ToArray();
         StartCoroutine(RltInvoke());
     }
     IEnumerator<WaitForSecondsRealtime> RltInvoke()
