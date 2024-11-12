@@ -22,7 +22,7 @@ public class ConsoleScript : MonoBehaviour
         StartCoroutine(ConsoleStart());
         foreach(BaseEffect effect in effects)
         {
-            EventManager.Instance.Subscribe(effect.Event, ModChoosen);
+            EventManager.Instance.Subscribe(effect.EventName, ModChoosen);
         }
     }
     private void Update()
