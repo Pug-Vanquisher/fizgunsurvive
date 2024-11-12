@@ -12,6 +12,7 @@ public class ConsoleScript : MonoBehaviour
     public Image Image;
     
     public BaseEffect[] effects;
+    public RiftEffect riftEffect;
     public TextAsset errorFile;
 
     private string[] errors;
@@ -30,7 +31,10 @@ public class ConsoleScript : MonoBehaviour
         }
         StartCoroutine(ConsoleStart());
     }
-
+    public void ShowRiftEffect()
+    {
+        StartCoroutine()
+    }
 
 
 
@@ -111,7 +115,18 @@ public class ConsoleScript : MonoBehaviour
         EndingStart = true;
         StartCoroutine(unpause());
         yield return new WaitForSecondsRealtime(0.5f);
-        Destroy(gameObject);
+        Text.text = "";
+    }
+
+    IEnumerator ConsoleRift()
+    {
+        StartCoroutine(pause());
+        Text.text = "Получено сторонне решение. Распаковка протоколов.";
+        yield return new WaitForSecondsRealtime(0.2f);
+        Text.text = "Получено сообщение: '" + riftEffect.Event +"'\n" + Text.text;
+        StartCoroutine(unpause());
+        yield return new WaitForSecondsRealtime(2f);
+        Text.text = "";
     }
 
     string Hexcode(Color color)
