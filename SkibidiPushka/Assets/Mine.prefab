@@ -131,6 +131,7 @@ MonoBehaviour:
   damage: 100
   explosionRadius: 4
   explosionEffectPrefab: {fileID: 3737584329265593100, guid: ecce2738ad5d82348abd87e443d40244, type: 3}
+  clip: {fileID: 8300000, guid: 26ab04c24d0730e4386f1a3a5f4ba997, type: 3}
   animator: {fileID: 1029869163544817840}
   player: {fileID: 0}
 --- !u!212 &1474351714489633590

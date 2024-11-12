@@ -8,12 +8,12 @@ public class SemiAutogun : GunScript
     [SerializeField] float numberOfShoots;
     [SerializeField, Range(0,30), Tooltip("в градусах")] float bulletSpread;
     [SerializeField, Range(0.1f, 0.3f)] float delayBetweenShots;
-
+    [SerializeField] AudioClip clip;
 
     protected override void ShootBullet(Vector3 targetPosition)
     {
         if (bulletPrefab == null || firePoint == null) return;
-
+        
         StartCoroutine(SHOOTA(targetPosition));
     }
 
@@ -39,6 +39,8 @@ public class SemiAutogun : GunScript
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+
+            SFXManager.instance.PlaySound(clip, transform);
 
             Vector2 direction = (Vector2)(targetPosition - transform.position + (Vector3)spreadDirect).normalized;
 

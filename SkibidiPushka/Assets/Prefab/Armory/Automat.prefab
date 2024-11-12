@@ -181,3 +181,4 @@ MonoBehaviour:
   numberOfShoots: 3
   bulletSpread: 10.5
   delayBetweenShots: 0.1372
+  clip: {fileID: 8300000, guid: de34cd7384e7c99468ff5d4828c18258, type: 3}
