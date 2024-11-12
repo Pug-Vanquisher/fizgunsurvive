@@ -11,7 +11,7 @@ public class CameraPlayerTrack : MonoBehaviour
 
     private void Start()
     {
-        var cameraStartPosition = player.transform.position;
+        var cameraStartPosition = new Vector3(14.72054f, 13.18578f);
         cameraStartPosition.z = zOffset;
         Camera.main.transform.position = cameraStartPosition;
         

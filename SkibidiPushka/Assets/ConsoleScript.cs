@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 public class ConsoleScript : MonoBehaviour
 {
-    public bool StartingEnd = false;
+    public bool rift = false;
     private bool EndingStart = false;
+    private bool StartingEnd = false;
 
     public TMP_Text Text;
     public Image Image;
@@ -20,22 +21,19 @@ public class ConsoleScript : MonoBehaviour
     void Start()
     {
         errors = errorFile.text.Split("\n");
-        EventManager.Instance.Subscribe("Upscaling", UpscalingEvent);
-    }
-    void UpscalingEvent()
-    {
-        foreach (BaseEffect effect in effects)
+        if (!rift)
         {
-            EventManager.Instance.Subscribe(effect.Event, ModChoosen);
-
+            foreach (BaseEffect effect in effects)
+            {
+                EventManager.Instance.Subscribe(effect.Event, ModChoosen);
+            }
+            StartCoroutine(ConsoleStart());
         }
-        StartCoroutine(ConsoleStart());
+        else
+        {
+            StartCoroutine(ConsoleRift());
+        }
     }
-    public void ShowRiftEffect()
-    {
-        StartCoroutine(ConsoleRift());
-    }
-
 
 
     private void Update()
@@ -56,6 +54,7 @@ public class ConsoleScript : MonoBehaviour
 
     IEnumerator ConsoleStart()
     {
+        Debug.Log("pepepe");
         StartCoroutine(pause());
         float lostTime = 3f;
         for(int i = 0; i< Random.Range(10, 16); i++)
@@ -115,18 +114,18 @@ public class ConsoleScript : MonoBehaviour
         EndingStart = true;
         StartCoroutine(unpause());
         yield return new WaitForSecondsRealtime(0.5f);
-        Text.text = "";
+        Destroy(gameObject);
     }
 
     IEnumerator ConsoleRift()
     {
-        StartCoroutine(pause());
+        StartingEnd = true;
         Text.text = "Получено сторонне решение. Распаковка протоколов.";
         yield return new WaitForSecondsRealtime(0.2f);
         Text.text = "Получено сообщение: '" + riftEffect.Event +"'\n" + Text.text;
-        StartCoroutine(unpause());
+        EndingStart = false;
         yield return new WaitForSecondsRealtime(2f);
-        Text.text = "";
+        Destroy(gameObject);
     }
 
     string Hexcode(Color color)
