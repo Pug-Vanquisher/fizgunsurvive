@@ -10460,7 +10460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c79513e45321542af4643a32a9482b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectDuration: 10
+  effectDuration: 150
   ConsolePrefab: {fileID: 6287462852142423889, guid: 0adae7ef74229d44fa21c83ba7813011, type: 3}
   effects: []
   myConsole: {fileID: 0}

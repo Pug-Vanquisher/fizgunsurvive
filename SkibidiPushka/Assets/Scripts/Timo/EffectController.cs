@@ -22,7 +22,7 @@ public class EffectController : MonoBehaviour
     private void Start()
     {
         var a = Instantiate(ConsolePrefab);
-        myConsole.GetComponent<ConsoleScript>();
+        myConsole = a.GetComponent<ConsoleScript>();
     }
     void AwakeRiftConsole()
     {

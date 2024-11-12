@@ -65,6 +65,6 @@ public class DatabaseRiftEffects
         new RiftEffect("Ты станешь чем то большим...", "EnemiesToWalls"),
         new RiftEffect("Твои грехи будут прощены...", "Invulnerability", 10f),
         new RiftEffect("Разрушение явит себя...", "Atomic"),
-        new RiftEffect("Даже стены не удержат тебя", "Ghost", 10f)
+        new RiftEffect("Стены не удержат тебя, но бездна не отпустит...", "Ghost", 10f)
     };
 }

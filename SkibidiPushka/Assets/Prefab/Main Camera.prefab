@@ -4849,6 +4849,7 @@ GameObject:
   - component: {fileID: 8496696105087913478}
   - component: {fileID: 6189015628973847517}
   - component: {fileID: -9069881763155390680}
+  - component: {fileID: 7921060951320692779}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5000,6 +5001,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57204e53157e3e4a8cc5d82cf696bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7921060951320692779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198870829622148336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c79513e45321542af4643a32a9482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectDuration: 150
+  ConsolePrefab: {fileID: 6287462852142423889, guid: 0adae7ef74229d44fa21c83ba7813011, type: 3}
+  effects: []
+  myConsole: {fileID: 0}
+  isChoosing: 0
 --- !u!1 &8728592787981531607
 GameObject:
   m_ObjectHideFlags: 0
