@@ -1624,10 +1624,6 @@ PrefabInstance:
       propertyPath: 'SummonChance.Array.data[6]'
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2840873596061532919, guid: 42ac9edac12ffbc4780dfb85c399805a, type: 3}
-      propertyPath: 'ObjectsPrefabs.Array.data[6]'
-      value: 
-      objectReference: {fileID: 5541928871987264397, guid: b51335a53d9f4744c87389a1e118d588, type: 3}
     - target: {fileID: 6189015628973847517, guid: 42ac9edac12ffbc4780dfb85c399805a, type: 3}
       propertyPath: menu
       value: 

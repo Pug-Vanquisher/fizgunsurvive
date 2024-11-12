@@ -135,8 +135,8 @@ MonoBehaviour:
   explosionRadius: 2
   rocketLifetime: 15
   explosionEffectPrefab: {fileID: 3737584329265593100, guid: ecce2738ad5d82348abd87e443d40244, type: 3}
-  initialSpeed: 4
-  maxSpeed: 15
+  initialSpeed: 2
+  maxSpeed: 12
 --- !u!114 &7069557992819765034
 MonoBehaviour:
   m_ObjectHideFlags: 0
