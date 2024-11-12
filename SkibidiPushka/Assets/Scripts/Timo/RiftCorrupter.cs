@@ -61,7 +61,7 @@ public class RiftCorrupter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collidersIn.ContainsKey(collision) && collision.gameObject.tag == "Enemy" && collision.gameObject.tag == "Player")
+        if(!collidersIn.ContainsKey(collision) && collision.gameObject.tag != "Enemy" && collision.gameObject.tag != "Player" && collision.gameObject.tag != "WallBuilder")
         {
             collidersIn.Add(collision, collision.gameObject);
         }

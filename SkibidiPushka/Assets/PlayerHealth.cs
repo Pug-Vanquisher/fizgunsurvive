@@ -10,11 +10,14 @@ public class PlayerHealth : MonoBehaviour
     private float maxPulses;
     private float maxScale;
 
+    private bool invul;
+
     private void Start()
     {
         currentHealth = maxHealth;
 
         EventManager.Instance.Subscribe("HighHealth", HealthUpscale);
+        EventManager.Instance.Subscribe("Invulnerability", ActivateInvul);
     }
     
     public void HealthUpscale()
@@ -24,17 +27,30 @@ public class PlayerHealth : MonoBehaviour
         Heal(newHeal);
     }
 
+    void ActivateInvul()
+    {
+        invul = true;
+        Invoke("DeactivateInvul", 10f);
+    }
+    void DeactivateInvul()
+    {
+        invul = false;
+    }
+
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        Debug.Log($"Игрок получил урон: {damage}. Текущее здоровье: {currentHealth}");
-
-        if (currentHealth <= 0)
+        if (!invul)
         {
-            Die();
+            currentHealth -= damage;
+            Debug.Log($"Игрок получил урон: {damage}. Текущее здоровье: {currentHealth}");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+            GetComponent<Animator>().SetFloat("Hitted", 1f);
+            Invoke("StopHit", 0.4f);
         }
-        GetComponent<Animator>().SetFloat("Hitted", 1f);
-        Invoke("StopHit", 0.4f);
 
     }
     

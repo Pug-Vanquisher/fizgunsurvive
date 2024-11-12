@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
         EventManager.Instance.Subscribe("StartAttack", Attack);
         EventManager.Instance.Subscribe("StopAttack", StopAttack);
         EventManager.Instance.Subscribe("HighMobility", SpeedUpscale);
+        EventManager.Instance.Subscribe("Ghost", Ghost);
     }
     void Update()
     {
@@ -24,6 +25,15 @@ public class PlayerMovement : MonoBehaviour
     void SpeedUpscale()
     {
         speed += 2;
+    }
+    void Ghost()
+    {
+        //playerBody.excludeLayers
+        Invoke("DisableGhost", 10f);
+    }
+    void DisableGhost()
+    {
+
     }
 
     private void Move()
