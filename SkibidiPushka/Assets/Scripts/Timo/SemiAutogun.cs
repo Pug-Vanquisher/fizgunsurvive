@@ -8,7 +8,6 @@ public class SemiAutogun : GunScript
     [SerializeField] float numberOfShoots;
     [SerializeField, Range(0,30), Tooltip("в градусах")] float bulletSpread;
     [SerializeField, Range(0.1f, 0.3f)] float delayBetweenShots;
-    private Quaternion rotation;
 
 
     protected override void ShootBullet(Vector3 targetPosition)
