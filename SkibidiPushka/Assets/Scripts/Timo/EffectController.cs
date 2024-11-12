@@ -1,125 +1,79 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 
 public class EffectController : MonoBehaviour
 {
-    [SerializeField] BaseEffect[] effects;
-    [SerializeField] float minTime_delay;
-    [SerializeField] float maxTime_delay;
-    [SerializeField] float timeForChoosing;
-    private BaseEffect _chosenOne; // by player
-    private float _currTime = 0;
-    private float _timeForSpawnChoose;
-    private BaseEffect[] chosenEffects;
+
+    public float effectDuration;
+
+    public GameObject ConsolePrefab;
+
+    private float timer;
+    public List<BaseEffect> effects = new List<BaseEffect>();
+    public bool isChoosing = true;
 
     private void Awake()
     {
-        _currTime = maxTime_delay;
+        EventManager.Instance.Subscribe("UpgradeTime", AwakeUpgradeConsole);
+    }
+    void AwakeUpgradeConsole()
+    {
+        var a = Instantiate(ConsolePrefab);
+        for (int i = 0; i < 3; i++)
+        {
+            effects.Add(DatabaseEffects.effects[Random.Range(0, DatabaseEffects.effects.Count)]);
+        }
+        a.GetComponent<ConsoleScript>().effects = effects.ToArray();
+        StartCoroutine(RltInvoke());
+    }
+    IEnumerator<WaitForSecondsRealtime> RltInvoke()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        isChoosing = true;
     }
 
     private void Update()
     {
-        if (_currTime > _timeForSpawnChoose)
-        {
-            _timeForSpawnChoose = Random.Range(Mathf.Min(minTime_delay, maxTime_delay), Mathf.Max(minTime_delay, maxTime_delay));
-            ChooseEffect();
-        }
-        else if (_currTime < timeForChoosing + 0.1f)
+        if (isChoosing)
         {
             ChooseEffect();
         }
-            _currTime += Time.deltaTime;
+        else
+        {
+            timer += Time.deltaTime;
+        }
+
+        if (timer >= effectDuration)
+        {
+            timer = 0;
+            EventManager.Instance.TriggerEvent("UpgradeTime");
+        }
+
     }
 
     private void ChooseEffect()
     {
-        int chosen = -4453;
-        ChooseThree();
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            chosen = 1;
+            MakeEvent(0);
         }
         else if (Input.GetKey(KeyCode.Alpha2))
         {
-            chosen = 2;
+            MakeEvent(1);
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {
-            chosen = 3;
+            MakeEvent(2);
         }
-        else
-        {
-            if (_currTime > timeForChoosing)
-            {
-                chosen = (int)Random.Range(1, 3);
-            }
-
-        }
-        if (!(chosen > 0))
-        {
-            int chosenRand = 0;
-            _chosenOne = chosenEffects[chosen - 1];
-            switch (chosen)
-            {
-                case 1:
-                    chosenRand = Random.value > 0.5f ? 2:3;
-                    return;
-                case 2:
-                    chosenRand = Random.value > 0.5f ? 1 : 3;
-                    return;
-                case 3:
-                    chosenRand = Random.value > 0.5f ? 2 : 1;
-                    return;
-            }
-            
-            if (chosenRand != 0)
-            {
-            EventManager.Instance.TriggerEvent(chosenEffects[chosenRand - 1].EventName);
-            }
-            _currTime = 0;
-        }
-        if (_chosenOne != null)
-        {
-            EventManager.Instance.TriggerEvent(_chosenOne.EventName);
-        }
-        for(int x = 0; x < effects.Length; x++)
-        {
-            if (effects[x] == null) 
-            {
-                
-            }
-        }
-        
-
     }
-
-    private void ChooseThree()
+    private void MakeEvent(int id)
     {
-        var numberOfEffects = new int[3];
-        numberOfEffects[0] = Random.Range(0, effects.Length);
-        chosenEffects[numberOfEffects[0]] = effects[numberOfEffects[0]];
-        effects[numberOfEffects[0]] = null;
-        numberOfEffects[1] = Random.Range(0, effects.Length);
-        if (effects[numberOfEffects[1]] == null)
-        {
-            chosenEffects[numberOfEffects[1]] = effects[numberOfEffects[1] + 1];
-            effects[numberOfEffects[1]+1] = null;
-        }
-        else
-        {
-            chosenEffects[numberOfEffects[1]] = effects[numberOfEffects[1]];
-            effects[numberOfEffects[1]] = null;
-        }
-        numberOfEffects[2] = Random.Range(0, effects.Length);
-        if (effects[numberOfEffects[2]] == null)
-        {
-            chosenEffects[numberOfEffects[2]] = effects[numberOfEffects[2] + 1];
-            effects[numberOfEffects[2] + 1] = null;
-        }
-        else
-        {
-            chosenEffects[numberOfEffects[2]] = effects[numberOfEffects[2]];
-            effects[numberOfEffects[2]] = null;
-        }
+        EventManager.Instance.TriggerEvent(effects[id].Event);
+        DatabaseEffects.LastUpgradeColor = effects[id].Color;
+        effects.RemoveAt(id);
+        EventManager.Instance.TriggerEvent(effects[Random.Range(0, effects.Count)].Event);
+        effects.Clear();
+        isChoosing = false; 
     }
 }
