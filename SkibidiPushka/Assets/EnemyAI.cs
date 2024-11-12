@@ -19,16 +19,18 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private EnemyHealth enemyHealth;
+    private EnemyController enemyController;
 
     private bool isStoppedDueToDamage = false;
     private Vector3 lastPosition;
 
     private void Awake()
-    { 
+    {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         enemyHealth = GetComponent<EnemyHealth>();
+        enemyController = GetComponent<EnemyController>();
 
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -53,7 +55,6 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-
         if (enemyHealth != null)
         {
             enemyHealth.OnDamageTaken += StopMovementOnDamage;
@@ -64,7 +65,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (player == null || isStoppedDueToDamage) return;
+        if (player == null || isStoppedDueToDamage || (enemyController != null && enemyController.IsHeld)) return;
         Debug.Log($"Enemy Position: {transform.position}, Player Position: {player.position}");
 
         UpdateWalkingAnimation();
@@ -76,7 +77,7 @@ public class EnemyAI : MonoBehaviour
         {
             yield return new WaitForSeconds(pathUpdateInterval);
 
-            if (player != null && !isStoppedDueToDamage)
+            if (player != null && !isStoppedDueToDamage && (enemyController == null || !enemyController.IsHeld))
             {
                 MoveToRandomPointNearPlayer();
             }
@@ -120,7 +121,7 @@ public class EnemyAI : MonoBehaviour
     private void StopMovementOnDamage()
     {
         isStoppedDueToDamage = true;
-        agent.enabled = false;
+        SetAgentEnabled(false);
         rb.velocity = Vector2.zero;
         animator.SetFloat("Hitted", 1f);
     }
@@ -128,9 +129,17 @@ public class EnemyAI : MonoBehaviour
     private void ResumeMovement()
     {
         isStoppedDueToDamage = false;
-        agent.enabled = true;
-        agent.isStopped = false;
+        SetAgentEnabled(true);
         animator.SetFloat("Hitted", 0f);
+    }
+
+    public void SetAgentEnabled(bool enabled)
+    {
+        if (agent != null && (enemyController == null || !enemyController.IsHeld))
+        {
+            agent.enabled = enabled;
+            agent.isStopped = !enabled;
+        }
     }
 
     private void OnDestroy()
@@ -144,7 +153,7 @@ public class EnemyAI : MonoBehaviour
 
     void GenerateGun(int id)
     {
-        for(int i = 0; i < transform.childCount; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
             Destroy(transform.GetChild(i).gameObject);
         }

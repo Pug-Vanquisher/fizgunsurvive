@@ -9,7 +9,7 @@ public class CameraPlayerTrack : MonoBehaviour
     [SerializeField, Range(1, 100)] float cameraSpeed = 10f;
     private Vector3 _previousPosition;
 
-    private void Awake()
+    private void Start()
     {
         var cameraStartPosition = player.transform.position;
         cameraStartPosition.z = zOffset;
