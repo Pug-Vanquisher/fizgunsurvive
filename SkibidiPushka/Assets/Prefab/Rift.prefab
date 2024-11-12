@@ -154,6 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClosingTime: 2
   Portal: {fileID: 7986831889587006186}
+  clips:
+  - {fileID: 8300000, guid: dc7ff38c5e99ebd4b8494faba06d5d84, type: 3}
+  - {fileID: 8300000, guid: 4c4bfbad9752e39448fcd0bb99d8e386, type: 3}
+  - {fileID: 8300000, guid: 20ddd880331b8264685529c2570bbefe, type: 3}
 --- !u!58 &3955939869739894497
 CircleCollider2D:
   m_ObjectHideFlags: 0

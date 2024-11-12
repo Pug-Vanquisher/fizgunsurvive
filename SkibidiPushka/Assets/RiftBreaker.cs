@@ -8,6 +8,8 @@ public class RiftBreaker : MonoBehaviour
     private Material PortalShader;
     public SpriteRenderer Portal;
 
+    [SerializeField] AudioClip[] clips;
+
     private void Start()
     {
         PortalShader = Portal.material;
@@ -50,6 +52,8 @@ public class RiftBreaker : MonoBehaviour
     }
     IEnumerator Opening()
     {
+        SFXManager.instance.PlaySound(clips, transform);
+
         float timer = 0f;
         PortalShader.SetFloat("_Brightness", 5);
         while (timer < ClosingTime)

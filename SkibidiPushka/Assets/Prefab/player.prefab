@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  clip: {fileID: 8300000, guid: 9aaf14060f2fa6f47b8e81736b4b0af4, type: 3}
 --- !u!50 &9192151139639385330
 Rigidbody2D:
   serializedVersion: 4
@@ -223,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  clip: {fileID: 0}
 --- !u!114 &7962003426264772700
 MonoBehaviour:
   m_ObjectHideFlags: 0
