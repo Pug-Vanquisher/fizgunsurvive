@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Wall
+  - WorldBorder
   layers:
   - Default
   - TransparentFX

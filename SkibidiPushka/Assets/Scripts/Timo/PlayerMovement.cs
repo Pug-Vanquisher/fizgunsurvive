@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float _currDashTime;
     protected Vector3 direct;
     private bool _isNoFlipped = true;
-    private WaitForEndOfFrame _waiter = new WaitForEndOfFrame();
+    private WaitForFixedUpdate _waiter = new WaitForFixedUpdate();
 
     private void Start()
     {
