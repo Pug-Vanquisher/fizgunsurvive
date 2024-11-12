@@ -47,7 +47,10 @@ public class DatabaseEffects
             Color.magenta, "HighVolatility"),
         new BaseEffect("Протокол: стабильность",
             "Порядок сшивает ткани реальности, закрывая все разломы",
-            Color.cyan, "RiftStabilize")
+            Color.cyan, "RiftStabilize"),
+        new BaseEffect("Повышение скорости",
+            "Ваши рефлексы на высоте",
+            new Color(0, 1f, 0.5f), "HighMobility")
     };
     public static Color LastUpgradeColor = Color.white;
 }
