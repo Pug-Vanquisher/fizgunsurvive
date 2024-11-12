@@ -1,38 +1,37 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D playerBody;
     [SerializeField] float speed;
     [SerializeField] Animator animator;
+    [SerializeField] KeyCode dashKey = KeyCode.LeftShift;
+    [SerializeField] float dashMulti;
+    [SerializeField] float dashTime;
+    private float _currDashTime;
     protected Vector3 direct;
     private bool _isNoFlipped = true;
+    private WaitForFixedUpdate _waiter = new WaitForFixedUpdate();
 
     private void Start()
     {
         EventManager.Instance.Subscribe("StartAttack", Attack);
         EventManager.Instance.Subscribe("StopAttack", StopAttack);
-        EventManager.Instance.Subscribe("HighMobility", SpeedUpscale);
-        EventManager.Instance.Subscribe("Ghost", Ghost);
     }
     void Update()
     {
         direct.x = Input.GetAxis("Horizontal");
         direct.y = Input.GetAxis("Vertical");
-        Move();
-
-    }
-    void SpeedUpscale()
-    {
-        speed += 2;
-    }
-    void Ghost()
-    {
-        //playerBody.excludeLayers
-        Invoke("DisableGhost", 10f);
-    }
-    void DisableGhost()
-    {
+        if (Input.GetKeyDown(dashKey))
+        {
+            Debug.Log("sdfjdjklhsfgsjhfg;lsdg");
+            _currDashTime = 0;
+            StartCoroutine(Dash(direct.normalized));
+        }
+        else { Move(); }
+        
 
     }
 
@@ -59,6 +58,16 @@ public class PlayerMovement : MonoBehaviour
         EventManager.Instance.Unsubscribe("StopAttack", StopAttack);
     }
 
+    private IEnumerator Dash(Vector3 direct)
+    {
+        while (_currDashTime < dashTime)
+        {
+            _currDashTime += Time.deltaTime;
+            playerBody.velocity = direct * speed * dashMulti * Time.fixedDeltaTime * 50;
+            yield return _waiter;
+        }
+        yield return null;
+    }
 
 }
 
