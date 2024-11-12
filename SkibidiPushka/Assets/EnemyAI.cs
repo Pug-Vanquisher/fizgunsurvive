@@ -15,6 +15,10 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Настройки Пушек")]
     [SerializeField] private GameObject[] GunsList;
+
+    [Header("Настройки префаба для замены")]
+    [SerializeField] private GameObject replacementPrefab;
+
     private NavMeshAgent agent;
     private Animator animator;
     private Rigidbody2D rb;
@@ -41,6 +45,8 @@ public class EnemyAI : MonoBehaviour
     private void Start()
     {
         GenerateGun(Random.Range(0, GunsList.Length));
+
+        EventManager.Instance.Subscribe("EnemiesToWalls", ReplaceWithPrefab);
 
         if (player == null)
         {
@@ -162,5 +168,18 @@ public class EnemyAI : MonoBehaviour
         NewGun.GetComponent<GunScript>().detectionRange = detectionRange;
         NewGun.GetComponent<GunScript>().playerLayer = playerLayer;
         NewGun.GetComponent<GunScript>().obstacleLayer = obstacleLayer;
+    }
+
+    public void ReplaceWithPrefab()
+    {
+        if (replacementPrefab != null)
+        {
+            Instantiate(replacementPrefab, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Debug.LogWarning("Replacement prefab is not assigned.");
+        }
     }
 }
