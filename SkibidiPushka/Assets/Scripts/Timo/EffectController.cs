@@ -1,39 +1,79 @@
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public class EffectController : MonoBehaviour
 {
-    [SerializeField] BaseEffect[] effects;
-    [SerializeField] float minTime_delay;
-    [SerializeField] float maxTime_delay;
-    private BaseEffect _chosenOne; // by player
-    private BaseEffect[] _chosenThree; // by script
-    private float _currTime = 0;
+
+    public float effectDuration;
+
+    public GameObject ConsolePrefab;
+
+    private float timer;
+    public List<BaseEffect> effects = new List<BaseEffect>();
+    public bool isChoosing = true;
 
     private void Awake()
     {
-        
+        EventManager.Instance.Subscribe("UpgradeTime", AwakeUpgradeConsole);
+    }
+    void AwakeUpgradeConsole()
+    {
+        var a = Instantiate(ConsolePrefab);
+        for (int i = 0; i < 3; i++)
+        {
+            effects.Add(DatabaseEffects.effects[Random.Range(0, DatabaseEffects.effects.Count)]);
+        }
+        a.GetComponent<ConsoleScript>().effects = effects.ToArray();
+        StartCoroutine(RltInvoke());
+    }
+    IEnumerator<WaitForSecondsRealtime> RltInvoke()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        isChoosing = true;
     }
 
     private void Update()
     {
-        if (_currTime <= 0)
+        if (isChoosing)
         {
-            _currTime = Random.Range(minTime_delay, maxTime_delay);
             ChooseEffect();
         }
         else
         {
-            _currTime -= Time.deltaTime;
+            timer += Time.deltaTime;
         }
+
+        if (timer >= effectDuration)
+        {
+            timer = 0;
+            EventManager.Instance.TriggerEvent("UpgradeTime");
+        }
+
     }
 
     private void ChooseEffect()
     {
-        ChooseThree();
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            MakeEvent(0);
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
+            MakeEvent(1);
+        }
+        else if (Input.GetKey(KeyCode.Alpha3))
+        {
+            MakeEvent(2);
+        }
     }
-
-    private void ChooseThree()
+    private void MakeEvent(int id)
     {
-
+        EventManager.Instance.TriggerEvent(effects[id].Event);
+        DatabaseEffects.LastUpgradeColor = effects[id].Color;
+        effects.RemoveAt(id);
+        EventManager.Instance.TriggerEvent(effects[Random.Range(0, effects.Count)].Event);
+        effects.Clear();
+        isChoosing = false; 
     }
 }

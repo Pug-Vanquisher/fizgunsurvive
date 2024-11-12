@@ -65,10 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[CRITICAL ERROR]\n\u0412\u044B\u0431\u0435\u0440\u0435\u0442\u0435 \u0441\u043F\u043E\u0441\u043E\u0431
-    \u043E\u0442\u043B\u0430\u0434\u043A\u0438:\n\n[10] - \u0421\u043F\u0430\u0441\u0442\u0438
-    \u0434\u0435\u0441\u044F\u0442 \u0434\u0435\u0442\u0435\u0439\n\n[2] - \u0418\u0418\u0418\u041B\u0418\n\n[3]
-    - \u041F\u0430\u0447\u043A\u0430 \u0447\u0438\u043F\u0441\u043E\u0432"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 322e879a69013b04481f2dc4ee9de321, type: 2}
   m_sharedMaterial: {fileID: 570826713625110139, guid: 322e879a69013b04481f2dc4ee9de321, type: 2}
@@ -95,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -226,6 +223,7 @@ GameObject:
   - component: {fileID: 7792810043143429731}
   - component: {fileID: 7418745598791567540}
   - component: {fileID: 2227032315183062447}
+  - component: {fileID: 4168362471280289437}
   m_Layer: 5
   m_Name: Console
   m_TagString: Untagged
@@ -317,3 +315,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4168362471280289437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6287462852142423889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc132514b42b794cb43383ca4460199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingEnd: 0
+  Text: {fileID: 7321665526010601465}
+  Image: {fileID: 8535864812672080607}
+  effects: []
+  errorFile: {fileID: 4900000, guid: fdcf8649c8cc4c240b189a5e89118d5b, type: 3}

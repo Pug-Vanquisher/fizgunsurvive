@@ -14,10 +14,13 @@ public class CameraEffects : MonoBehaviour
     {
         FreezeFrame(0.05f);
     }
-
+    private void Update()
+    {
+        Camera.main.backgroundColor = DatabaseEffects.LastUpgradeColor;
+    }
     public void FreezeFrame(float dur)
     {
-        if (waiting) return;
+        if (waiting || Time.timeScale != 1) return;
         Time.timeScale = 0.001f;
         StartCoroutine(Wait(dur));
     }

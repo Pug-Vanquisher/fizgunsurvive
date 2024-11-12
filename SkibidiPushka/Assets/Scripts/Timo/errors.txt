@@ -1,0 +1,859 @@
+e system "flare_halo_0"!
+Attemped to precache unknown particle system "flathr"!
+Attemped to precache unknown particle system "fstar_charge"!
+Attemped to precache unknown particle system "fstar_hit"!
+Attemped to precache unknown particle system "fstar_freeze_catch"!
+Attemped to precache unknown particle system "fstar_freeze_release"!
+Attemped to precache unknown particle system "fstar_muzzle"!
+Attemped to precache unknown particle system "fstar_muzzle_altfire"!
+Attemped to precache unknown particle system "fstar_tracer"!
+Attemped to precache unknown particle system "fstar_secfire"!
+Attemped to precache unknown particle system "fstar_sfire_hit_swave"!
+Attemped to precache unknown particle system "gravrifle_blast"!
+Attemped to precache unknown particle system "gravrifle_blast_parentable"!
+Attemped to precache unknown particle system "gravrifle_blast_smoke"!
+Attemped to precache unknown particle system "gravrifle_charge"!
+Attemped to precache unknown particle system "gravrifle_dissolve"!
+Attemped to precache unknown particle system "gravrifle_hit"!
+Attemped to precache unknown particle system "gravrifle_nade"!
+Attemped to precache unknown particle system "gravrifle_tracer"!
+Attemped to precache unknown particle system "grinder_muzzle"!
+Attemped to precache unknown particle system "gunsmoke"!
+Attemped to precache unknown particle system "hellfire_muzzle"!
+Attemped to precache unknown particle system "hellfire_muzzle_smoke"!
+Attemped to precache unknown particle system "hellfire_tracer"!
+Attemped to precache unknown particle system "hellfire_blast"!
+Attemped to precache unknown particle system "hellnade_fragments"!
+Attemped to precache unknown particle system "hellnade_heat"!
+Attemped to precache unknown particle system "hellnade_shockwave"!
+Attemped to precache unknown particle system "hornet_blast"!
+Attemped to precache unknown particle system "hornet_blast_charged"!
+Attemped to precache unknown particle system "hornet_blast_cheap"!
+Attemped to precache unknown particle system "hornet_trail"!
+Attemped to precache unknown particle system "hornet_trail_cheaper"!
+Attemped to precache unknown particle system "hwave_charge"!
+Attemped to precache unknown particle system "hwave_charged"!
+Attemped to precache unknown particle system "hwave_debris_small"!
+Attemped to precache unknown particle system "hwave_hit"!
+Attemped to precache unknown particle system "hwave_hit_fleks"!
+Attemped to precache unknown particle system "hwave_muzzle"!
+Attemped to precache unknown particle system "hwave_muzzle_embers"!
+Attemped to precache unknown particle system "hwave_muzzle_finish"!
+Attemped to precache unknown particle system "hwave_tracer"!
+Attemped to precache unknown particle system "hwave_tracer_cheap"!
+Attemped to precache unknown particle system "ice_crystals"!
+Attemped to precache unknown particle system "ice_crystals_2"!
+Attemped to precache unknown particle system "ice_crystals_3"!
+Attemped to precache unknown particle system "ice_freezing"!
+Attemped to precache unknown particle system "ice_freezing_shortlt"!
+Attemped to precache unknown particle system "ice_freezing_release"!
+Attemped to precache unknown particle system "ice_impact"!
+Attemped to precache unknown particle system "ice_impact_heavy"!
+Attemped to precache unknown particle system "ice_tracer_smoke"!
+Attemped to precache unknown particle system "ice_muzzle_small"!
+Attemped to precache unknown particle system "ice_sfire_charge"!
+Attemped to precache unknown particle system "item_flare"!
+Attemped to precache unknown particle system "item_orb_battery"!
+Attemped to precache unknown particle system "item_orb_health"!
+Attemped to precache unknown particle system "item_orb_upgrade"!
+Attemped to precache unknown particle system "item_pfx_battery"!
+Attemped to precache unknown particle system "item_pfx_health"!
+Attemped to precache unknown particle system "item_pfx_upgrade"!
+Attemped to precache unknown particle system "item_pkin_amb"!
+Attemped to precache unknown particle system "item_pkin_break"!
+Attemped to precache unknown particle system "item_upg_break"!
+Attemped to precache unknown particle system "jotunn_charge_init"!
+Attemped to precache unknown particle system "jotunn_charging"!
+Attemped to precache unknown particle system "jotunn_muzzle"!
+Attemped to precache unknown particle system "lanka_hit_riv"!
+Attemped to precache unknown particle system "lapis_vent"!
+Attemped to precache unknown particle system "meridian_tracer"!
+Attemped to precache unknown particle system "moby_hit"!
+Attemped to precache unknown particle system "moby_muzzle"!
+Attemped to precache unknown particle system "moby_tracer"!
+Attemped to precache unknown particle system "ngen_core_playerfx"!
+Attemped to precache unknown particle system "ngen_core_small"!
+Attemped to precache unknown particle system "ngen_core_small_cheap"!
+Attemped to precache unknown particle system "ngen_explosion"!
+Attemped to precache unknown particle system "ngen_explosion_energy"!
+Attemped to precache unknown particle system "ngen_hit"!
+Attemped to precache unknown particle system "ngen_hit_lgtning"!
+Attemped to precache unknown particle system "ngen_hit_sparks_2"!
+Attemped to precache unknown particle system "ngen_missile_smoke"!
+Attemped to precache unknown particle system "ngen_muzzle"!
+Attemped to precache unknown particle system "ngen_muzzle_2"!
+Attemped to precache unknown particle system "ngen_muzzle_3"!
+Attemped to precache unknown particle system "ngen_muzzle_4"!
+Attemped to precache unknown particle system "ngen_muzzle_4_shotgun"!
+Attemped to precache unknown particle system "ngen_muzzle_4_simplified"!
+Attemped to precache unknown particle system "ngen_muzzle_charge"!
+Attemped to precache unknown particle system "ngen_muzzle_embers_overheat"!
+Attemped to precache unknown particle system "ngen_tracer"!
+Attemped to precache unknown particle system "nio_beam"!
+Attemped to precache unknown particle system "nio_muzzle"!
+Attemped to precache unknown particle system "nio_impact"!
+Attemped to precache unknown particle system "nio_dissolve"!
+Attemped to precache unknown particle system "nio_dissolve_cheap"!
+Attemped to precache unknown particle system "nio_charge"!
+Attemped to precache unknown particle system "nrg_hit"!
+Attemped to precache unknown particle system "nrg_tracer"!
+Attemped to precache unknown particle system "onwater_bubbles"!
+Attemped to precache unknown particle system "panda_charge"!
+Attemped to precache unknown particle system "panda_charged"!
+Attemped to precache unknown particle system "panda_hit"!
+Attemped to precache unknown particle system "panda_muzzle"!
+Attemped to precache unknown particle system "panda_tracer"!
+Attemped to precache unknown particle system "pele_hit"!
+Attemped to precache unknown particle system "pele_muzzle"!
+Attemped to precache unknown particle system "pele_tracer"!
+Attemped to precache unknown particle system "pest_muzzle"!
+Attemped to precache unknown particle system "pest_hit"!
+Attemped to precache unknown particle system "phasma_absorb"!
+Attemped to precache unknown particle system "phasma_blade_enable"!
+Attemped to precache unknown particle system "phasma_blade_enable_sparks"!
+Attemped to precache unknown particle system "phasma_blade_disable"!
+Attemped to precache unknown particle system "phasma_blade_sparks"!
+Attemped to precache unknown particle system "phasma_blast"!
+Attemped to precache unknown particle system "phasma_core"!
+Attemped to precache unknown particle system "phasma_initial_mist"!
+Attemped to precache unknown particle system "phasma_trail"!
+Attemped to precache unknown particle system "phasma_w_blade_enable"!
+Attemped to precache unknown particle system "phasma_w_initial_mist"!
+Attemped to precache unknown particle system "phasma_w_trail"!
+Attemped to precache unknown particle system "prisma_core"!
+Attemped to precache unknown particle system "pulsar_charge"!
+Attemped to precache unknown particle system "pulsar_charge_fail"!
+Attemped to precache unknown particle system "pulsar_beam"!
+Attemped to precache unknown particle system "pulsar_hit_weak"!
+Attemped to precache unknown particle system "pulsar_muzzle"!
+Attemped to precache unknown particle system "pyro_dissolve"!
+Attemped to precache unknown particle system "pyro_dissolve_ash_0"!
+Attemped to precache unknown particle system "pyro_dissolve_ash_3"!
+Attemped to precache unknown particle system "pyro_dissolve_cheap"!
+Attemped to precache unknown particle system "pyro_dissolve_ash_cheap"!
+Attemped to precache unknown particle system "pyro_explode"!
+Attemped to precache unknown particle system "pyro_nade"!
+Attemped to precache unknown particle system "saphyre_absorb"!
+Attemped to precache unknown particle system "saphyre_hit"!
+Attemped to precache unknown particle system "saphyre_hit_fleks"!
+Attemped to precache unknown particle system "saphyre_muzzle"!
+Attemped to precache unknown particle system "saphyre_muzzle_embers"!
+Attemped to precache unknown particle system "saphyre_muzzle_flames_0a"!
+Attemped to precache unknown particle system "saphyre_tracer"!
+Attemped to precache unknown particle system "sentinel_hit"!
+Attemped to precache unknown particle system "sentinel_muzzle"!
+Attemped to precache unknown particle system "seraph_hit"!
+Attemped to precache unknown particle system "seraph_muzzle"!
+Attemped to precache unknown particle system "seraph_tracer"!
+Attemped to precache unknown particle system "shk_hit"!
+Attemped to precache unknown particle system "shk_muzzle"!
+Attemped to precache unknown particle system "shk_tracer"!
+Attemped to precache unknown particle system "spectra_blast"!
+Attemped to precache unknown particle system "spectra_charging"!
+Attemped to precache unknown particle system "spectra_core"!
+Attemped to precache unknown particle system "spectra_core_crsv"!
+Attemped to precache unknown particle system "spectra_core_evensmaller"!
+Attemped to precache unknown particle system "spectra_core_fire"!
+Attemped to precache unknown particle system "spectra_core_ice"!
+Attemped to precache unknown particle system "spectra_core_small"!
+Attemped to precache unknown particle system "spectra_explode"!
+Attemped to precache unknown particle system "spectra_fmchange"!
+Attemped to precache unknown particle system "spectra_hit"!
+Attemped to precache unknown particle system "spectra_muzzle"!
+Attemped to precache unknown particle system "spectra_muzzle_2"!
+Attemped to precache unknown particle system "spectra_muzzle_old"!
+Attemped to precache unknown particle system "spectra_muzzle_overheat"!
+Attemped to precache unknown particle system "spectra_tracer"!
+Attemped to precache unknown particle system "spr_explosion"!
+Attemped to precache unknown particle system "spr_explosion_large"!
+Attemped to precache unknown particle system "spr_explosion_large_flash_noz"!
+Attemped to precache unknown particle system "spr_explosion_large_smoshroom"!
+Attemped to precache unknown particle system "spr_hit"!
+Attemped to precache unknown particle system "spr_muzzle"!
+Attemped to precache unknown particle system "spr_nade_tick"!
+Attemped to precache unknown particle system "spr_tracer"!
+Attemped to precache unknown particle system "stinger_muzzle"!
+Attemped to precache unknown particle system "stinger_core_small"!
+Attemped to precache unknown particle system "stinger_explode"!
+Attemped to precache unknown particle system "stinger_muzzle_2"!
+Attemped to precache unknown particle system "stinger_core_small_2"!
+Attemped to precache unknown particle system "stinger_explode_2"!
+Attemped to precache unknown particle system "supra_c_hit"!
+Attemped to precache unknown particle system "supra_charging"!
+Attemped to precache unknown particle system "supra_mirv"!
+Attemped to precache unknown particle system "supra_nade"!
+Attemped to precache unknown particle system "supra_p_hit"!
+Attemped to precache unknown particle system "storm_muzzle"!
+Attemped to precache unknown particle system "storm_muzzle_cheap"!
+Attemped to precache unknown particle system "tbolt_muzzle"!
+Attemped to precache unknown particle system "tbolt_hit"!
+Attemped to precache unknown particle system "tbolt_tracer"!
+Attemped to precache unknown particle system "tbolt_tracer_cheap"!
+Attemped to precache unknown particle system "trace_muzzle"!
+Attemped to precache unknown particle system "trace_trace"!
+Attemped to precache unknown particle system "trace_projectile"!
+Attemped to precache unknown particle system "trace_projectile_pws"!
+Attemped to precache unknown particle system "trace_sparks_new"!
+Attemped to precache unknown particle system "umbra_ammo"!
+Attemped to precache unknown particle system "umbra_ammo_pickup"!
+Attemped to precache unknown particle system "umbra_ammo_consumed"!
+Attemped to precache unknown particle system "umbra_cast"!
+Attemped to precache unknown particle system "umbra_core"!
+Attemped to precache unknown particle system "umbra_darken"!
+Attemped to precache unknown particle system "umbra_darken_stackup"!
+Attemped to precache unknown particle system "umbra_hit"!
+Attemped to precache unknown particle system "umbra_muzzle"!
+Attemped to precache unknown particle system "umbra_muzzle_embers"!
+Attemped to precache unknown particle system "umbra_muzzle_vented"!
+Attemped to precache unknown particle system "umbra_ptru"!
+Attemped to precache unknown particle system "umbra_shutdown_flecks"!
+Attemped to precache unknown particle system "umbra_succumb"!
+Attemped to precache unknown particle system "vapor"!
+Attemped to precache unknown particle system "vapor_cheap"!
+Attemped to precache unknown particle system "vapor_charge_glow"!
+Attemped to precache unknown particle system "vapor_charge_secfire"!
+Attemped to precache unknown particle system "vapor_collapse"!
+Attemped to precache unknown particle system "vapor_collapse_cheap"!
+Attemped to precache unknown particle system "vapor_muzzle"!
+Attemped to precache unknown particle system "vapor_muzzle_altfire"!
+Attemped to precache unknown particle system "vapor_muzzle_evensmaller"!
+Attemped to precache unknown particle system "vapor_muzzle_small"!
+Attemped to precache unknown particle system "vectra_charged"!
+Attemped to precache unknown particle system "vectra_charging"!
+Attemped to precache unknown particle system "vp_binary_muzzle"!
+Attemped to precache unknown particle system "vp_binary_tracer"!
+Attemped to precache unknown particle system "vp_dissolve"!
+Attemped to precache unknown particle system "vp_dissolve_cheap"!
+Attemped to precache unknown particle system "vsecfire_shockwave"!
+Attemped to precache unknown particle system "vh_muzzle"!
+Attemped to precache unknown particle system "vh_tracer_old"!
+Attemped to precache unknown particle system "vh_hit"!
+Attemped to precache unknown particle system "xplo_tracer"!
+Attemped to precache unknown particle system "xplo_hit"!
+Attemped to precache unknown particle system "xplo_hit_cheap"!
+Attemped to precache unknown particle system "zeala_charged"!
+Attemped to precache unknown particle system "zeala_charging"!
+Attemped to precache unknown particle system "zeala_burst"!
+Attemped to precache unknown particle system "zeala_muzzle"!
+Attemped to precache unknown particle system "zeala_nade"!
+Attemped to precache unknown particle system "zeala_vortex"!
+Attemped to precache unknown particle system "zeala_vortex_cheap"!
+Attemped to precache unknown particle system "WheelDust"!
+Attemped to precache unknown particle system "tfa_muzzle_gauss"!
+Attemped to precache unknown particle system "tfa_bullet_fire_tracer"!
+Attemped to precache unknown particle system "tfa_ins2_weapon_shell_smoke"!
+Attemped to precache unknown particle system "tfa_ins2_weapon_muzzle_smoke"!
+Attemped to precache unknown particle system "tfa_muzzle_rifle"!
+Attemped to precache unknown particle system "smoke_trail_tfa"!
+Attemped to precache unknown particle system "tfa_ins2_shell_eject"!
+Attemped to precache unknown particle system "smoke_trail_controlled"!
+Attemped to precache unknown particle system "tfa_bullet_smoke_tracer"!
+Attemped to precache unknown particle system "tfa_muzzle_energy"!
+Attemped to precache unknown particle system "tfa_muzzle_sniper"!
+Attemped to precache unknown particle system "bo3_banshii_proj"!
+Attemped to precache unknown particle system "bo3_banshii_explode"!
+Attemped to precache unknown particle system "antlion_gib_01"!
+Attemped to precache unknown particle system "antlion_gib_01_juice"!
+Attemped to precache unknown particle system "antlion_gib_01_trailsA"!
+Attemped to precache unknown particle system "antlion_gib_01_trailsb"!
+Attemped to precache unknown particle system "antlion_gib_02"!
+Attemped to precache unknown particle system "antlion_gib_02_blood"!
+Attemped to precache unknown particle system "antlion_gib_02_floaters"!
+Attemped to precache unknown particle system "antlion_gib_02_gas"!
+Attemped to precache unknown particle system "antlion_gib_02_juice"!
+Attemped to precache unknown particle system "antlion_gib_02_slime"!
+Attemped to precache unknown particle system "antlion_gib_02_trailsA"!
+Attemped to precache unknown particle system "antlion_gib_02_trailsB"!
+Attemped to precache unknown particle system "antlion_spit"!
+Attemped to precache unknown particle system "antlion_spit_02"!
+Attemped to precache unknown particle system "antlion_spit_03"!
+Attemped to precache unknown particle system "antlion_spit_05"!
+Attemped to precache unknown particle system "antlion_spit_player"!
+Attemped to precache unknown particle system "antlion_spit_player_splat"!
+Attemped to precache unknown particle system "antlion_spit_trail"!
+Attemped to precache unknown particle system "GrubBlood"!
+Attemped to precache unknown particle system "GrubSquashBlood"!
+Attemped to precache unknown particle system "GrubSquashBlood2"!
+Attemped to precache unknown particle system "Advisor_Pod_Steam_Continuous"!
+Attemped to precache unknown particle system "striderbuster_attach"!
+Attemped to precache unknown particle system "striderbuster_break"!
+Attemped to precache unknown particle system "striderbuster_break_explode"!
+Attemped to precache unknown particle system "striderbuster_explode_core"!
+Attemped to precache unknown particle system "steam_jet_50"!
+Attemped to precache unknown particle system "steam_jet_50_steam"!
+Attemped to precache unknown particle system "steam_jet_80"!
+Attemped to precache unknown particle system "steam_jet_80_drops"!
+Attemped to precache unknown particle system "steam_jet_80_dropsteam"!
+Attemped to precache unknown particle system "steam_jet_80_steam"!
+Attemped to precache unknown particle system "steam_large_01"!
+Attemped to precache unknown particle system "steampuff"!
+Attemped to precache unknown particle system "explosion_turret_break"!
+Attemped to precache unknown particle system "explosion_turret_fizzle"!
+Attemped to precache unknown particle system "explosion_turret_break_b"!
+Attemped to precache unknown particle system "explosion_turret_break_chunks"!
+Attemped to precache unknown particle system "explosion_turret_break_embers"!
+Attemped to precache unknown particle system "explosion_turret_break_fire"!
+Attemped to precache unknown particle system "explosion_turret_break_fire_over"!
+Attemped to precache unknown particle system "explosion_turret_break_flash"!
+Attemped to precache unknown particle system "explosion_turret_break_pre_flash"!
+Attemped to precache unknown particle system "explosion_turret_break_pre_smoke"!
+Attemped to precache unknown particle system "explosion_turret_break_pre_smoke Version #2"!
+Attemped to precache unknown particle system "explosion_turret_break_pre_sparks"!
+Attemped to precache unknown particle system "explosion_turret_break_sparks"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_a"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_b"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_c"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_d"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_e"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Backup"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Beam"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Black"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_b"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Exlposion_c"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_d"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_e"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_f"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_g"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_h"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_i"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_j"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Explosion_k"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_f"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_g"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_h"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_h Version #2"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_i"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Intake"!
+Attemped to precache unknown particle system "Weapon_Combine_Ion_Cannon_Intake_b"!
+Attemped to precache unknown particle system "aurora_shockwave"!
+Attemped to precache unknown particle system "aurora_shockwave_debris"!
+Attemped to precache unknown particle system "aurora_shockwave_ring"!
+Attemped to precache unknown particle system "demo_aurora_01"!
+Attemped to precache unknown particle system "vj_bms_turret_full"!
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_core"!
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_glow"!
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_smoke"!
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_sparks"!
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_sparks2"!
+Attemped to precache unknown particle system "vj_bleedout_blue"!
+Attemped to precache unknown particle system "vj_bleedout_blue_small"!
+Attemped to precache unknown particle system "vj_bleedout_blue_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_green"!
+Attemped to precache unknown particle system "vj_bleedout_green_small"!
+Attemped to precache unknown particle system "vj_bleedout_green_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_oil"!
+Attemped to precache unknown particle system "vj_bleedout_oil_small"!
+Attemped to precache unknown particle system "vj_bleedout_oil_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_orange"!
+Attemped to precache unknown particle system "vj_bleedout_orange_small"!
+Attemped to precache unknown particle system "vj_bleedout_orange_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_purple"!
+Attemped to precache unknown particle system "vj_bleedout_purple_small"!
+Attemped to precache unknown particle system "vj_bleedout_purple_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_red"!
+Attemped to precache unknown particle system "vj_bleedout_red_small"!
+Attemped to precache unknown particle system "vj_bleedout_red_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_white"!
+Attemped to precache unknown particle system "vj_bleedout_white_small"!
+Attemped to precache unknown particle system "vj_bleedout_white_tiny"!
+Attemped to precache unknown particle system "vj_bleedout_yellow"!
+Attemped to precache unknown particle system "vj_bleedout_yellow_small"!
+Attemped to precache unknown particle system "vj_bleedout_yellow_tiny"!
+Attemped to precache unknown particle system "vj_impact1_black"!
+Attemped to precache unknown particle system "vj_impact1_blue"!
+Attemped to precache unknown particle system "vj_impact1_green"!
+Attemped to precache unknown particle system "vj_impact1_orange"!
+Attemped to precache unknown particle system "vj_impact1_purple"!
+Attemped to precache unknown particle system "vj_impact1_red"!
+Attemped to precache unknown particle system "vj_impact1_white"!
+Attemped to precache unknown particle system "vj_impact1_yellow"!
+Attemped to precache unknown particle system "vj_impact1_centaurspit"!
+Attemped to precache unknown particle system "vj_explosion1"!
+Attemped to precache unknown particle system "vj_explosion2"!
+Attemped to precache unknown particle system "vj_explosion3"!
+Attemped to precache unknown particle system "vj_explosionfire1"!
+Attemped to precache unknown particle system "vj_explosionfire2"!
+Attemped to precache unknown particle system "vj_explosionfire3"!
+Attemped to precache unknown particle system "vj_explosionfire4"!
+Attemped to precache unknown particle system "vj_explosionfire5"!
+Attemped to precache unknown particle system "vj_explosionflash1"!
+Attemped to precache unknown particle system "vj_explosionflash2"!
+Attemped to precache unknown particle system "vj_explosionspark1"!
+Attemped to precache unknown particle system "vj_explosionspark2"!
+Attemped to precache unknown particle system "vj_explosionspark3"!
+Attemped to precache unknown particle system "vj_explosionspark4"!
+Attemped to precache unknown particle system "vj_shockwave1"!
+Attemped to precache unknown particle system "vj_shockwave2"!
+Attemped to precache unknown particle system "vj_smoke1"!
+Attemped to precache unknown particle system "vj_smoke2"!
+Attemped to precache unknown particle system "vj_smokespike1"!
+Attemped to precache unknown particle system "vj_rocks1"!
+Attemped to precache unknown particle system "vj_rocks2"!
+Attemped to precache unknown particle system "vj_debris1"!
+Attemped to precache unknown particle system "vj_dirt1"!
+Attemped to precache unknown particle system "vj_rpg1_fulltrail"!
+Attemped to precache unknown particle system "vj_rpg1_flare"!
+Attemped to precache unknown particle system "vj_rpg1_smoke"!
+Attemped to precache unknown particle system "vj_rpg2_fulltrail"!
+Attemped to precache unknown particle system "vj_rpg2_smoke1"!
+Attemped to precache unknown particle system "vj_rpg2_smoke2"!
+Attemped to precache unknown particle system "vj_rpg2_fire"!
+Attemped to precache unknown particle system "vj_rpg2_flare"!
+Attemped to precache unknown particle system "vj_rpg2_glow"!
+Attemped to precache unknown particle system "vj_rifle_smoke"!
+Attemped to precache unknown particle system "vj_rifle_smoke_dark"!
+Attemped to precache unknown particle system "vj_rifle_sparks1"!
+Attemped to precache unknown particle system "vj_rifle_sparks2"!
+Attemped to precache unknown particle system "vj_rifle_full"!
+Attemped to precache unknown particle system "vj_rifle_glow"!
+Attemped to precache unknown particle system "vj_rifle_glow_large"!
+Attemped to precache unknown particle system "vj_rifle_inner"!
+Attemped to precache unknown particle system "vj_rifle_side"!
+Attemped to precache unknown particle system "vj_rifle_side_glow"!
+Attemped to precache unknown particle system "vj_rifle_smoke_flash"!
+Attemped to precache unknown particle system "vj_rifle_top"!
+Attemped to precache unknown particle system "vj_rifle_top_glow"!
+Attemped to precache unknown particle system "vj_rifle_top_left_glow"!
+Attemped to precache unknown particle system "vj_rifle_full_blue"!
+Attemped to precache unknown particle system "vj_rifle_glow_blue"!
+Attemped to precache unknown particle system "vj_rifle_glow_large_blue"!
+Attemped to precache unknown particle system "vj_rifle_inner_blue"!
+Attemped to precache unknown particle system "vj_rifle_side_blue"!
+Attemped to precache unknown particle system "vj_rifle_side_glow_blue"!
+Attemped to precache unknown particle system "vj_rifle_smoke_flash_blue"!
+Attemped to precache unknown particle system "vj_rifle_top_blue"!
+Attemped to precache unknown particle system "vj_rifle_top_glow_blue"!
+Attemped to precache unknown particle system "vj_rifle_top_left_glow_blue"!
+Attemped to precache unknown particle system "vj_l4d_balloon"!
+Attemped to precache unknown particle system "vj_l4d_balloon_body"!
+Attemped to precache unknown particle system "vj_l4d_balloon_string"!
+Attemped to precache unknown particle system "vj_l4d_blood_spray_clown"!
+Attemped to precache unknown particle system "vj_l4d_door_attack_dust"!
+Attemped to precache unknown particle system "vj_l4d_door_hit_metal"!
+Attemped to precache unknown particle system "vj_l4d_door_hit_metal_b"!
+Attemped to precache unknown particle system "vj_l4d_door_hit_wood"!
+Attemped to precache unknown particle system "vj_l4d_door_slash_metal"!
+Attemped to precache unknown particle system "vj_l4d_door_slash_wood"!
+Attemped to precache unknown particle system "vj_l4d_drool"!
+Attemped to precache unknown particle system "vj_l4d_froth"!
+Attemped to precache unknown particle system "vj_l4d_froth2"!
+Attemped to precache unknown particle system "vj_l4d_froth_b"!
+Attemped to precache unknown particle system "vj_l4d_froth_c"!
+Attemped to precache unknown particle system "vj_l4d_froth_d"!
+Attemped to precache unknown particle system "vj_l4d_mudman_hit_right"!
+Attemped to precache unknown particle system "vj_l4d_vomit"!
+Attemped to precache unknown particle system "vj_l4d_vomit_refract"!
+Attemped to precache unknown particle system "vj_l4d_vomit_stream"!
+Attemped to precache unknown particle system "blood_impact_antlion_worker"!
+Attemped to precache unknown particle system "AC_muzzle_pistol"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_shotgun"!
+Attemped to precache unknown particle system "AC_muzzle_shotgun_db"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_ejection"!
+Attemped to precache unknown particle system "AC_muzzle_minigun_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_rifle"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_suppressed"!
+Attemped to precache unknown particle system "mw_ins2_shell_eject"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_ar_smoke_barrel"!
+Attemped to precache unknown particle system "mw_fas2_shocksmoke"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_ar"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_pistol"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_pistol_deagle"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_dmr"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_lmg"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_shotgun"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_slug"!
+Attemped to precache unknown particle system "mw_ins2_ins_weapon_rpg_frontblast"!
+Attemped to precache unknown particle system "mw_doi_flamethrower"!
+Attemped to precache unknown particle system "ac_muzzle_muzzlebreak"!
+Attemped to precache unknown particle system "ac_muzzle_flashhider"!
+Attemped to precache unknown particle system "ac_muzzle_compensator"!
+Attemped to precache unknown particle system "AC_muzzle_desert"!
+Attemped to precache unknown particle system "AC_muzzle_desert_ejection"!
+Attemped to precache unknown particle system "flashlight_mw19"!
+Attemped to precache unknown particle system "mw_envdust"!
+Attemped to precache unknown particle system "smoke_explosion_he"!
+Attemped to precache unknown particle system "Generic_explo_high"!
+Attemped to precache unknown particle system "mgbase_tracer"!
+Attemped to precache unknown particle system "mgbase_tracer_fast"!
+Attemped to precache unknown particle system "mgbase_tracer_slow"!
+Attemped to precache unknown particle system "mgbase_tracer_small"!
+Attemped to precache unknown particle system "gravrifle_nade_embers"!
+Attemped to precache unknown particle system "lapis_d_vent"!
+Attemped to precache unknown particle system "drake_hit_sparks"!
+Attemped to precache unknown particle system "nmrih_molotov_rag_fire"!
+Attemped to precache unknown particle system "nmrih_molotov_explosion"!
+Attemped to precache unknown particle system "nmrih_molotov_explosion_nofire"!
+Attemped to precache unknown particle system "lanka_riv_muzzle"!
+Attemped to precache unknown particle system "lanka_riv_tracer"!
+Attemped to precache unknown particle system "eml_generic_blast_minorfrags_smoke"!
+Attemped to precache unknown particle system "40mm_trail"!
+Attemped to precache unknown particle system "arrow_beep_flare"!
+Attemped to precache unknown particle system "Generic_explo_mid"!
+Attemped to precache unknown particle system "Generic_explo_tiny"!
+Attemped to precache unknown particle system "arrow_gas_dust"!
+Attemped to precache unknown particle system "arrow_gas_explode"!
+Attemped to precache unknown particle system "arrow_smoke"!
+Attemped to precache unknown particle system "arrow_smoke_explode"!
+Attemped to precache unknown particle system "arrow_thermite_smokeleft"!
+Attemped to precache unknown particle system "arrow_trail"!
+Attemped to precache unknown particle system "Generic_explo_emp"!
+Attemped to precache unknown particle system "arrow_flashbang"!
+Attemped to precache unknown particle system "arrow_gas_ejection"!
+Attemped to precache unknown particle system "arrow_heal"!
+Attemped to precache unknown particle system "ins_C4_explosion"!
+Attemped to precache unknown particle system "ins_grenade_explosion"!
+Attemped to precache unknown particle system "ins_m203_explosion"!
+Attemped to precache unknown particle system "ins_rpg_explosion"!
+Attemped to precache unknown particle system "rockettrail"!
+Attemped to precache unknown particle system "bullet_sniper_smoke"!
+Attemped to precache unknown particle system "bullet_sniper_tracer"!
+Attemped to precache unknown particle system "Generic_explo_vhigh"!
+Attemped to precache unknown particle system "alyxshot_muzzle"!
+Attemped to precache unknown particle system "alyxshot_tracer"!
+Attemped to precache unknown particle system "alyxshot_impact"!
+Attemped to precache unknown particle system "vpr_nade_blast"!
+Attemped to precache unknown particle system "vpr_nade_tick"!
+InitFastCopy: only 27% fast props. Bug?
+Clientside Lua startup!
+[SLibrary] Script load - slib_framework/core/sh_infmap.lua
+[SLibrary] Script load - slib_framework/core/table/sh_array.lua
+[SLibrary] Script load - slib_framework/core/table/sh_table.lua
+[SLibrary] Script load - slib_framework/core/base/sh_global.lua
+[SLibrary] Script load - slib_framework/core/sh_components.lua
+[SLibrary] Script load - slib_framework/core/sh_storage.lua
+[SLibrary] Script load - slib_framework/core/sh_access.lua
+[SLibrary] Script load - slib_framework/core/sh_override.lua
+[SLibrary] Script load - slib_framework/core/sh_safe_calls.lua
+[SLibrary] Script load - slib_framework/core/class/sh_sql_table.lua
+[SLibrary] Script load - slib_framework/core/class/sh_sql.lua
+[SLibrary] Script load - slib_framework/core/class/sh_hook.lua
+[SLibrary] Script load - slib_framework/core/class/sh_fakeplayer.lua
+[SLibrary] Script load - slib_framework/core/class/sh_chunks.lua
+[SLibrary] Script load - slib_framework/debug/sh_profiler.lua
+[SLibrary] Script load - slib_framework/debug/sh_message.lua
+[SLibrary] Script load - slib_framework/network/sh_base_params.lua
+[SLibrary] Script load - slib_framework/network/sh_addnetwork.lua
+[SLibrary] Script load - slib_framework/network/sh_serializator.lua
+[SLibrary] Script load - slib_framework/network/base/sh_garbage_collection.lua
+[SLibrary] Script load - slib_framework/network/base/callback/sh_callback.lua
+[SLibrary] Script load - slib_framework/network/base/request/sh_request.lua
+[SLibrary] Script load - slib_framework/network/base/request/sh_request_simple.lua
+[SLibrary] Script load - slib_framework/network/base/sh_handler.lua
+[SLibrary] Script load - slib_framework/network/base/sh_packages.lua
+[SLibrary] Script load - slib_framework/network/base/backward/cl_backward.lua
+[SLibrary] Script load - slib_framework/network/validator/sh_validator.lua
+[SLibrary] Script load - slib_framework/network/validator/sh_validator_server.lua
+[SLibrary] Script load - slib_framework/network/validator/sh_validator_client.lua
+[SLibrary] Script load - slib_framework/network/entity/sh_entity_callback.lua
+[SLibrary] Script load - slib_framework/network/file/cl_netfile_reader.lua
+[SLibrary] Script load - slib_framework/network/file/cl_netfile_writer.lua
+[SLibrary] Script load - slib_framework/network/file/cl_netfile_remover.lua
+[SLibrary] Script load - slib_framework/animator/sh_animator.lua
+[SLibrary] Script load - slib_framework/animator/cl_animator.lua
+[SLibrary] Script load - slib_framework/animator/sh_animator_services.lua
+[SLibrary] Script load - slib_framework/animator/cl_animator_services.lua
+[SLibrary] Script load - slib_framework/override/entity/sh_entity.lua
+[SLibrary] Script load - slib_framework/override/entity/cl_entity.lua
+[SLibrary] Script load - slib_framework/override/player/sh_player.lua
+[SLibrary] Script load - slib_framework/override/player/cl_player.lua
+[SLibrary] Script load - slib_framework/override/vgui/cl_vgui.lua
+[SLibrary] Script load - slib_framework/cvars/gcvars/sh_gcvars.lua
+[SLibrary] Script load - slib_framework/cvars/gcvars/cl_gcvars.lua
+[SLibrary] Script load - slib_framework/commands/gcommands/sh_gcommands.lua
+[SLibrary] Script load - slib_framework/hooks/sh_player_first_spawn.lua
+[SLibrary] Script load - slib_framework/extension/sh_concommand.lua
+[SLibrary] Script load - slib_framework/extension/sh_net.lua
+[SLibrary] Script load - slib_framework/extension/duplicator/cl_saver.lua
+[SLibrary] Script load - slib_framework/extension/duplicator/sh_handler.lua
+[SLibrary] Script load - slib_framework/extension/duplicator/sh_duplicator.lua
+[SLibrary] Script load - slib_framework/extension/sh_debug.lua
+[SLibrary] Script load - slib_framework/extension/sh_generators.lua
+[SLibrary] Script load - slib_framework/extension/sh_player.lua
+[SLibrary] Script load - slib_framework/extension/sh_sound_duration.lua
+[SLibrary] Script load - slib_framework/extension/sh_file.lua
+[SLibrary] Script load - slib_framework/extension/sh_filestream.lua
+[SLibrary] Script load - slib_framework/extension/sh_time.lua
+[SLibrary] Script load - slib_framework/extension/sh_async.lua
+[SLibrary] Script load - slib_framework/extension/sh_entity.lua
+[SLibrary] Script load - slib_framework/extension/sh_hash.lua
+[SLibrary] Script load - slib_framework/extension/sh_cvars.lua
+[SLibrary] Script load - slib_framework/extension/sh_helpers.lua
+[SLibrary] Script load - slib_framework/extension/gui/cl_helpers.lua
+[SLibrary] Script load - slib_framework/extension/gui/cl_listener.lua
+[SLibrary] Script load - slib_framework/extension/gui/cl_extension.lua
+[SLibrary] Script load - slib_framework/extension/gui/cl_default_listeners.lua
+[SLibrary] Script load - slib_framework/extension/gui/sh_routes.lua
+[SLibrary] Script load - slib_framework/extension/dfcl/cl_library.lua
+[SLibrary] Script load - slib_framework/extension/dfcl/cl_dframe_context.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_main.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_config.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_citizen.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_civil_defense.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_gangster.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_police.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_police_helicopter.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_racer_driver.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_special_forces.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_special_forces_2.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_taxi_driver.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_thief.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/sh_zombie.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/skip_wanted/sh_civil_defense.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/skip_wanted/sh_police_helicopter.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/skip_wanted/sh_special_forces.lua
+[Background NPCs] Script load - background_npcs_core/config/actors/skip_wanted/sh_special_forces_2.lua
+[Background NPCs] Script load - background_npcs_core/config/replics/sh_init.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_names.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_shot_sound.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_player.lua
+[Background NPCs] Script load - background_npcs_core/config/gamemodes/sh_darkrp.lua
+[Background NPCs] Script load - background_npcs_core/config/sh_ambient.lua
+[Background NPCs] Script load - background_npcs_core/config/states/sh_wanted.lua
+[Background NPCs] Script load - background_npcs_core/config/states/sh_arrest.lua
+[Background NPCs] Script load - background_npcs_core/config/states/sh_dialogue.lua
+[Background NPCs] Script load - background_npcs_core/config/states/sh_sit_chair.lua
+[Background NPCs | Custom modules] Script load - background_npcs_core/custom_modules/config/sh_example.lua
+This is a demo module. I boot after initializing all configs.
+[Background NPCs | Custom modules] Script load - background_npcs_core/custom_modules/config/sharkvil/sh_default_models_support.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_oldconfig.lua
+[Background NPCs] Script load - background_npcs_core/cvars/sh_cvars.lua
+[Background NPCs] Script load - background_npcs_core/cvars/cl_cvars.lua
+[Background NPCs] Script load - background_npcs_core/commands/sh_cmd_config.lua
+[Background NPCs] Script load - background_npcs_core/commands/sh_cmd_autogenerator.lua
+[Background NPCs | Custom modules] Script load - background_npcs_core/custom_modules/preload/sh_example.lua
+This is a demo module. I boot before initializing addon scripts, but after loading configs and cvars.
+[Background NPCs] Script load - background_npcs_core/classes/actor/cl_actor_text_say.lua
+[Background NPCs] Script load - background_npcs_core/classes/actor/sh_actor_class.lua
+[Background NPCs] Script load - background_npcs_core/classes/actor/sh_actor_animations.lua
+[Background NPCs] Script load - background_npcs_core/classes/sh_node_class.lua
+[Background NPCs] Script load - background_npcs_core/classes/sh_seat_class.lua
+[Background NPCs] Script load - background_npcs_core/classes/sh_dv_class.lua
+[Background NPCs] Script load - background_npcs_core/global/cl_fonts.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_meta.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_actors_finder.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_actors_register.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_killing_statistic.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_wanted_killing_statistic.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_states.lua
+[Background NPCs] Script load - background_npcs_core/global/sh_find_path_service.lua
+[Background NPCs] Script load - background_npcs_core/modules/cl_render_optimization.lua
+[Background NPCs] Script load - background_npcs_core/modules/dynamic_movement_mesh/cl_dynamic_movement_mesh.lua
+[Background NPCs] Script load - background_npcs_core/modules/debug/cl_render_target_path.lua
+[Background NPCs] Script load - background_npcs_core/modules/debug/cl_movement_render.lua
+[Background NPCs] Script load - background_npcs_core/modules/debug/sh_draw_chunks.lua
+[Background NPCs] Script load - background_npcs_core/modules/cl_updatepage.lua
+[Background NPCs] Script load - background_npcs_core/modules/routes/sh_route_saver.lua
+[Background NPCs] Script load - background_npcs_core/modules/routes/loader/cl_loader.lua
+[Background NPCs] Script load - background_npcs_core/modules/routes/compile/cl_compile.lua
+[Background NPCs] Script load - background_npcs_core/modules/routes/compile/sh_save_map.lua
+[Background NPCs] Script load - background_npcs_core/modules/routes/sh_seat_saver.lua
+[Background NPCs] Script load - background_npcs_core/modules/spawner/actors/sh_actor_remover.lua
+[Background NPCs] Script load - background_npcs_core/modules/states/wanted/sh_wanted_class.lua
+[Background NPCs] Script load - background_npcs_core/modules/states/wanted/cl_wanted_sync.lua
+[Background NPCs] Script load - background_npcs_core/modules/states/wanted/cl_visual_wanted.lua
+[Background NPCs] Script load - background_npcs_core/modules/ambient/cl_ambient_sound.lua
+[Background NPCs] Script load - background_npcs_core/modules/synchronization/cl_sync.lua
+[Background NPCs] Script load - background_npcs_core/modules/cl_version_checker.lua
+[Background NPCs] Script load - background_npcs_core/actions/cl_killed_actor.lua
+[Background NPCs] Script load - background_npcs_core/states/sh_dance.lua
+[Background NPCs] Script load - background_npcs_core/states/sh_scenic_npc.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/lang/sh_en.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/lang/sh_ru.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_lang.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_bgn_settings_menu.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_general_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_spawn_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_state_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_active_npc_group_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_optimization_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_client_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_workshop_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_wanted_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_generation_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_addons_settings.lua
+[Background NPCs] Script load - background_npcs_core/tool_options/cl_arrest_settings.lua
+[Background NPCs] Script load - background_npcs_core/modules/spawnmenu/cl_spawnmenu.lua
+[Background NPCs] Script load - background_npcs_core/modules/spawnmenu/sh_spawnmenu.lua
+[Background NPCs] Script load - background_npcs_core/modules/sh_poll.lua
+[Background NPCs | Custom modules] Script load - background_npcs_core/custom_modules/postload/sh_example.lua
+This is a demo module. I boot after initializing all addon scripts.
+BA2: Precaching gib models and sounds...
+--- Missing Vgui material atts/num2buck
+--- Missing Vgui material atts/rifleslug
+Darken217's SciFi Weapons, Update 29
+Particles: Missing 'particles/impact_fx_fas.pcf'
+Attemped to precache unknown particle system "impact_dirt_d"! (x2)
+Particles: Missing 'particles/impact_fx_fas.pcf'
+Attemped to precache unknown particle system "impact_dirt_d"!
+[vFire] vFire performs best with gmod_mcore_test set to 1, enable it and restart your game for changes to take effect.
+
+[Garry's Bombs 5 Base] bad argument #3 to 'Add' (function expected, got nil)
+  1. Add - lua/includes/modules/hook.lua:31
+   2. unknown - lua/autorun/gb5_help.lua:14
+
+Initiating Henry's Animation Tool ...
+Done Initializing!
+[LifeMod] Warning, could not locate ConVar saving file.
+LifeMod UI, Rendering Systems, Cvars & Language Packs - Successfully Loaded!
+[LVS] - initialized [18.86ms]
+Darken217's SciFi Weapons, Update 29
+Particles: Missing 'particles/shitsonfireyo.pcf'
+Attemped to precache unknown particle system "shitsonfireyo"! (x2)
+[Awesome Infection] Loaded!
+[TFA Base] [!] Loaded unofficial module cl_ins2_holosights.
+[TFA Base] [!] Some of files not belonging to TFA Base were loaded from tfa/modules/ directory
+[TFA Base] This behavior is kept for backward compatiblity and using this is highly discouraged!
+[TFA Base] Files loaded this way have no pre-defined sorting applied and result of execution of those files is undefined.
+[TFA Base] If you are author of these files, please consider moving your modules to tfa/external/ as soon as possible.
+Loading VJ Base (Client)...
+VJ Base client files initialized!
+VJ Base Language Set To: russian
+Attemped to precache unknown particle system "vj_bms_turret_muzzle_smoke"! (x2)
+Reloaded Control: DProperties
+cl_infect loaded!
+[Awesome Infection] Loaded!
+Couldn't find/load font 'Roboto-Bold', falling back to 'Tahoma'..
+SPSC CL: Clientside Initialized.
+Particles: Missing 'particles/gb_gascan.pcf'
+Couldn't find/load font 'Engraves MT', falling back to 'Tahoma'.. (x3)
+Warning! Creating an RT (VolumetricLightingRender) with TEXTUREFLAGS_PROCEDURAL! Not allowed.
+Warning! Creating an RT (VolumetricLightingBlend) with TEXTUREFLAGS_PROCEDURAL! Not allowed.
+Couldn't find/load font 'monospace', falling back to 'Tahoma'.. (x2)
+Reloaded Control: DProperties
+Couldn't find/load font 'Roboto-Bold', falling back to 'Tahoma'..
+Couldn't find/load font 'Engraves MT', falling back to 'Tahoma'.. (x3)
+Couldn't find/load font 'monospace', falling back to 'Tahoma'.. (x2)
+Default clips will be not be modified
+Requesting texture value from var "$fbtexture" which is not a texture value (material: pp/toytown-top)
+Attemped to precache unknown particle system "blood_impact_antlion_worker"! (x3)
+--- Missing Vgui material texturemissing
+Attemped to precache unknown particle system "blood_impact_antlion_worker"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_pistol"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_shotgun"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_shotgun_db"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_ejection"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_minigun_smoke_barrel"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_rifle"! (x2)
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_suppressed"! (x2)
+Attemped to precache unknown particle system "mw_ins2_shell_eject"! (x2)
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_ar_smoke_barrel"! (x2)
+Attemped to precache unknown particle system "AC_muzzle_shotgun"!
+Attemped to precache unknown particle system "AC_muzzle_shotgun_db"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_ejection"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_minigun_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_rifle"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_ejection"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_rifle"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_suppressed"!
+Attemped to precache unknown particle system "mw_ins2_shell_eject"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_ar_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_rifle"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_suppressed"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_ejection"!
+Attemped to precache unknown particle system "AC_muzzle_pistol_smoke_barrel"!
+Attemped to precache unknown particle system "AC_muzzle_desert"! (x2)
+ERROR: Trying to derive weapon mg_base from non existant SWEP weapon_base!
+Attemped to precache unknown particle system "AC_muzzle_desert"!
+Attemped to precache unknown particle system "mw_fas2_muzzleflash_ar_smoke_barrel"! (x6)
+Couldn't find/load font 'Bandal', falling back to 'Tahoma'..
+--- Missing Vgui material vgui/ui_fadeline
+Couldn't find/load font 'Bandal', falling back to 'Tahoma'..
+ERROR: Trying to derive weapon doi_atow_etoolde from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_etoolus from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_etoolcw from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_brassknuckles from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_bayonetcw from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_knifeus from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_bayonetde from non existant SWEP cw_melee_base!
+ERROR: Trying to derive weapon doi_atow_bayonetus from non existant SWEP cw_melee_base!
+
+[M9K Specialties] language.Add expects string as second argument!
+  1. unknown - lua/entities/m9k_mad_c4/shared.lua:171
+
+Attemped to precache unknown particle system "ins_C4_explosion"! (x5)
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/female/amy/female_hands"!
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/male/hands_w"!
+material models/survivors/male/glassesfront_walter has a normal map and an envmapmask.  Must use $normalmapalphaenvmapmask.
+
+material models/survivors/male/glassesside_walter has a normal map and an envmapmask.  Must use $normalmapalphaenvmapmask.
+
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/male/hands_b"!
+Error! Flag "$nocull" is multiply defined in material "models/survivors/male/hands_b"!
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/male/hands_b"!
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/female/lyndsay/female_hands"!
+Error! Flag "$halflambert" is multiply defined in material "models/survivors/female/margaret/female_hands"!
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/hdromeo/weapon_vm_sn_hdromeo_pistolgrip"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/hdromeo/weapon_vm_sn_hdromeo_body2"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/hdromeo/weapon_vm_sn_hdromeo_lower"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/hdromeo/weapon_vm_sn_hdromeo_ironsight"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/hdromeo/weapon_vm_sn_hdromeo_stockadapter"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/romeo870/weapon_vm_sh_charlie725_shell"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/romeo870/weapon_vm_sh_romeo870_shroud"
+Error in .VMT file: error parsing vector element "$envmaptint" in "viper/mw/weapons/romeo870/weapon_vm_sh_romeo870_body"
+Error! Variable "$bumpmap" is multiply defined in material "models/police_detekt/arms"!
+Couldn't find/load font 'Roboto-Bold', falling back to 'Tahoma'..
+Couldn't find/load font 'Engraves MT', falling back to 'Tahoma'.. (x3)
+Couldn't find/load font 'Bandal', falling back to 'Tahoma'..
+Couldn't find/load font 'monospace', falling back to 'Tahoma'.. (x2)
+SciFi Weapons sucessfully verified.
+Loading HAT Core...
+Done Loading!
+Compact freed 1507328 bytes
+JOY_AXIS_X:  mapped to Turn (absolute)
+JOY_AXIS_Y:  mapped to Look (absolute)
+JOY_AXIS_Z:  unmapped
+JOY_AXIS_R:  mapped to Forward (absolute)
+JOY_AXIS_U:  mapped to Side (absolute)
+JOY_AXIS_V:  unmapped
+Advanced Joystick settings initialized
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedlf)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedbk)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
+У вас не назначена клавиша для выбрасывания оружия.
+Для того, чтобы назначить клавишу, выполните в консоли команду "bind <клавиша> +drop".
+Updated to TFA Base Version: 4.7.8.6
+	* First deploy state is now networked (and saved properly with engine saves)
+	* Projectile spread now function same as hitscan bullets
+	* Fixes for various reported errors
+
+[ADMIN] Background NPCs:
+Вы используете версию для разработчиков 'Background NPCs' :o
+Актуальная версия - 1.12.0 : Ваша версия - 1.12.1
+Используйте консольную команду 'bgn_updateinfo' чтобы посмотреть информацию о последнем выпуске.
+
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+
+Notice: This server is running VJ Base.
+|----------------------------> VJ Base 2.16.0c <----------------------------|
+|- NOTICE! To configure VJ Base click on DrVrej in the spawn menu! -|
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+
+[ADMIN] Background NPCs:
+Dключен генератор сетки перемещения в реальном времени.
+Если у вас возникли проблемы с производительностью, вы можете изменить настройки в спавнменю:
+Options > Background NPCs > Генерация
+
+
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+
+[HTML] :1: Unsafe JavaScript attempt to access frame with URL data:text/html;charset=utf-8,%09%09%3Chtml%3E%0A%09%09%09%3Cbody%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%0A%09%09%09%09%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FJg3DvQZFWwo%3Frel%3D0%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%0A%09%09%09%3C%2Fbody%3E%0A%09%09%3C%2Fhtml%3E%0A%09 from frame with URL https://www.youtube.com/embed/Jg3DvQZFWwo?rel=0. Domains, protocols and ports must match.
+

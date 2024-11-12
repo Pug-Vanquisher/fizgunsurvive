@@ -16,20 +16,10 @@ public class RiftCorrupterPlacer : MonoBehaviour
     }
     void TileRemake()
     {
-        if (enemySpawnrate + obstalceSpawnrate != transform.childCount)
+        for (int i = 0; i < Mathf.Abs(enemySpawnrate + obstalceSpawnrate - transform.childCount); i++)
         {
-            for (int i = 0; i < Mathf.Abs(enemySpawnrate + obstalceSpawnrate - transform.childCount); i++)
-            {
-                if (transform.childCount > enemySpawnrate + obstalceSpawnrate)
-                {
-                    Destroy(transform.GetChild(transform.childCount - i - 1).gameObject);
-                }
-                else if (transform.childCount < enemySpawnrate + obstalceSpawnrate)
-                {
-                    var a = Instantiate(CorrupterPrefab, transform);
-                    a.GetComponent<EnvCorrupter>().localPos = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(respawnMinDistance, respawnMaxDistance);
-                }
-            }
+            var a = Instantiate(CorrupterPrefab, transform);
+            a.GetComponent<RiftCorrupter>().localPos = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(respawnMinDistance, respawnMaxDistance);
         }
         EventManager.Instance.TriggerEvent("UpdateNavMesh");
     }

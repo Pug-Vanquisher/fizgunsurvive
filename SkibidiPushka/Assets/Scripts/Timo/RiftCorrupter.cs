@@ -11,7 +11,7 @@ public class RiftCorrupter : MonoBehaviour
     public SpriteRenderer NewEnemy;
 
     public float FadeIn;
-    public float FadeOut;
+    public float timer;
 
     private float Brightness;
     private float Force;
@@ -19,35 +19,29 @@ public class RiftCorrupter : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(RiftInvasion());
         Brightness = WarpSprite.material.GetFloat("_Brightness");
         Force = NewEnemy.material.GetFloat("_Force");
     }
     private void Update()
     {
         transform.position = tiled(localPos + new Vector2(transform.parent.position.x, transform.parent.position.y));
-    }
-
-    IEnumerator RiftInvasion()
-    {
-        float fading = 0.52f / FadeIn;
-        while (FadeIn > 0)
+        timer += Time.deltaTime;
+        if (timer < FadeIn / 2)
         {
-            WarpSprite.material.SetFloat("_Brightness", Brightness + fading);
-            FadeIn -= 0.1f;
-            yield return new WaitForSeconds(0.1f);
-        } 
-
-        fading = - 0.52f / FadeOut;
-        float forcing = 1 / FadeOut;
-        while (FadeOut > 0)
-        {
-            WarpSprite.material.SetFloat("_Brightness", Brightness + fading);
-            NewEnemy.material.SetFloat("_Force", Force + forcing);
-            FadeOut -= 0.1f;
-            yield return new WaitForSeconds(0.1f);
+            Brightness = Mathf.Lerp(Brightness, -0.2f, 0.01f);
+            Force = 10;
         }
-        KillTile();
+        else if (timer >= FadeIn / 2  && timer < FadeIn)
+        {
+            Brightness = Mathf.Lerp(Brightness, 5, 0.01f);
+            Force = Mathf.Lerp(Force, 0, 0.1f);
+        }
+        else if (timer >= FadeIn)
+        {
+            KillTile();
+        }
+        WarpSprite.material.SetFloat("_Brightness", Brightness);
+        NewEnemy.material.SetFloat("_Force", Force);
     }
 
     void KillTile()
