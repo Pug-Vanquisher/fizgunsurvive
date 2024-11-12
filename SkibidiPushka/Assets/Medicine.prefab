@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1136942892870329571}
   - component: {fileID: 2166984981655993742}
   - component: {fileID: 6201504145957019863}
+  - component: {fileID: -2929874465295308079}
   m_Layer: 16
   m_Name: Medicine
   m_TagString: Untagged
@@ -223,3 +224,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2929874465295308079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541928871987264397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05abafc4a8bcdd84c88dcd7eab87abbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeGrabbed: 1

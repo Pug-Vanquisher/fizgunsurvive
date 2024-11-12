@@ -178,12 +178,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTouchedLayer: PlayerTouched
   canBeGrabbed: 1
-  massForDamageCalculation: 5
+  massForDamageCalculation: 10
   maxhealth: 500
-  minDamage: 5
-  maxDamage: 50
+  minDamage: 10
+  maxDamage: 100
   breakThreshold: 10
-  knockbackMultiplier: 0.5
+  knockbackMultiplier: 0.6
 --- !u!208 &8092367191663410814
 NavMeshObstacle:
   m_ObjectHideFlags: 0

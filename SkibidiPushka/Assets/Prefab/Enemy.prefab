@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  stopDistance: 1
+  stopDistance: 2
   detectionRange: 5
   playerLayer:
     serializedVersion: 2
@@ -167,7 +167,7 @@ MonoBehaviour:
   GunsList:
   - {fileID: 6087284258791908462, guid: f18ccb1a47484234c8bd949dc73b7546, type: 3}
   - {fileID: 6087284258791908462, guid: 87805fd9b3782d143852aaab2c7caab3, type: 3}
-  - {fileID: 6087284258791908462, guid: 87805fd9b3782d143852aaab2c7caab3, type: 3}
+  - {fileID: 6087284258791908462, guid: f97b01fb8e1537840bcd3e8b034fb11c, type: 3}
 --- !u!114 &3160468205360601378
 MonoBehaviour:
   m_ObjectHideFlags: 0
